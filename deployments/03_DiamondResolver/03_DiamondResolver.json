@@ -3,9 +3,13 @@
     "type": "deployment",
     "name": "DiamondResolver",
     "artifact": "diamond-resolver/DiamondResolver.sol",
-    "constructorArguments": ["<Root>", "<NameWrapperRegistry>"],
+    "constructorArguments": [
+      "<Root>",
+      "<NameWrapperRegistry>"
+    ],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x00000000000000000000000000000000000000007df0b5fd37cb8629d36bd201",
+    "contractAddress": "0x8888a77d7366d3f60a847e0aa50c8f9da38439a5",
+    "deployments": null
   }
 ]

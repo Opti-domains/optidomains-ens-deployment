@@ -3,9 +3,12 @@
     "type": "deployment",
     "name": "Root",
     "artifact": "root/Root.sol",
-    "constructorArguments": ["<DEPLOYER>"],
+    "constructorArguments": [
+      "<DEPLOYER>"
+    ],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x000000000000000000000000000000000000000061180aab8ab870377ae6b3a9",
+    "contractAddress": "0x8888ab329ab828242146c09009d4bf4215e789c7",
+    "deployments": null
   }
 ]

@@ -11,10 +11,12 @@ import (
 	"os"
 	"path/filepath"
 	"sort"
+	"strconv"
 	"strings"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/joho/godotenv"
 )
@@ -90,9 +92,32 @@ func buildInitCode(dict map[string]string, action *DeploymentAction) (string, er
 					Type: abiType,
 				})
 
-				switch abiTypeStr {
-				case "address":
+				if abiTypeStr == "address" {
 					args = append(args, common.HexToAddress(value.(string)))
+				} else if abiTypeStr == "bytes" {
+					args = append(args, common.Hex2Bytes(value.(string)))
+				} else if strings.HasPrefix(abiTypeStr, "bytes") {
+					args = append(args, common.HexToHash(value.(string)))
+				} else if abiTypeStr == "uint8" {
+					args = append(args, uint8(value.(float64)))
+				} else if abiTypeStr == "uint16" {
+					args = append(args, uint16(value.(float64)))
+				} else if abiTypeStr == "uint32" {
+					args = append(args, uint32(value.(float64)))
+				} else if abiTypeStr == "uint64" {
+					args = append(args, uint64(value.(float64)))
+				} else if strings.HasPrefix(abiTypeStr, "uint") {
+					if floatValue, ok := value.(float64); ok {
+						value = strconv.FormatFloat(floatValue, 'f', 0, 64)
+					}
+
+					num, ok := math.ParseBig256(value.(string))
+					if !ok {
+						return "", errors.New("failed to convert string to " + abiTypeStr)
+					}
+					args = append(args, num)
+				} else {
+					args = append(args, value)
 				}
 			}
 		}
@@ -124,13 +149,15 @@ func scanSalt(initCode, leading string) (string, string) {
 	address := ""
 	salt := ""
 
+	leadingTemplate := leading[:3]
+
 	for !strings.HasPrefix(address, "0x"+leading) {
 		saltBytes := make([]byte, 12)
 		rand.Read(saltBytes)
 		saltHex := hex.EncodeToString(saltBytes)
 		salt = "0x0000000000000000000000000000000000000000" + saltHex
 		address = calculateAddressBySalt(initCode, salt)
-		if strings.HasPrefix(address, "0x888") {
+		if strings.HasPrefix(address, "0x"+leadingTemplate) {
 			fmt.Println(salt, address)
 		}
 	}
@@ -184,7 +211,7 @@ func buildPaths(directory string) ([]string, error) {
 }
 
 func processSingle(dict map[string]string, filePath string) error {
-	file, err := os.OpenFile(filePath, os.O_RDWR|os.O_TRUNC|os.O_CREATE, 0644)
+	file, err := os.OpenFile(filePath, os.O_RDWR|os.O_CREATE, 0644)
 	if err != nil {
 		return err
 	}
@@ -195,28 +222,43 @@ func processSingle(dict map[string]string, filePath string) error {
 		return err
 	}
 
-	var jsonData []DeploymentAction
+	var jsonData []*DeploymentAction
 	err = json.Unmarshal(content, &jsonData)
 	if err != nil {
 		return fmt.Errorf("error parsing JSON in file %s: %s", filePath, err)
 	}
 
 	for _, action := range jsonData {
-		err := generateAddressPipeline(dict, &action)
+		if action.Type == "deployment" {
+			err := generateAddressPipeline(dict, action)
 
-		if err != nil {
-			return err
+			if err != nil {
+				return err
+			}
+
+			dict[action.Name] = action.ContractAddress
 		}
+	}
 
-		dict[action.Name] = action.ContractAddress
+	// Truncate the file
+	err = file.Truncate(0)
+	if err != nil {
+		return err
+	}
 
-		encoder := json.NewEncoder(file)
-		encoder.SetIndent("", "  ")
+	// Seek to the beginning of the file
+	_, err = file.Seek(0, 0)
+	if err != nil {
+		return err
+	}
 
-		err = encoder.Encode(action)
-		if err != nil {
-			return err
-		}
+	encoder := json.NewEncoder(file)
+	encoder.SetEscapeHTML(false)
+	encoder.SetIndent("", "  ")
+
+	err = encoder.Encode(jsonData)
+	if err != nil {
+		return err
 	}
 
 	return nil

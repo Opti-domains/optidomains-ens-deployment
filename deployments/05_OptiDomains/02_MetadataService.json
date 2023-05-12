@@ -3,9 +3,12 @@
     "type": "deployment",
     "name": "OptiDomains_MetadataService",
     "artifact": "wrapper/OptiDomainsMetadataService.sol",
-    "constructorArguments": ["https://metadata.opti.domains/token/domains/op"],
+    "constructorArguments": [
+      "https://metadata.opti.domains/token/domains/op"
+    ],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x000000000000000000000000000000000000000004a435796fb6f7a22664024d",
+    "contractAddress": "0x8888c9c5794b7f790dd83033089e1c85d8fdd53d",
+    "deployments": null
   }
 ]

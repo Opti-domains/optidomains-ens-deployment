@@ -5,26 +5,18 @@
     "artifact": "diamond-resolver/facets/auth/RegistryWhitelistAuthFacet.sol",
     "constructorArguments": [],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x0000000000000000000000000000000000000000702bccd7d5928cb8936eb63b",
+    "contractAddress": "0x888856d8dd781b27d5044b2bd0368d350cfea2aa",
+    "deployments": null
   },
   {
     "type": "rootTx",
-    "target": "<DiamondResolver>",
-    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
-    "args": [
-      [
-        {
-          "target": "<RegistryWhitelistAuthFacet>",
-          "action": 0,
-          "selectors": [
-            "0x25f36704",
-            "0x9281aa0b"
-          ]
-        }
-      ],
-      "<DiamondResolver>",
-      "0x717dbd4c00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000125f3670400000000000000000000000000000000000000000000000000000000"
-    ]
+    "name": "",
+    "artifact": "",
+    "constructorArguments": null,
+    "leading": "",
+    "salt": "",
+    "contractAddress": "",
+    "deployments": null
   }
 ]

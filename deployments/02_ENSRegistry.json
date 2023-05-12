@@ -3,9 +3,12 @@
     "type": "deployment",
     "name": "ENSRegistry",
     "artifact": "registry/ENSRegistry.sol",
-    "constructorArguments": ["<Root>"],
+    "constructorArguments": [
+      "<Root>"
+    ],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x00000000000000000000000000000000000000009b0377b09f3bf72960622f9a",
+    "contractAddress": "0x888877fa045507f80e0359c72e5ffd97d0e17098",
+    "deployments": null
   }
 ]

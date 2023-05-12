@@ -3,9 +3,12 @@
     "type": "deployment",
     "name": "NameWrapperRegistry",
     "artifact": "diamond-resolver/NameWrapperRegistry.sol",
-    "constructorArguments": ["<ENSRegistry>"],
+    "constructorArguments": [
+      "<ENSRegistry>"
+    ],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x00000000000000000000000000000000000000008e56150aa74a432b01ba60d4",
+    "contractAddress": "0x8888e369c6df111bacaf810f91b878ab99e938dc",
+    "deployments": null
   }
 ]

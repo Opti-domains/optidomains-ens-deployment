@@ -2,7 +2,7 @@
   {
     "type": "deployment",
     "name": "PublicResolverFacet",
-    "artifact": "diamond-resolver/facets/auth/PublicResolverFacet.sol",
+    "artifact": "diamond-resolver/facets/public-resolver/PublicResolverFacet.sol",
     "constructorArguments": [],
     "leading": "8888",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",

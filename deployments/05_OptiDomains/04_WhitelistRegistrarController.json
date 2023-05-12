@@ -4,31 +4,46 @@
     "name": "OptiDomains_WhitelistRegistrarController",
     "artifact": "ethregistrar/WhitelistRegistrarController.sol",
     "constructorArguments": [
-      "<ENSRegistry>",
       "<OptiDomains_BaseRegistrarImplementation>",
-      "<OptiDomains_MetadataService>",
-      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+      "<ReverseRegistrar>",
+      "<OptiDomains_NameWrapper>",
+      "<OPERATOR>",
+      0,
+      "op"
     ],
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "salt": "0x0000000000000000000000000000000000000000ba49ec4f6d91399ce09cf5ab",
+    "contractAddress": "0x8888df25e263788ed19fbd15b9350ebb4f0b51f2",
+    "deployments": null
   },
   {
     "type": "rootTx",
-    "target": "<OptiDomains_NameWrapper>",
-    "selector": "function setController(address,bool)",
-    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+    "name": "",
+    "artifact": "",
+    "constructorArguments": null,
+    "leading": "",
+    "salt": "",
+    "contractAddress": "",
+    "deployments": null
   },
   {
     "type": "rootTx",
-    "target": "<ReverseRegistrar>",
-    "selector": "function setController(address,bool)",
-    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+    "name": "",
+    "artifact": "",
+    "constructorArguments": null,
+    "leading": "",
+    "salt": "",
+    "contractAddress": "",
+    "deployments": null
   },
   {
     "type": "rootTx",
-    "target": "<DiamondResolver>",
-    "selector": "function setWhitelisted(address,bool)",
-    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+    "name": "",
+    "artifact": "",
+    "constructorArguments": null,
+    "leading": "",
+    "salt": "",
+    "contractAddress": "",
+    "deployments": null
   }
 ]
