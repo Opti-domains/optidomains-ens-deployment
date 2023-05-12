@@ -30,6 +30,7 @@ type DeploymentAction struct {
 	Name                 string        `json:"name"`
 	Artifact             string        `json:"artifact"`
 	ConstructorArguments []interface{} `json:"constructorArguments"`
+	ParsedArguments      []interface{} `json:"parsedArguments"`
 	Leading              string        `json:"leading"`
 	Salt                 string        `json:"salt"`
 	ContractAddress      string        `json:"contractAddress"`
@@ -37,20 +38,35 @@ type DeploymentAction struct {
 }
 
 func resolveAddress(dict map[string]string, data interface{}) interface{} {
+	// fmt.Println(data)
 	switch d := data.(type) {
 	case string:
 		if strings.HasPrefix(d, "<") && strings.HasSuffix(d, ">") {
 			key := d[1 : len(d)-1]
 			if val, ok := dict[key]; ok {
+				// fmt.Println(key, val)
 				return val
 			}
 			fmt.Printf("Not found %s\n", d)
 		}
 	case map[string]interface{}:
 		for k, v := range d {
+			// fmt.Println(k)
 			d[k] = resolveAddress(dict, v)
 		}
 		return d
+	case []interface{}:
+		for k, v := range d {
+			// fmt.Println(k)
+			d[k] = resolveAddress(dict, v)
+		}
+		return d
+	case *DeploymentAction:
+		parsed := make([]interface{}, len(d.ConstructorArguments))
+		copy(parsed, d.ConstructorArguments)
+
+		parsed = resolveAddress(dict, parsed).([]interface{})
+		d.ParsedArguments = parsed
 	}
 	return data
 }
@@ -222,21 +238,36 @@ func processSingle(dict map[string]string, filePath string) error {
 		return err
 	}
 
-	var jsonData []*DeploymentAction
+	var jsonData []map[string]interface{}
 	err = json.Unmarshal(content, &jsonData)
 	if err != nil {
 		return fmt.Errorf("error parsing JSON in file %s: %s", filePath, err)
 	}
 
-	for _, action := range jsonData {
-		if action.Type == "deployment" {
-			err := generateAddressPipeline(dict, action)
+	for key, data := range jsonData {
+		if data["type"] == "deployment" {
+			x, _ := json.Marshal(data)
+			var action DeploymentAction
+			err := json.Unmarshal(x, &action)
+
+			if err != nil {
+				return err
+			}
+
+			err = generateAddressPipeline(dict, &action)
 
 			if err != nil {
 				return err
 			}
 
 			dict[action.Name] = action.ContractAddress
+
+			x, _ = json.Marshal(action)
+			err = json.Unmarshal(x, &jsonData[key])
+
+			if err != nil {
+				return err
+			}
 		}
 	}
 
@@ -264,10 +295,10 @@ func processSingle(dict map[string]string, filePath string) error {
 	return nil
 }
 
-func getDeployerAddress() (string, error) {
-	privateKeyHex := os.Getenv("DEPLOYER_KEY")[2:]
+func getAddressFromPk(pk string) (string, error) {
+	privateKeyHex := pk[2:]
 	if privateKeyHex == "" {
-		return "", errors.New("DEPLOYER_KEY not set")
+		return "", errors.New("private key not set")
 	}
 
 	privateKey, err := crypto.HexToECDSA(privateKeyHex)
@@ -278,7 +309,7 @@ func getDeployerAddress() (string, error) {
 	publicKey := privateKey.Public()
 	publicKeyECDSA, ok := publicKey.(*ecdsa.PublicKey)
 	if !ok {
-		return "", errors.New("Casting public key to ecdsa error")
+		return "", errors.New("casting public key to ecdsa error")
 	}
 
 	address := crypto.PubkeyToAddress(*publicKeyECDSA).Hex()
@@ -297,13 +328,17 @@ func main() {
 
 	dict := make(map[string]string)
 
-	deployerAddress, err := getDeployerAddress()
-
+	deployerAddress, err := getAddressFromPk(os.Getenv("DEPLOYER_KEY"))
 	if err != nil {
 		panic(err)
 	}
-
 	dict["DEPLOYER"] = deployerAddress
+
+	operatorAddress, err := getAddressFromPk(os.Getenv("OPERATOR_KEY"))
+	if err != nil {
+		panic(err)
+	}
+	dict["OPERATOR"] = operatorAddress
 
 	for _, path := range paths {
 		err := processSingle(dict, path)

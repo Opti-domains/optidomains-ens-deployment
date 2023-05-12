@@ -1,54 +1,54 @@
 [
   {
-    "type": "deployment",
-    "name": "ReverseRegistrar",
     "artifact": "reverseRegistrar/ReverseRegistrar.sol",
     "constructorArguments": [
       "<ENSRegistry>"
     ],
+    "contractAddress": "0x88888569d597fd733c764c80a37e058c975c41c6",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000a2b6e19d4edaa4ed2dbcc0db",
-    "contractAddress": "0x8888d1a5ca8040b8e1dfcc4a74e363348483b113",
-    "deployments": null
+    "name": "ReverseRegistrar",
+    "parsedArguments": [
+      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae"
+    ],
+    "salt": "0x00000000000000000000000000000000000000005c8c03bdc2ac8656419a84d3",
+    "type": "deployment"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<DiamondResolver>"
+    ],
+    "selector": "function setDefaultResolver(address)",
+    "target": "<ReverseRegistrar>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<ENSRegistry>",
+      "0xdec08c9dbbdd0890e300eb5062089b2d4b1c40e3673bbccb5423f7b37dcf9a9c",
+      "<Root>"
+    ],
+    "selector": "function setSubnodeOwner(address,bytes32,address)",
+    "target": "<Root>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<ENSRegistry>",
+      "0xe5e14487b78f85faa6e1808e89246cf57dd34831548ff2e6097380d98db2504a",
+      "<ReverseRegistrar>"
+    ],
+    "selector": "function setSubnodeOwner(address,bytes32,address)",
+    "target": "<Root>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<ReverseRegistrar>",
+      true
+    ],
+    "selector": "function setWhitelisted(address,bool)",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
   }
 ]

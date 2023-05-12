@@ -1,14 +1,17 @@
 [
   {
-    "type": "deployment",
-    "name": "Root",
     "artifact": "root/Root.sol",
     "constructorArguments": [
       "<DEPLOYER>"
     ],
+    "contractAddress": "0x8888abaf87f3419a515a45206a4c27532cce184d",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x000000000000000000000000000000000000000061180aab8ab870377ae6b3a9",
-    "contractAddress": "0x8888ab329ab828242146c09009d4bf4215e789c7",
-    "deployments": null
+    "name": "Root",
+    "parsedArguments": [
+      "0x8888e46A81E8732Dca896D5e9ceAAd86a7306bE0"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000794d2226a624e2295ff3060a",
+    "type": "deployment"
   }
 ]

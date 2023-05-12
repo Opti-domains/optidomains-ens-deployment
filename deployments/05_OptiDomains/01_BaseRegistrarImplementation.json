@@ -1,25 +1,29 @@
 [
   {
-    "type": "deployment",
-    "name": "OptiDomains_BaseRegistrarImplementation",
     "artifact": "ethregistrar/BaseRegistrarImplementation.sol",
     "constructorArguments": [
       "<ENSRegistry>",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
+    "contractAddress": "0x8888047015c641866385524d1589c8779c3a85c2",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x00000000000000000000000000000000000000009e1d1e908213724a67f245f3",
-    "contractAddress": "0x8888bdc1aad3ec4a20f6039fbce9df5865ec5097",
-    "deployments": null
+    "name": "OptiDomains_BaseRegistrarImplementation",
+    "parsedArguments": [
+      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae",
+      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+    ],
+    "salt": "0x00000000000000000000000000000000000000004563834e83333e8d4cda62fe",
+    "type": "deployment"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<ENSRegistry>",
+      "0xbc41dd7236fa8be09e593a876f5868355879efd89a87f2a6d06bb0b228b3a3b2",
+      "<OptiDomains_BaseRegistrarImplementation>"
+    ],
+    "selector": "function setSubnodeOwner(address,bytes32,address)",
+    "target": "<Root>",
+    "type": "rootTx"
   }
 ]

@@ -1,35 +1,35 @@
 [
   {
-    "type": "deployment",
-    "name": "OptiDomainsAttestation",
     "artifact": "attestation/OptiDomainsAttestation.sol",
     "constructorArguments": [
       "<NameWrapperRegistry>",
       "<Root>"
     ],
+    "contractAddress": "0x8888177e66f0c76aa2c773af0ef2f7e5350201fb",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x00000000000000000000000000000000000000004b4ee8ceb88e42c94db3d16d",
-    "contractAddress": "0x88887a7c0900c2c9cd9e69eb06f2cab5ae0c259e",
-    "deployments": null
+    "name": "OptiDomainsAttestation",
+    "parsedArguments": [
+      "0x88884b32e08591cf446761039b74895908734c32",
+      "0x8888abaf87f3419a515a45206a4c27532cce184d"
+    ],
+    "salt": "0x000000000000000000000000000000000000000002e0d30e07308adde7ca88f8",
+    "type": "deployment"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<OptiDomainsAttestation>"
+    ],
+    "selector": "function setAttestation(address)",
+    "target": "<NameWrapperRegistry>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84"
+    ],
+    "selector": "function activate(address)",
+    "target": "<OptiDomainsAttestation>",
+    "type": "rootTx"
   }
 ]

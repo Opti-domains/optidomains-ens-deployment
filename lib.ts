@@ -88,15 +88,3 @@ export function generateAddressPipeline(dict: {[name: string]: string}, action: 
   }
   return action
 }
-
-console.log(
-  generateAddressPipeline({}, {
-    "type": "deployment",
-    "name": "Root",
-    "artifact": "root/Root.sol",
-    "constructorArguments": ["0x000090D38BCc60A8CEA2E0cDC9f9182750D5d2b3"],
-    "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
-  })
-)

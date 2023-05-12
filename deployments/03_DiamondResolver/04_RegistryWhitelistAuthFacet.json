@@ -1,22 +1,32 @@
 [
   {
-    "type": "deployment",
-    "name": "RegistryWhitelistAuthFacet",
     "artifact": "diamond-resolver/facets/auth/RegistryWhitelistAuthFacet.sol",
     "constructorArguments": [],
+    "contractAddress": "0x8888b7f9d6edb6440bc7724fa908c0b8ea815b1e",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000702bccd7d5928cb8936eb63b",
-    "contractAddress": "0x888856d8dd781b27d5044b2bd0368d350cfea2aa",
-    "deployments": null
+    "name": "RegistryWhitelistAuthFacet",
+    "parsedArguments": [],
+    "salt": "0x0000000000000000000000000000000000000000c99e786e47c47cc48a2000c4",
+    "type": "deployment"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      [
+        {
+          "action": 0,
+          "selectors": [
+            "0x25f36704",
+            "0x9281aa0b"
+          ],
+          "target": "<RegistryWhitelistAuthFacet>"
+        }
+      ],
+      "<DiamondResolver>",
+      "0x717dbd4c00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000125f3670400000000000000000000000000000000000000000000000000000000"
+    ],
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
   }
 ]

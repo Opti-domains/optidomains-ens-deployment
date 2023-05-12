@@ -1,14 +1,17 @@
 [
   {
-    "type": "deployment",
-    "name": "OptiDomains_MetadataService",
     "artifact": "wrapper/OptiDomainsMetadataService.sol",
     "constructorArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
+    "contractAddress": "0x88889d1099e71393b8fbf15085c88c8c01cb49ab",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x000000000000000000000000000000000000000004a435796fb6f7a22664024d",
-    "contractAddress": "0x8888c9c5794b7f790dd83033089e1c85d8fdd53d",
-    "deployments": null
+    "name": "OptiDomains_MetadataService",
+    "parsedArguments": [
+      "https://metadata.opti.domains/token/domains/op"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000330347c7ed0eda02f3ec1358",
+    "type": "deployment"
   }
 ]

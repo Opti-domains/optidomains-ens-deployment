@@ -1,15 +1,19 @@
 [
   {
-    "type": "deployment",
-    "name": "DiamondResolver",
     "artifact": "diamond-resolver/DiamondResolver.sol",
     "constructorArguments": [
       "<Root>",
       "<NameWrapperRegistry>"
     ],
+    "contractAddress": "0x8888dddefad8ad99f978f9f57b183eb4b227d429",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x00000000000000000000000000000000000000007df0b5fd37cb8629d36bd201",
-    "contractAddress": "0x8888a77d7366d3f60a847e0aa50c8f9da38439a5",
-    "deployments": null
+    "name": "DiamondResolver",
+    "parsedArguments": [
+      "0x8888abaf87f3419a515a45206a4c27532cce184d",
+      "0x88884b32e08591cf446761039b74895908734c32"
+    ],
+    "salt": "0x00000000000000000000000000000000000000005fae6749fd7874fa53e9ac94",
+    "type": "deployment"
   }
 ]

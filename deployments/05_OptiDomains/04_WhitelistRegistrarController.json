@@ -1,7 +1,5 @@
 [
   {
-    "type": "deployment",
-    "name": "OptiDomains_WhitelistRegistrarController",
     "artifact": "ethregistrar/WhitelistRegistrarController.sol",
     "constructorArguments": [
       "<OptiDomains_BaseRegistrarImplementation>",
@@ -11,39 +9,46 @@
       0,
       "op"
     ],
+    "contractAddress": "0x888840a9647d24a1eb5511cf12c21b71d09f1b2d",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000ba49ec4f6d91399ce09cf5ab",
-    "contractAddress": "0x8888df25e263788ed19fbd15b9350ebb4f0b51f2",
-    "deployments": null
+    "name": "OptiDomains_WhitelistRegistrarController",
+    "parsedArguments": [
+      "0x8888047015c641866385524d1589c8779c3a85c2",
+      "0x88888569d597fd733c764c80a37e058c975c41c6",
+      "0x8888b8d70855c3ba95630b5d71ff77288b4240f5",
+      "0x88887761180a16D5Bfe87DB69F5F360C6FCc3C05",
+      0,
+      "op"
+    ],
+    "salt": "0x00000000000000000000000000000000000000001d74c884d68306f0c0e6053f",
+    "type": "deployment"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<OptiDomains_WhitelistRegistrarController>",
+      true
+    ],
+    "selector": "function setController(address,bool)",
+    "target": "<OptiDomains_NameWrapper>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<OptiDomains_WhitelistRegistrarController>",
+      true
+    ],
+    "selector": "function setController(address,bool)",
+    "target": "<ReverseRegistrar>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<OptiDomains_WhitelistRegistrarController>",
+      true
+    ],
+    "selector": "function setWhitelisted(address,bool)",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
   }
 ]

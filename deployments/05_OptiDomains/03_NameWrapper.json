@@ -1,7 +1,5 @@
 [
   {
-    "type": "deployment",
-    "name": "OptiDomains_NameWrapper",
     "artifact": "wrapper/OptiDomains.sol",
     "constructorArguments": [
       "<ENSRegistry>",
@@ -9,29 +7,34 @@
       "<OptiDomains_MetadataService>",
       "op"
     ],
+    "contractAddress": "0x8888b8d70855c3ba95630b5d71ff77288b4240f5",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x0000000000000000000000000000000000000000e5e47a968c8ef851d5ed3a2e",
-    "contractAddress": "0x88882b319fe299f12376ec32fb84a6d26784cc9c",
-    "deployments": null
+    "name": "OptiDomains_NameWrapper",
+    "parsedArguments": [
+      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae",
+      "0x8888047015c641866385524d1589c8779c3a85c2",
+      "0x88889d1099e71393b8fbf15085c88c8c01cb49ab",
+      "op"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000814c4ac7d57eab8ddedca4d6",
+    "type": "deployment"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "<OptiDomains_NameWrapper>"
+    ],
+    "selector": "function addController(address)",
+    "target": "<OptiDomains_BaseRegistrarImplementation>",
+    "type": "rootTx"
   },
   {
-    "type": "rootTx",
-    "name": "",
-    "artifact": "",
-    "constructorArguments": null,
-    "leading": "",
-    "salt": "",
-    "contractAddress": "",
-    "deployments": null
+    "args": [
+      "0x0000000000000000000000000000000000000000",
+      "<OptiDomains_NameWrapper>"
+    ],
+    "selector": "function upgrade(address,address)",
+    "target": "<NameWrapperRegistry>",
+    "type": "rootTx"
   }
 ]

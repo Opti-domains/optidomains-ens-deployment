@@ -1,14 +1,17 @@
 [
   {
-    "type": "deployment",
-    "name": "NameWrapperRegistry",
     "artifact": "diamond-resolver/NameWrapperRegistry.sol",
     "constructorArguments": [
       "<ENSRegistry>"
     ],
+    "contractAddress": "0x88884b32e08591cf446761039b74895908734c32",
+    "deployments": null,
     "leading": "8888",
-    "salt": "0x00000000000000000000000000000000000000008e56150aa74a432b01ba60d4",
-    "contractAddress": "0x8888e369c6df111bacaf810f91b878ab99e938dc",
-    "deployments": null
+    "name": "NameWrapperRegistry",
+    "parsedArguments": [
+      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000a08a926ed14661d5d129a6da",
+    "type": "deployment"
   }
 ]
