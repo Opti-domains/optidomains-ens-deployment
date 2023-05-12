@@ -1,0 +1,34 @@
+[
+  {
+    "type": "deployment",
+    "name": "OptiDomains_WhitelistRegistrarController",
+    "artifact": "ethregistrar/WhitelistRegistrarController.sol",
+    "constructorArguments": [
+      "<ENSRegistry>",
+      "<OptiDomains_BaseRegistrarImplementation>",
+      "<OptiDomains_MetadataService>",
+      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+    ],
+    "leading": "8888",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  },
+  {
+    "type": "rootTx",
+    "target": "<OptiDomains_NameWrapper>",
+    "selector": "function setController(address,bool)",
+    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+  },
+  {
+    "type": "rootTx",
+    "target": "<ReverseRegistrar>",
+    "selector": "function setController(address,bool)",
+    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+  },
+  {
+    "type": "rootTx",
+    "target": "<DiamondResolver>",
+    "selector": "function setWhitelisted(address,bool)",
+    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+  }
+]

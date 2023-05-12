@@ -1,0 +1,115 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "RegistryAuthFacet",
+  "sourceName": "contracts/diamond-resolver/facets/auth/RegistryAuthFacet.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Unauthorised",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "operator",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "ApprovalForAll",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "node",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "delegate",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "bool",
+          "name": "approved",
+          "type": "bool"
+        }
+      ],
+      "name": "Approved",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "node",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint64",
+          "name": "newVersion",
+          "type": "uint64"
+        }
+      ],
+      "name": "VersionChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "node",
+          "type": "bytes32"
+        }
+      ],
+      "name": "isAuthorised",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506102e8806100206000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806325f3670414610030575b600080fd5b61004361003e366004610262565b610057565b604051901515815260200160405180910390f35b6000803073ffffffffffffffffffffffffffffffffffffffff16637b1039996040518163ffffffff1660e01b8152600401602060405180830381865afa1580156100a5573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100c9919061028e565b73ffffffffffffffffffffffffffffffffffffffff16637dd56411846040518263ffffffff1660e01b815260040161010391815260200190565b602060405180830381865afa158015610120573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610144919061028e565b90508373ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614806101d1575073ffffffffffffffffffffffffffffffffffffffff80821660009081527f8c151f2b073b889ff2e1725375750783c091724f29d93246786f4cca8f047dbe602090815260408083209388168352929052205460ff165b80610235575073ffffffffffffffffffffffffffffffffffffffff80821660009081527f8c151f2b073b889ff2e1725375750783c091724f29d93246786f4cca8f047dbf6020908152604080832087845282528083209388168352929052205460ff165b949350505050565b73ffffffffffffffffffffffffffffffffffffffff8116811461025f57600080fd5b50565b6000806040838503121561027557600080fd5b82356102808161023d565b946020939093013593505050565b6000602082840312156102a057600080fd5b81516102ab8161023d565b939250505056fea26469706673582212202954272b07fe97383bb4ce5c54e1298f142a523b69dd5d85be60b530169d0c0164736f6c63430008130033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806325f3670414610030575b600080fd5b61004361003e366004610262565b610057565b604051901515815260200160405180910390f35b6000803073ffffffffffffffffffffffffffffffffffffffff16637b1039996040518163ffffffff1660e01b8152600401602060405180830381865afa1580156100a5573d6000803e3d6000fd5b505050506040513d601f19601f820116820180604052508101906100c9919061028e565b73ffffffffffffffffffffffffffffffffffffffff16637dd56411846040518263ffffffff1660e01b815260040161010391815260200190565b602060405180830381865afa158015610120573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610144919061028e565b90508373ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff1614806101d1575073ffffffffffffffffffffffffffffffffffffffff80821660009081527f8c151f2b073b889ff2e1725375750783c091724f29d93246786f4cca8f047dbe602090815260408083209388168352929052205460ff165b80610235575073ffffffffffffffffffffffffffffffffffffffff80821660009081527f8c151f2b073b889ff2e1725375750783c091724f29d93246786f4cca8f047dbf6020908152604080832087845282528083209388168352929052205460ff165b949350505050565b73ffffffffffffffffffffffffffffffffffffffff8116811461025f57600080fd5b50565b6000806040838503121561027557600080fd5b82356102808161023d565b946020939093013593505050565b6000602082840312156102a057600080fd5b81516102ab8161023d565b939250505056fea26469706673582212202954272b07fe97383bb4ce5c54e1298f142a523b69dd5d85be60b530169d0c0164736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

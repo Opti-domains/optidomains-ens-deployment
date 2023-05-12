@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "name": "NameWrapperRegistry",
+    "artifact": "diamond-resolver/NameWrapperRegistry.sol",
+    "constructorArguments": ["<ENSRegistry>"],
+    "leading": "8888",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]
