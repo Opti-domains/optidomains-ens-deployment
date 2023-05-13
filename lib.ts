@@ -1,14 +1,19 @@
 import * as dotenv from "dotenv";
 dotenv.config();
 
+import fs from "fs";
+import path from "path";
+
 import ImmutableCreate2FactoryABI from "./ImmutableCreate2FactoryABI.json"
+import RootABI from "./RootABI.json"
+
 import { ethers } from "ethers"
 import { CHAINS } from "./config";
-import fs from "fs";
-import { DeploymentAction } from "./types";
+import { DeploymentAction, TxAction } from "./types";
 import { randomBytes } from 'crypto'
 
 const ImmutableCreate2Factory = new ethers.Contract("0x0000000000ffe8b47b3e2130213b802212439497", ImmutableCreate2FactoryABI)
+let Root: ethers.Contract
 
 let provider, wallet;
 
@@ -87,4 +92,103 @@ export function generateAddressPipeline(dict: {[name: string]: string}, action: 
     [action.salt, action.contractAddress] = scanSalt(initCode, action.leading)
   }
   return action
+}
+
+export function rootGenerateSignature(
+  rootAddress: string,
+  topic: string,
+  nonce: number,
+  digestIn: string,
+) {
+  // Define the input types and values of the transaction data
+  const inputTypes = [
+    'bytes1',
+    'bytes1',
+    'address',
+    'bytes32',
+    'uint256',
+    'bytes32',
+  ]
+  const inputValues = ['0x19', '0x00', rootAddress, topic, nonce, digestIn]
+
+  // ABI-encode the transaction data
+  const digest = ethers.utils.solidityKeccak256(inputTypes, inputValues)
+
+  // console.log(
+  //   digest,
+  //   controller.address,
+  //   network.config.chainId,
+  //   isTakeover
+  //     ? '0x0548274c4be004976424de9f6f485fbe40a8f13e41524cd574fead54e448415c'
+  //     : '0xdd007bd789f73e08c2714644c55b11c7d202931d717def434e3c9caa12a9f583',
+  //   commitment,
+  // )
+
+  const signingKey = new ethers.utils.SigningKey(
+    process.env.SIGNER_PRIVATE_KEY as string,
+  )
+  const signature = signingKey.signDigest(digest)
+
+  return ethers.utils.hexlify(
+    ethers.utils.concat([
+      signature.r,
+      signature.s,
+      ethers.utils.hexlify(signature.v),
+    ]),
+  )
+}
+
+export async function deployContract(initCode: string, salt: string) {
+  await (await ImmutableCreate2Factory.safeCreate2(salt, initCode)).wait();
+}
+
+export const TOPIC_LOCK = ethers.utils.keccak256(
+  ethers.utils.toUtf8Bytes('lock'),
+)
+export const TOPIC_EXECUTE = ethers.utils.keccak256(
+  ethers.utils.toUtf8Bytes('execute'),
+)
+export const TOPIC_TRANSFER_OWNERSHIP = ethers.utils.keccak256(
+  ethers.utils.toUtf8Bytes('transferOwnership'),
+)
+export const TOPIC_SET_CONTROLLER = ethers.utils.keccak256(
+  ethers.utils.toUtf8Bytes('setController'),
+)
+
+export async function performRootTx(dict: {[name: string]: string}, action: TxAction) {
+  if (!Root) {
+    Root = new ethers.Contract(dict.Root, RootABI)
+  }
+
+  const target = resolveAddress(dict, action.target)
+
+  const nonce = await Root.currentNonce();
+
+  const iface = new ethers.utils.Interface([
+    action.selector,
+  ])
+
+  const functionName = action.selector.match(/function\s+(\w+)/)[1];
+
+  const calldata = iface.encodeFunctionData(functionName, action.args)
+
+  const signature = rootGenerateSignature(
+    dict.Root,
+    TOPIC_EXECUTE,
+    nonce,
+    ethers.utils.solidityKeccak256(
+      ['address', 'bytes'],
+      [target, calldata],
+    )
+  )
+
+  const tx = await Root.execute(
+    target,
+    calldata,
+    signature,
+  )
+
+  await tx.wait();
+
+  console.log(`Root TX on ${action.target} (Tx: ${tx.hash})`)
 }

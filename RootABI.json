@@ -1,0 +1,19 @@
+[
+  "constructor(address)",
+  "error InvalidOperatorSignature()",
+  "event ControllerChanged(address indexed,bool)",
+  "event OwnershipTransferred(address indexed,address indexed)",
+  "event RootExecution(address indexed,bytes,bytes)",
+  "event TLDLocked(bytes32 indexed)",
+  "function controllers(address) view returns (bool)",
+  "function currentNonce() view returns (uint256)",
+  "function execute(address,bytes,bytes) returns (bytes)",
+  "function isOwner(address) view returns (bool)",
+  "function lock(bytes32,bytes)",
+  "function locked(bytes32) view returns (bool)",
+  "function owner() view returns (address)",
+  "function setController(address,bool,bytes)",
+  "function setSubnodeOwner(address,bytes32,address)",
+  "function supportsInterface(bytes4) pure returns (bool)",
+  "function transferOwnership(address,bytes)"
+]

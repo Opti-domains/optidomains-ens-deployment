@@ -7,3 +7,10 @@ export interface DeploymentAction {
   salt: string
   contractAddress: string
 }
+
+export interface TxAction {
+  type: string
+  target: string
+  selector: string
+  args: (string | number)[]
+}
