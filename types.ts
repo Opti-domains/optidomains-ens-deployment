@@ -1,3 +1,7 @@
+export interface DeploymentActionResult {
+
+}
+
 export interface DeploymentAction {
   type: string
   name: string
@@ -6,6 +10,11 @@ export interface DeploymentAction {
   leading: string
   salt: string
   contractAddress: string
+  deployments: null | undefined | DeploymentActionResult[]
+}
+
+export interface TxActionResult {
+
 }
 
 export interface TxAction {
@@ -13,4 +22,5 @@ export interface TxAction {
   target: string
   selector: string
   args: (string | number)[]
+  deployments: null | undefined | DeploymentActionResult[]
 }

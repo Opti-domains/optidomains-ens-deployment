@@ -1,6 +1,10 @@
+import * as dotenv from "dotenv";
+dotenv.config();
+
 import fs from "fs/promises";
 import path from "path";
-import { resolveAddress } from "./lib";
+import { buildInitCode, calculateAddressBySalt, deployContract, getAddressFromPk, performRootTx, resolveAddress, setupWallet } from "./lib";
+import { cloneDeep } from "lodash";
 
 async function readFilesRecursively(directory) {
   try {
@@ -36,6 +40,8 @@ async function readFilesRecursively(directory) {
   }
 }
 
+const RAW_ACTION_SYMBOL = Symbol("rawAction")
+
 async function processSingle(dict, filePath) {
   const stats = await fs.stat(filePath);
   if (stats.isFile()) {
@@ -49,6 +55,9 @@ async function processSingle(dict, filePath) {
 
       // Put into dict
       for (let action of jsonData) {
+        action[RAW_ACTION_SYMBOL] = cloneDeep(action)
+        delete action[RAW_ACTION_SYMBOL].deployments
+
         if (action.type == 'deployment') {
           dict[action.name] = action.contractAddress
         }
@@ -57,16 +66,49 @@ async function processSingle(dict, filePath) {
       const actions = resolveAddress(dict, jsonData)
 
       // Process the JSON data
-      console.log('File:', filePath);
-      console.log('JSON data:', actions);
+      // console.log('File:', filePath);
+      // console.log('JSON data:', actions);
+
+      for (let action of actions) {
+        if (action.type == 'deployment') {
+          const initCode = buildInitCode(dict, action)
+          const address = calculateAddressBySalt(initCode, action.salt)
+
+          if (address.toLowerCase() != action.contractAddress.toLowerCase()) {
+            throw new Error("Address mismatch")
+          }
+
+          const tx = await deployContract(initCode, action.salt)
+
+          console.log(`Contract ${action.name} deployed at ${action.address} (Tx: ${tx.hash})`)
+        } else {
+          const tx = await performRootTx(dict, action)
+          console.log(`Root TX on ${action[RAW_ACTION_SYMBOL].target} (Tx: ${tx.hash})`)
+        }
+
+        // Rollback to raw action
+        for (let key in action[RAW_ACTION_SYMBOL]) {
+          action[key] = action[RAW_ACTION_SYMBOL][key]
+        }
+      }
     }
   }
 }
 
 async function main() {
+  // Retrieve command line arguments
+  const args: string[] = process.argv.slice(2);
+  const chainName: string = args[0]
+
+  setupWallet(chainName)
+
   const filePaths = await readFilesRecursively('deployments')
 
-  const dict = {}
+  const dict = {
+    DEPLOYER: getAddressFromPk(process.env.DEPLOYER_KEY),
+    OPERATOR: getAddressFromPk(process.env.OPERATOR_KEY),
+    CHAIN_NAME: chainName,
+  }
 
   for (const filePath of filePaths) {
     await processSingle(dict, filePath)

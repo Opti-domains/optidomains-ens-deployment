@@ -12,14 +12,34 @@ import { CHAINS } from "./config";
 import { DeploymentAction, TxAction } from "./types";
 import { randomBytes } from 'crypto'
 
-const ImmutableCreate2Factory = new ethers.Contract("0x0000000000ffe8b47b3e2130213b802212439497", ImmutableCreate2FactoryABI)
+let ImmutableCreate2Factory = new ethers.Contract("0x0000000000ffe8b47b3e2130213b802212439497", ImmutableCreate2FactoryABI)
 let Root: ethers.Contract
 
 let provider, wallet;
 
-export function setupWallet(chain: string) {
+export function setupWallet(chain: string, pk = process.env.DEPLOYER_KEY) {
   provider = new ethers.providers.JsonRpcProvider(CHAINS[chain].url);
-  wallet = new ethers.Wallet(process.env.DEPLOYER_KEY);
+  wallet = new ethers.Wallet(pk, provider);
+
+  ImmutableCreate2Factory = new ethers.Contract("0x0000000000ffe8b47b3e2130213b802212439497", ImmutableCreate2FactoryABI, wallet)
+}
+
+export function getWallet(): ethers.Wallet {
+  return wallet
+}
+
+export function getProvider(): ethers.providers.JsonRpcProvider {
+  return provider
+}
+
+export function getAddressFromPk(privateKey: string) {
+  // Create a new wallet instance using the private key
+  const wallet = new ethers.Wallet(privateKey);
+
+  // Get the address from the wallet
+  const address = wallet.address;
+
+  return address
 }
 
 export function resolveAddress(dict: {[name: string]: string}, data: any) {
@@ -139,7 +159,7 @@ export function rootGenerateSignature(
 }
 
 export async function deployContract(initCode: string, salt: string) {
-  await (await ImmutableCreate2Factory.safeCreate2(salt, initCode)).wait();
+  return await (await ImmutableCreate2Factory.safeCreate2(salt, initCode)).wait();
 }
 
 export const TOPIC_LOCK = ethers.utils.keccak256(
@@ -157,7 +177,7 @@ export const TOPIC_SET_CONTROLLER = ethers.utils.keccak256(
 
 export async function performRootTx(dict: {[name: string]: string}, action: TxAction) {
   if (!Root) {
-    Root = new ethers.Contract(dict.Root, RootABI)
+    Root = new ethers.Contract(dict.Root, RootABI, wallet)
   }
 
   const target = resolveAddress(dict, action.target)
@@ -188,7 +208,5 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
     signature,
   )
 
-  await tx.wait();
-
-  console.log(`Root TX on ${action.target} (Tx: ${tx.hash})`)
+  return await tx.wait();
 }
