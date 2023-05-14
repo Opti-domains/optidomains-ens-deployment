@@ -9,19 +9,25 @@
       0,
       "op"
     ],
-    "contractAddress": "0x888840a9647d24a1eb5511cf12c21b71d09f1b2d",
-    "deployments": null,
+    "contractAddress": "0x8888e81629170a0313a31098ed16748aec459da4",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x8888e81629170a0313a31098ed16748aec459da4",
+        "transactionHash": "0x1d236bb167f64498b3dfc5d7c9134088e2b5fe97dbf16636e95d57c9c000def4"
+      }
+    ],
     "leading": "8888",
     "name": "OptiDomains_WhitelistRegistrarController",
     "parsedArguments": [
-      "0x8888047015c641866385524d1589c8779c3a85c2",
-      "0x88888569d597fd733c764c80a37e058c975c41c6",
-      "0x8888b8d70855c3ba95630b5d71ff77288b4240f5",
+      "0x88885f2d03fc91c51078abf4ba4788e59ab9e0cd",
+      "0x8888ef1e5699a70e16b524ec8000ad69c084ee3d",
+      "0x888875a20f24ef027ef26fcf8defe734baa83072",
       "0x88887761180a16D5Bfe87DB69F5F360C6FCc3C05",
       0,
       "op"
     ],
-    "salt": "0x00000000000000000000000000000000000000001d74c884d68306f0c0e6053f",
+    "salt": "0x0000000000000000000000000000000000000000bed934aa2c70a792d403604c",
     "type": "deployment"
   },
   {
@@ -31,7 +37,13 @@
     ],
     "selector": "function setController(address,bool)",
     "target": "<OptiDomains_NameWrapper>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x0142dabb12c12adb0c087bd216a2cd07cd9d4eb4f605533dba1a4a482826ddc1"
+      }
+    ]
   },
   {
     "args": [
@@ -40,7 +52,13 @@
     ],
     "selector": "function setController(address,bool)",
     "target": "<ReverseRegistrar>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x7ae728eafc4558c8f5706eac53e715199c6c424fb17fce5451a23837572232f9"
+      }
+    ]
   },
   {
     "args": [
@@ -49,6 +67,12 @@
     ],
     "selector": "function setWhitelisted(address,bool)",
     "target": "<DiamondResolver>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xc1124917734c6b40adc5ee421d80b2b9d80cca488b79b496f681dd1719142147"
+      }
+    ]
   }
 ]

@@ -4,14 +4,20 @@
     "constructorArguments": [
       "<ENSRegistry>"
     ],
-    "contractAddress": "0x88888569d597fd733c764c80a37e058c975c41c6",
-    "deployments": null,
+    "contractAddress": "0x8888ef1e5699a70e16b524ec8000ad69c084ee3d",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x8888ef1e5699a70e16b524ec8000ad69c084ee3d",
+        "transactionHash": "0xa4f2a28837885dcd8b52bc258fb8748850f7b4386129d14f860c1c30686513f2"
+      }
+    ],
     "leading": "8888",
     "name": "ReverseRegistrar",
     "parsedArguments": [
-      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae"
+      "0x8888f11e97df012ad3a390ccc6429a4942cd7d68"
     ],
-    "salt": "0x00000000000000000000000000000000000000005c8c03bdc2ac8656419a84d3",
+    "salt": "0x00000000000000000000000000000000000000005ec67668979d861a84b0308d",
     "type": "deployment"
   },
   {
@@ -20,7 +26,13 @@
     ],
     "selector": "function setDefaultResolver(address)",
     "target": "<ReverseRegistrar>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xcc9036a67e46587528c6361f0470d370d18b336e91dd43b05a9a89e83999ab05"
+      }
+    ]
   },
   {
     "args": [
@@ -30,17 +42,29 @@
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
     "target": "<Root>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x10c5b7c60bb57697bfcfa62172068d5be97b719af9b2867ee2c33506c5c4528c"
+      }
+    ]
   },
   {
     "args": [
-      "<ENSRegistry>",
+      "0xa097f6721ce401e757d1223a763fef49b8b5f90bb18567ddb86fd205dff71d34",
       "0xe5e14487b78f85faa6e1808e89246cf57dd34831548ff2e6097380d98db2504a",
       "<ReverseRegistrar>"
     ],
-    "selector": "function setSubnodeOwner(address,bytes32,address)",
-    "target": "<Root>",
-    "type": "rootTx"
+    "selector": "function setSubnodeOwner(bytes32,bytes32,address)",
+    "target": "<ENSRegistry>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x28482f0fd416efedf25740ff2f7ccf5ac6bf825c334242d41415e8ee5f4675a4"
+      }
+    ]
   },
   {
     "args": [
@@ -49,6 +73,12 @@
     ],
     "selector": "function setWhitelisted(address,bool)",
     "target": "<DiamondResolver>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xde61be32d76632a6e6c938aa4523c4f7bac02f4bb19e2b2c07e975054e3279ae"
+      }
+    ]
   }
 ]

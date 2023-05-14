@@ -3,8 +3,9 @@ dotenv.config();
 
 import fs from "fs/promises";
 import path from "path";
-import { buildInitCode, calculateAddressBySalt, deployContract, getAddressFromPk, performRootTx, resolveAddress, setupWallet } from "./lib";
+import { buildInitCode, calculateAddressBySalt, deployContract, getAddressFromPk, getProvider, getWallet, performRootTx, resolveAddress, setupWallet } from "./lib";
 import { cloneDeep } from "lodash";
+import { ethers } from "ethers";
 
 async function readFilesRecursively(directory) {
   try {
@@ -70,9 +71,18 @@ async function processSingle(dict, filePath) {
       // console.log('JSON data:', actions);
 
       for (let action of actions) {
+        if (action.deployments && action.deployments.find(x => x.chain == dict.CHAIN_NAME)) {
+          continue
+        }
+
         if (action.type == 'deployment') {
           const initCode = buildInitCode(dict, action)
           const address = calculateAddressBySalt(initCode, action.salt)
+
+          // console.log(action.name)
+          // console.log(address)
+          // console.log(initCode)
+          // console.log(action.salt)
 
           if (address.toLowerCase() != action.contractAddress.toLowerCase()) {
             throw new Error("Address mismatch")
@@ -80,16 +90,34 @@ async function processSingle(dict, filePath) {
 
           const tx = await deployContract(initCode, action.salt)
 
-          console.log(`Contract ${action.name} deployed at ${action.address} (Tx: ${tx.hash})`)
+          console.log(`Contract ${action.name} deployed at ${action.contractAddress} (Tx: ${tx.transactionHash})`)
+
+          // Save on deployments
+          if (!action.deployments) action.deployments = []
+          action.deployments.push({
+            chain: dict.CHAIN_NAME,
+            contractAddress: action.contractAddress,
+            transactionHash: tx.transactionHash,
+          })
         } else {
           const tx = await performRootTx(dict, action)
-          console.log(`Root TX on ${action[RAW_ACTION_SYMBOL].target} (Tx: ${tx.hash})`)
+          console.log(`Root TX on ${action[RAW_ACTION_SYMBOL].target} (Tx: ${tx.transactionHash})`)
+
+          // Save on deployments
+          if (!action.deployments) action.deployments = []
+          action.deployments.push({
+            chain: dict.CHAIN_NAME,
+            transactionHash: tx.transactionHash,
+          })
         }
 
         // Rollback to raw action
         for (let key in action[RAW_ACTION_SYMBOL]) {
           action[key] = action[RAW_ACTION_SYMBOL][key]
         }
+
+        // Save result to JSON
+        await fs.writeFile(filePath, JSON.stringify(actions, undefined, 2))
       }
     }
   }
@@ -102,11 +130,30 @@ async function main() {
 
   setupWallet(chainName)
 
+  if (chainName == "hardhat") {
+    const wallet = getWallet()
+    const provider = getProvider()
+  
+    const balance = await provider.getBalance(wallet.address);
+  
+    if (parseFloat(ethers.utils.formatEther(balance)) < 0.5) {
+      // Transfer 1 ETH to that address
+      let tx = {
+        to: wallet.address,
+        value: ethers.utils.parseEther("1")
+      }
+  
+      const signedTransaction = await (new ethers.Wallet(process.env.FACTORY_KEY, provider)).sendTransaction(tx);
+      console.log('Transfer ETH to deployer:', signedTransaction.hash);
+    }
+  }
+
   const filePaths = await readFilesRecursively('deployments')
 
   const dict = {
     DEPLOYER: getAddressFromPk(process.env.DEPLOYER_KEY),
     OPERATOR: getAddressFromPk(process.env.OPERATOR_KEY),
+    OWNER: getAddressFromPk(process.env.OWNER_KEY),
     CHAIN_NAME: chainName,
   }
 

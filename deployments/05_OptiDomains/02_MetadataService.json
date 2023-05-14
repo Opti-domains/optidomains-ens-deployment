@@ -4,14 +4,20 @@
     "constructorArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
-    "contractAddress": "0x88889d1099e71393b8fbf15085c88c8c01cb49ab",
-    "deployments": null,
+    "contractAddress": "0x888863513feda417c7d6fee7134515774ce56fb2",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x888863513feda417c7d6fee7134515774ce56fb2",
+        "transactionHash": "0x8cf3ebfe56473d5f5ba801337542e2fd5212110ef72bdaf9fcf88b5cba9f8490"
+      }
+    ],
     "leading": "8888",
     "name": "OptiDomains_MetadataService",
     "parsedArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000330347c7ed0eda02f3ec1358",
+    "salt": "0x0000000000000000000000000000000000000000498b1a070504f860b26aeb53",
     "type": "deployment"
   }
 ]

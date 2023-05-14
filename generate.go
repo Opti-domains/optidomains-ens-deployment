@@ -100,13 +100,15 @@ func buildInitCode(dict map[string]string, action *DeploymentAction) (string, er
 			for _, input := range inputs {
 				abiTypeStr := input.(map[string]interface{})["type"].(string)
 				abiType, err := abi.NewType(abiTypeStr, "", nil)
-				value := actionInterface.ConstructorArguments[len(constructorArgs)]
+				value := actionInterface.ParsedArguments[len(constructorArgs)]
 				if err != nil {
 					return "", err
 				}
 				constructorArgs = append(constructorArgs, abi.Argument{
 					Type: abiType,
 				})
+
+				// fmt.Println(abiTypeStr, value)
 
 				if abiTypeStr == "address" {
 					args = append(args, common.HexToAddress(value.(string)))
@@ -183,6 +185,9 @@ func scanSalt(initCode, leading string) (string, string) {
 
 func generateAddressPipeline(dict map[string]string, action *DeploymentAction) error {
 	initCode, err := buildInitCode(dict, action)
+	// fmt.Println(action.Name)
+	// fmt.Println(initCode)
+	// fmt.Println("")
 	if err != nil {
 		fmt.Println("Error building init code:", err)
 		return err
@@ -339,6 +344,12 @@ func main() {
 		panic(err)
 	}
 	dict["OPERATOR"] = operatorAddress
+
+	ownerAddress, err := getAddressFromPk(os.Getenv("OWNER_KEY"))
+	if err != nil {
+		panic(err)
+	}
+	dict["OWNER"] = ownerAddress
 
 	for _, path := range paths {
 		err := processSingle(dict, path)

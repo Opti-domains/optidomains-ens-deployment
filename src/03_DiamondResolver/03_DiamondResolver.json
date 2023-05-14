@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "name": "DiamondResolver",
+    "artifact": "diamond-resolver/DiamondResolver.sol",
+    "constructorArguments": ["<Root>", "<NameWrapperRegistry>"],
+    "leading": "8888",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]

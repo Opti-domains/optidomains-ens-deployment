@@ -131,6 +131,8 @@ export function rootGenerateSignature(
   ]
   const inputValues = ['0x19', '0x00', rootAddress, topic, nonce, digestIn]
 
+  console.log(inputValues)
+
   // ABI-encode the transaction data
   const digest = ethers.utils.solidityKeccak256(inputTypes, inputValues)
 
@@ -145,7 +147,7 @@ export function rootGenerateSignature(
   // )
 
   const signingKey = new ethers.utils.SigningKey(
-    process.env.SIGNER_PRIVATE_KEY as string,
+    process.env.OWNER_KEY as string,
   )
   const signature = signingKey.signDigest(digest)
 
@@ -189,6 +191,8 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
   ])
 
   const functionName = action.selector.match(/function\s+(\w+)/)[1];
+
+  console.log(functionName, action.selector, action.args)
 
   const calldata = iface.encodeFunctionData(functionName, action.args)
 

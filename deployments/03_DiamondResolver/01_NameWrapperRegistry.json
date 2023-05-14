@@ -4,14 +4,20 @@
     "constructorArguments": [
       "<ENSRegistry>"
     ],
-    "contractAddress": "0x88884b32e08591cf446761039b74895908734c32",
-    "deployments": null,
+    "contractAddress": "0x88885e38f5bfc754676d8634bf1ade1b362a1ef6",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x88885e38f5bfc754676d8634bf1ade1b362a1ef6",
+        "transactionHash": "0xc398499cc0c2fccdeb58819e30ac5cd5d4d85e4728fbff1968f5d6c6439700b8"
+      }
+    ],
     "leading": "8888",
     "name": "NameWrapperRegistry",
     "parsedArguments": [
-      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae"
+      "0x8888f11e97df012ad3a390ccc6429a4942cd7d68"
     ],
-    "salt": "0x0000000000000000000000000000000000000000a08a926ed14661d5d129a6da",
+    "salt": "0x000000000000000000000000000000000000000057cce09821c3bde3c4834e07",
     "type": "deployment"
   }
 ]

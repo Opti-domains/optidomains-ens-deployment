@@ -5,15 +5,21 @@
       "<ENSRegistry>",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "contractAddress": "0x8888047015c641866385524d1589c8779c3a85c2",
-    "deployments": null,
+    "contractAddress": "0x88885f2d03fc91c51078abf4ba4788e59ab9e0cd",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x88885f2d03fc91c51078abf4ba4788e59ab9e0cd",
+        "transactionHash": "0x0cb7a12632b19ad6faf52a5a8d11141de5ad281b3401405a1ec23a3a3ff1d1a2"
+      }
+    ],
     "leading": "8888",
     "name": "OptiDomains_BaseRegistrarImplementation",
     "parsedArguments": [
-      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae",
+      "0x8888f11e97df012ad3a390ccc6429a4942cd7d68",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "salt": "0x00000000000000000000000000000000000000004563834e83333e8d4cda62fe",
+    "salt": "0x0000000000000000000000000000000000000000eb24b20a142b0f47d5d85746",
     "type": "deployment"
   },
   {
@@ -24,6 +30,12 @@
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
     "target": "<Root>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xdd8db34b2e321cabc0f8ffef854deb2d7d13494311fe3a258413f5a587dfcb50"
+      }
+    ]
   }
 ]

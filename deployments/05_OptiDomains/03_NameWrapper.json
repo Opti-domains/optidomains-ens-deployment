@@ -7,17 +7,23 @@
       "<OptiDomains_MetadataService>",
       "op"
     ],
-    "contractAddress": "0x8888b8d70855c3ba95630b5d71ff77288b4240f5",
-    "deployments": null,
+    "contractAddress": "0x888875a20f24ef027ef26fcf8defe734baa83072",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x888875a20f24ef027ef26fcf8defe734baa83072",
+        "transactionHash": "0x0736df2794a636706c1379bf2df5ebf70ab676c34cad57d60e2952a814f6de63"
+      }
+    ],
     "leading": "8888",
     "name": "OptiDomains_NameWrapper",
     "parsedArguments": [
-      "0x88889ef0816c325f9412cb8f4502910bd5edc7ae",
-      "0x8888047015c641866385524d1589c8779c3a85c2",
-      "0x88889d1099e71393b8fbf15085c88c8c01cb49ab",
+      "0x8888f11e97df012ad3a390ccc6429a4942cd7d68",
+      "0x88885f2d03fc91c51078abf4ba4788e59ab9e0cd",
+      "0x888863513feda417c7d6fee7134515774ce56fb2",
       "op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000814c4ac7d57eab8ddedca4d6",
+    "salt": "0x0000000000000000000000000000000000000000e6c1d49c75fde12b9bc76faa",
     "type": "deployment"
   },
   {
@@ -26,7 +32,13 @@
     ],
     "selector": "function addController(address)",
     "target": "<OptiDomains_BaseRegistrarImplementation>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x18df22fd9d85ba9e2b0c0418a8c9604f3e909e7b2a60a742f5a8795940243c2f"
+      }
+    ]
   },
   {
     "args": [
@@ -35,6 +47,12 @@
     ],
     "selector": "function upgrade(address,address)",
     "target": "<NameWrapperRegistry>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x391f245d168ed4062cbcf38037a6c3bb70ed15c363036961cd2cf1d3e6444607"
+      }
+    ]
   }
 ]

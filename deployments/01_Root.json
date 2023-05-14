@@ -2,16 +2,22 @@
   {
     "artifact": "root/Root.sol",
     "constructorArguments": [
-      "<DEPLOYER>"
+      "<OWNER>"
     ],
-    "contractAddress": "0x8888abaf87f3419a515a45206a4c27532cce184d",
-    "deployments": null,
+    "contractAddress": "0x88885d7708eae16d2e418079de90caef4a247b84",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x88885d7708eae16d2e418079de90caef4a247b84",
+        "transactionHash": "0x527a82ea8946dda11c953655b509d9f642e33febb780e28e23c9b828a9c90936"
+      }
+    ],
     "leading": "8888",
     "name": "Root",
     "parsedArguments": [
       "0x8888e46A81E8732Dca896D5e9ceAAd86a7306bE0"
     ],
-    "salt": "0x0000000000000000000000000000000000000000794d2226a624e2295ff3060a",
+    "salt": "0x0000000000000000000000000000000000000000738db0f00f9737f9a7ab16ed",
     "type": "deployment"
   }
 ]

@@ -5,15 +5,21 @@
       "<NameWrapperRegistry>",
       "<Root>"
     ],
-    "contractAddress": "0x8888177e66f0c76aa2c773af0ef2f7e5350201fb",
-    "deployments": null,
+    "contractAddress": "0x8888ea567ca8ab7a6a9d592d7528db45fe9e06f5",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x8888ea567ca8ab7a6a9d592d7528db45fe9e06f5",
+        "transactionHash": "0x3b4346581302b56bc44230f853792faa2fadbf755ae2e14250f482c96d3e17ab"
+      }
+    ],
     "leading": "8888",
     "name": "OptiDomainsAttestation",
     "parsedArguments": [
-      "0x88884b32e08591cf446761039b74895908734c32",
-      "0x8888abaf87f3419a515a45206a4c27532cce184d"
+      "0x88885e38f5bfc754676d8634bf1ade1b362a1ef6",
+      "0x88885d7708eae16d2e418079de90caef4a247b84"
     ],
-    "salt": "0x000000000000000000000000000000000000000002e0d30e07308adde7ca88f8",
+    "salt": "0x000000000000000000000000000000000000000059e2c6a9865e5e8c325e2c98",
     "type": "deployment"
   },
   {
@@ -22,7 +28,13 @@
     ],
     "selector": "function setAttestation(address)",
     "target": "<NameWrapperRegistry>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xb0c9724415272b75b730131e8141eac31d3d6af3a0245cec73dc19ba3fe65602"
+      }
+    ]
   },
   {
     "args": [
@@ -30,6 +42,12 @@
     ],
     "selector": "function activate(address)",
     "target": "<OptiDomainsAttestation>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x6f8659f7a5195b0b4bbd2ecda8ab79322d50801ff8f7fd7fb4c7e9dd9de622c2"
+      }
+    ]
   }
 ]

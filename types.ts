@@ -1,5 +1,7 @@
 export interface DeploymentActionResult {
-
+  chain: string
+  contractAddress: string
+  transactionHash: string
 }
 
 export interface DeploymentAction {
@@ -14,7 +16,8 @@ export interface DeploymentAction {
 }
 
 export interface TxActionResult {
-
+  chain: string
+  transactionHash: string
 }
 
 export interface TxAction {

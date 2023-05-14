@@ -67,6 +67,11 @@
       "type": "error"
     },
     {
+      "inputs": [],
+      "name": "NotController",
+      "type": "error"
+    },
+    {
       "inputs": [
         {
           "internalType": "bytes32",
