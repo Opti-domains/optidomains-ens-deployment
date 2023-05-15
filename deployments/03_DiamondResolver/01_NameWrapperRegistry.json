@@ -10,6 +10,16 @@
         "chain": "hardhat",
         "contractAddress": "0x888811129031a33bba5e92c82f527a27f5557885",
         "transactionHash": "0x7e170829745b4fa021404b9bd3ba725675d3d03e6283b6965cc7721cb01065bf"
+      },
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x888811129031a33bba5e92c82f527a27f5557885",
+        "transactionHash": "0x62d458d26e74d378c0c60927ef1c7855c599544f2acf6052b64873d9548de249"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "contractAddress": "0x888811129031a33bba5e92c82f527a27f5557885",
+        "transactionHash": "0xfffaee65b29136966b9c3a764f8d6db1a19168b2ebe79a85a3e1ed30028c4d3a"
       }
     ],
     "leading": "888811",

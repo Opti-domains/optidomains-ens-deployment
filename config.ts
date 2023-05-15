@@ -14,4 +14,9 @@ export const CHAINS = {
     rpc: `https://goerli.base.org`,
     chainId: 84531,
   },
+  polygonzkevm_goerli: {
+    type: "evm",
+    rpc: `https://rpc.public.zkevm-test.net`,
+    chainId: 1442,
+  },
 };
