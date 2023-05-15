@@ -3,7 +3,13 @@
     "artifact": "diamond-resolver/facets/public-resolver/PublicResolverFacet.sol",
     "constructorArguments": [],
     "contractAddress": "0x8888119df76cb32714ade54bb607367979de209c",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x8888119df76cb32714ade54bb607367979de209c",
+        "transactionHash": "0xf3ff872b539c06ebc82c0ee152cd80b38fe976dff402194138787ad646130dee"
+      }
+    ],
     "leading": "888811",
     "name": "PublicResolverFacet",
     "parsedArguments": [],
@@ -48,6 +54,13 @@
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
     "target": "<DiamondResolver>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xc4c7fff618e67f0e4ce275974c2128423caa15e50bc475acafb9db372f214496"
+      }
+    ],
+    "signature": "0x69a16cfc39e3b7a0bb847438b673465596a471a05209edd3584d3f38804704024432d18c8ffa6c152d3ca75c300451a51efed710bae19c85de3157e1c21867681c"
   }
 ]

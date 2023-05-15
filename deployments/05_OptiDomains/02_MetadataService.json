@@ -5,7 +5,13 @@
       "https://metadata.opti.domains/token/domains/op"
     ],
     "contractAddress": "0x88881187088d7fcbb1527a19cb997e68938c099b",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x88881187088d7fcbb1527a19cb997e68938c099b",
+        "transactionHash": "0x5efac82f8f323826bb3dc1f9ba7998ec162ecf8064f946cab3045ff1dcabb78d"
+      }
+    ],
     "leading": "888811",
     "name": "OptiDomains_MetadataService",
     "parsedArguments": [

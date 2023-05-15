@@ -101,7 +101,7 @@ async function processSingle(dict, filePath) {
             transactionHash: tx.transactionHash,
           })
         } else {
-          const {tx, signature} = await performRootTx(dict, action)
+          const {tx, signature} = await performRootTx(dict, action, dict.OWNER_PK)
           console.log(`Root TX on ${action[RAW_ACTION_SYMBOL].target} (Tx: ${tx.transactionHash})`)
 
           // Save on deployments
@@ -154,10 +154,13 @@ async function main() {
 
   const filePaths = await readFilesRecursively('deployments')
 
+  const ownerPk = decryptText(process.env.OWNER_KEY, args[1])
+
   const dict = {
     DEPLOYER: getAddressFromPk(process.env.DEPLOYER_KEY),
     OPERATOR: getAddressFromPk(process.env.OPERATOR_KEY),
-    OWNER: getAddressFromPk(decryptText(process.env.OWNER_KEY, args[1])),
+    OWNER: getAddressFromPk(ownerPk),
+    OWNER_PK: ownerPk,
     CHAIN_NAME: chainName,
   }
 

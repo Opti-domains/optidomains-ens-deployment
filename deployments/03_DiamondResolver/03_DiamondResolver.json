@@ -6,7 +6,13 @@
       "<NameWrapperRegistry>"
     ],
     "contractAddress": "0x88881124bcf23860acca486f1f78dc073644f378",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x88881124bcf23860acca486f1f78dc073644f378",
+        "transactionHash": "0x09a9f441f89ea9539b57f89b8e6be4a3ece5bde5430e0bd8982f210d8526c1c2"
+      }
+    ],
     "leading": "888811",
     "name": "DiamondResolver",
     "parsedArguments": [

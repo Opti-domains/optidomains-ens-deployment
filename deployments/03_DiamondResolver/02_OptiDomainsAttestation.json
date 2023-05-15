@@ -2,11 +2,17 @@
   {
     "artifact": "attestation/OptiDomainsAttestation.sol",
     "constructorArguments": [
-      "<NameWrapperRegistry>",
-      "<Root>"
+      "0x888811129031a33bba5e92c82f527a27f5557885",
+      "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f"
     ],
     "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
+        "transactionHash": "0xabde06cb15dfe1f86220d5864c7ad256784d7485ff4b26b1f34b8cbc76fd7b0c"
+      }
+    ],
     "leading": "888811",
     "name": "OptiDomainsAttestation",
     "parsedArguments": [
@@ -18,26 +24,47 @@
   },
   {
     "args": [
-      "<OptiDomainsAttestation>"
+      "0x88881102eca792633671a93ad34a091db1c4c69e"
     ],
     "selector": "function setAttestation(address)",
-    "target": "<NameWrapperRegistry>",
-    "type": "rootTx"
+    "target": "0x888811129031a33bba5e92c82f527a27f5557885",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x03bb5e9f4abd442640c90dbcd31884e3107a5c4c22c094dcd841f825211e2c60"
+      }
+    ],
+    "signature": "0xb02284b9cee2a4a87be3e0a54b89da127ff536f5cae78719610d6f2b78da24b675a8738ca1bfa91162962e6714ead41ca5f13ef034425208345792b48d0a461a1b"
   },
   {
     "args": [
       "0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd"
     ],
     "selector": "function activate(address)",
-    "target": "<OptiDomainsAttestation>",
-    "type": "rootTx"
+    "target": "0x88881102eca792633671a93ad34a091db1c4c69e",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xf641b0fb8a7f789610e69b58ec1b6d2df9e6337b0d1d4175b23048d4f4b92f6a"
+      }
+    ],
+    "signature": "0xd1b2d91333147caa1f962902fcb6ef1ecd87642fc9bbfc4edc4c191801f19f4f4aa7598e84133ea5368231a3b27a06665a4015e81ad7a9d5e44f77f1edd148281c"
   },
   {
     "args": [
       "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84"
     ],
     "selector": "function activate(address)",
-    "target": "<OptiDomainsAttestation>",
-    "type": "rootTx"
+    "target": "0x88881102eca792633671a93ad34a091db1c4c69e",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xaa5222326f67ed3b9cfed1d671623f5bccb2198777b07717eb5b6ee5e9f9d80f"
+      }
+    ],
+    "signature": "0x54dd445c3ff43d8644fb0a8e168b36dbdcfb6fa28a90cb469fabb5f8523312237a0bcb546222fb5ae043e0b641bd310975a3f344694110ff7c1fd07d0ebfe73f1b"
   }
 ]

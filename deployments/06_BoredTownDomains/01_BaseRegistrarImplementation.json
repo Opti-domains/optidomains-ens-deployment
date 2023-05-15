@@ -6,7 +6,13 @@
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
     "contractAddress": "0xb02ed6a43239eb8b9ac816ccd4148dd92e47e520",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0xb02ed6a43239eb8b9ac816ccd4148dd92e47e520",
+        "transactionHash": "0x2cc4c7ba944a0bdfb19c54865ea6b99817ff0c6783c5e5ea463e3d82fdf6ff61"
+      }
+    ],
     "leading": "b02ed",
     "name": "BoredTown_BaseRegistrarImplementation",
     "parsedArguments": [
@@ -24,6 +30,13 @@
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
     "target": "<Root>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xbf1f7845edbef58f7ff5f7288f18795ae8345fd9ae27ffaae42610d3f87395ab"
+      }
+    ],
+    "signature": "0xdc8b5daea2cadf02429520a4955f3b5b26f84e92a3253e5193af6910c51ffaa26d7a299c1086264e7619dceed059476616beeb1e2cb3a66d5a99fcd4a59044511c"
   }
 ]

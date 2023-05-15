@@ -10,7 +10,13 @@
       "town"
     ],
     "contractAddress": "0xb02ed19d2df50f9bd54ea849fc939086e2e61cfa",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0xb02ed19d2df50f9bd54ea849fc939086e2e61cfa",
+        "transactionHash": "0x73c4c8409203126d47c18456848684f15c8b6e80a63c3082396c2f2860433fca"
+      }
+    ],
     "leading": "b02ed",
     "name": "BoredTown_WhitelistRegistrarController",
     "parsedArguments": [
@@ -31,7 +37,14 @@
     ],
     "selector": "function setController(address,bool)",
     "target": "<BoredTown_NameWrapper>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xa732c173407ec6d8b854059093ddf777edac135efe1eecd99c637f7d6ad1f6fa"
+      }
+    ],
+    "signature": "0x2a144f2c7e6917d35f968e40740cceaa9cc6b13834c7138a48d44654b04575a11a1121e9d5c249a5389477323bdcb53d4b2c42c00ec110645e3a5acbc268d5361c"
   },
   {
     "args": [
@@ -40,7 +53,14 @@
     ],
     "selector": "function setController(address,bool)",
     "target": "<ReverseRegistrar>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x2aef90e94b88b8cedd39c075d9b7f7b2c7887e109e6b11a7f56eb9f6489b2b93"
+      }
+    ],
+    "signature": "0xb38da77fe8ce8e965fd94fbe9f9f25dce66e34e686575ae4b64ddd5b6453a9fe1c8e348b71bbed57904ea3b520865cb3d4f9e71167b4efe8887e2fc8c4ad01f11b"
   },
   {
     "args": [
@@ -49,6 +69,13 @@
     ],
     "selector": "function setWhitelisted(address,bool)",
     "target": "<DiamondResolver>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x78a4f3e003ffab3971ff155679f99df6ad78ca06da32decce6220781fc95fcf4"
+      }
+    ],
+    "signature": "0x2819909aa3f44274664ed77b91285fd54ce7c70b7dfd1df34db967a85b72270105daa191ca43c327a81ec72b61a424128ff76c6039f52490b554af12abe58d6a1c"
   }
 ]

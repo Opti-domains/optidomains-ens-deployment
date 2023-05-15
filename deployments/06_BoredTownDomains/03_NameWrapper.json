@@ -8,7 +8,13 @@
       "town"
     ],
     "contractAddress": "0xb02ed93f5012e765349ed0312300f9f5e02c97cf",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0xb02ed93f5012e765349ed0312300f9f5e02c97cf",
+        "transactionHash": "0xa065837ddcef57cd1cf14d63fc8348cc81e3791567e7ef8c3677493876b585d5"
+      }
+    ],
     "leading": "b02ed",
     "name": "BoredTown_NameWrapper",
     "parsedArguments": [
@@ -26,7 +32,14 @@
     ],
     "selector": "function addController(address)",
     "target": "<BoredTown_BaseRegistrarImplementation>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x70eb0aeb6276ec46675fc10c807e860c29594a8d9cc65f6e9e5990a135abe2a4"
+      }
+    ],
+    "signature": "0xac7ed35326ffadd3e32d13a05d8f44f9df00780703e87a8666659251110087cd73ceb3bf836d1af0d3d6a67466c8e6dc9b6b5b208fd1e07fb44aa5534c2b971d1b"
   },
   {
     "args": [
@@ -35,6 +48,13 @@
     ],
     "selector": "function upgrade(address,address)",
     "target": "<NameWrapperRegistry>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x898c0ae80c6538c64603f751bff56b053e9f10e013e6e906a0b8b4dc7144e85f"
+      }
+    ],
+    "signature": "0xbd56608b2a1d7a797c9f798fcd32c42b145d8803d5f3953d85df6a4cde087636244129214dc1f66e56c7cfe258b4247162d3233f9259f7b22019f5b68cc450531b"
   }
 ]

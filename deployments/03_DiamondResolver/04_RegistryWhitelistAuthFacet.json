@@ -3,7 +3,13 @@
     "artifact": "diamond-resolver/facets/auth/RegistryWhitelistAuthFacet.sol",
     "constructorArguments": [],
     "contractAddress": "0x888811d4f5de064fdb03ef25c5394a6ac9aab329",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x888811d4f5de064fdb03ef25c5394a6ac9aab329",
+        "transactionHash": "0x1a2d2e8d86a81a4f85770e68c353f116912a2caf31f36b2933bb9c8585799ebd"
+      }
+    ],
     "leading": "888811",
     "name": "RegistryWhitelistAuthFacet",
     "parsedArguments": [],
@@ -27,6 +33,13 @@
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
     "target": "<DiamondResolver>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xc074dde0cac6e6eb7ebc0189c07733f309a9fcaebc4a5888dc4a1474a10de355"
+      }
+    ],
+    "signature": "0xbcc0c16f61cc388310a93b8063ec2c8df0fd7c5f784b57acdc1912fb0cc67a4575252e4a2f306d2bb1c56eccae140865241dedf6189f4582f371088b79dbd45e1c"
   }
 ]

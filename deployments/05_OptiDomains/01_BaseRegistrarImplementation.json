@@ -6,7 +6,13 @@
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
     "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
+        "transactionHash": "0x3b1f24525608a2a06917ea729b45c968c4e5da493a8c95af07522aa37de83795"
+      }
+    ],
     "leading": "888811",
     "name": "OptiDomains_BaseRegistrarImplementation",
     "parsedArguments": [
@@ -24,6 +30,13 @@
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
     "target": "<Root>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x463c35a66f2b07502f7ceee846498052d01e1024909b01f27a02469b407cffb1"
+      }
+    ],
+    "signature": "0x5982b698c2b90f40d81461140981ff56add384f454e2a92615f1ee90e14e4f1e43e95c9e93a4713da8c06e870442ee8724dd6fc33a6d4fa766fd3d5e79e19d441b"
   }
 ]

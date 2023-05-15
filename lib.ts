@@ -119,6 +119,7 @@ export function rootGenerateSignature(
   topic: string,
   nonce: number,
   digestIn: string,
+  pk: string,
 ) {
   // Define the input types and values of the transaction data
   const inputTypes = [
@@ -146,9 +147,7 @@ export function rootGenerateSignature(
   //   commitment,
   // )
 
-  const signingKey = new ethers.utils.SigningKey(
-    process.env.OWNER_KEY as string,
-  )
+  const signingKey = new ethers.utils.SigningKey(pk)
   const signature = signingKey.signDigest(digest)
 
   return ethers.utils.hexlify(
@@ -177,7 +176,7 @@ export const TOPIC_SET_CONTROLLER = ethers.utils.keccak256(
   ethers.utils.toUtf8Bytes('setController'),
 )
 
-export async function performRootTx(dict: {[name: string]: string}, action: TxAction) {
+export async function performRootTx(dict: {[name: string]: string}, action: TxAction, pk: string) {
   if (!Root) {
     Root = new ethers.Contract(dict.Root, RootABI, wallet)
   }
@@ -203,7 +202,8 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
     ethers.utils.solidityKeccak256(
       ['address', 'bytes'],
       [target, calldata],
-    )
+    ),
+    pk,
   )
 
   const tx = await Root.execute(

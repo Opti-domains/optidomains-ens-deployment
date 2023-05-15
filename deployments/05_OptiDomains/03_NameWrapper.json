@@ -8,7 +8,13 @@
       "op"
     ],
     "contractAddress": "0x888811a56d6816d86c81b60f47fd4dccbc03c2ee",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x888811a56d6816d86c81b60f47fd4dccbc03c2ee",
+        "transactionHash": "0x95b793d07ad9b988666c96991d31228fa249e47cd9b2ad0fb201916c66ee43c0"
+      }
+    ],
     "leading": "888811",
     "name": "OptiDomains_NameWrapper",
     "parsedArguments": [
@@ -26,7 +32,14 @@
     ],
     "selector": "function addController(address)",
     "target": "<OptiDomains_BaseRegistrarImplementation>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0x79d06a48ddbcc4b77886d7f39a58f55216cba683a208e2daa3a6f29c9e357864"
+      }
+    ],
+    "signature": "0x5b8d4e0d34eb4cfab36b9e0aff4b1bc95439608ac1ce8d0e471d73cc970b116e5542c20a16d2a411db0c3ad44a0a94c44a05577bb29cda28a5706ff9160cc6521c"
   },
   {
     "args": [
@@ -35,6 +48,13 @@
     ],
     "selector": "function upgrade(address,address)",
     "target": "<NameWrapperRegistry>",
-    "type": "rootTx"
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "transactionHash": "0xc03feced7451476d4ed84617a7200b420d8576747d2cb34c88bf6128568f3538"
+      }
+    ],
+    "signature": "0x597d082b875d02952ae4b6cd57fbf01716b03d2ee0d462d97ac143e4fa4bf1eb2e889391ad11198bf2903028836c732d2236936d18f5c8c47183a40c607d37941b"
   }
 ]

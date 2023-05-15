@@ -5,7 +5,13 @@
       "<Root>"
     ],
     "contractAddress": "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
-    "deployments": null,
+    "deployments": [
+      {
+        "chain": "hardhat",
+        "contractAddress": "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
+        "transactionHash": "0x060a16a931320b25107a44427803a2c571a3a832940822586bb12341de5687ea"
+      }
+    ],
     "leading": "888811",
     "name": "ENSRegistry",
     "parsedArguments": [
