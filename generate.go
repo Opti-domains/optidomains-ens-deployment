@@ -412,18 +412,18 @@ func main() {
 	}
 	dict["DEPLOYER"] = deployerAddress
 
-	decryptKey := os.Args[1]
-	iv := os.Getenv("IV")
-	operatorKeyEncrypted := os.Getenv("OPERATOR_KEY")
-	operatorKey := Aes256Decode(operatorKeyEncrypted, decryptKey, iv)[0:66]
-
-	operatorAddress, err := getAddressFromPk(operatorKey)
+	operatorAddress, err := getAddressFromPk(os.Getenv("OPERATOR_KEY"))
 	if err != nil {
 		panic(err)
 	}
 	dict["OPERATOR"] = operatorAddress
 
-	ownerAddress, err := getAddressFromPk(os.Getenv("OWNER_KEY"))
+	decryptKey := os.Args[1]
+	iv := os.Getenv("IV")
+	ownerKeyEncrypted := os.Getenv("OWNER_KEY")
+	ownerKey := Aes256Decode(ownerKeyEncrypted, decryptKey, iv)[0:66]
+
+	ownerAddress, err := getAddressFromPk(ownerKey)
 	if err != nil {
 		panic(err)
 	}

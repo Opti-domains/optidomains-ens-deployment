@@ -2,12 +2,12 @@
   {
     "artifact": "diamond-resolver/facets/public-resolver/PublicResolverFacet.sol",
     "constructorArguments": [],
-    "contractAddress": "0x888811d51d23bc88c7f39375db8900edef9a18ae",
+    "contractAddress": "0x8888119df76cb32714ade54bb607367979de209c",
     "deployments": null,
     "leading": "888811",
     "name": "PublicResolverFacet",
     "parsedArguments": [],
-    "salt": "0x0000000000000000000000000000000000000000adbcfc1c70b0bd2b185122c4",
+    "salt": "0x0000000000000000000000000000000000000000e40719ccb4ca1bbf6986dfc4",
     "type": "deployment"
   },
   {

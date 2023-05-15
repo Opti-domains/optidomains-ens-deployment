@@ -9,19 +9,19 @@
       0,
       "town"
     ],
-    "contractAddress": "0xb02ed0dca3313ff00264b9d5e697477b6a587cac",
+    "contractAddress": "0xb02ed19d2df50f9bd54ea849fc939086e2e61cfa",
     "deployments": null,
     "leading": "b02ed",
     "name": "BoredTown_WhitelistRegistrarController",
     "parsedArguments": [
-      "0xb02edeffc9895219f4f3bb668602247932dcafae",
-      "0x888811fc56bd2b65ea6b8b5d23b62945b021512d",
-      "0xb02edaeb35bca26b3d5d782a0efe0e391b5ac8ed",
-      "0x88881111a0358cdf10Bc095aa14B95936aDA741f",
+      "0xb02ed6a43239eb8b9ac816ccd4148dd92e47e520",
+      "0x888811008edca0aef8e47f44815cdbc05b7d4d63",
+      "0xb02ed93f5012e765349ed0312300f9f5e02c97cf",
+      "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A",
       0,
       "town"
     ],
-    "salt": "0x00000000000000000000000000000000000000004c00eab1b10d5453f5b97310",
+    "salt": "0x000000000000000000000000000000000000000059ea7822782f7f0bff7ed7bc",
     "type": "deployment"
   },
   {

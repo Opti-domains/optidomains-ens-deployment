@@ -7,17 +7,17 @@
       "<OptiDomains_MetadataService>",
       "op"
     ],
-    "contractAddress": "0x88881171db979a0af7ed77e40543bbe9541c8b24",
+    "contractAddress": "0x888811a56d6816d86c81b60f47fd4dccbc03c2ee",
     "deployments": null,
     "leading": "888811",
     "name": "OptiDomains_NameWrapper",
     "parsedArguments": [
-      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9",
-      "0x8888117a4cc9d7623cce75aad3c005395e0ca678",
-      "0x88881161ecba4a1ce046b43c5e205ed4dcca4f1f",
+      "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
+      "0x8888112fdef1da2f8a291786af607e34829f70cb",
+      "0x88881187088d7fcbb1527a19cb997e68938c099b",
       "op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000ea51017b6d729da8ea5ba555",
+    "salt": "0x0000000000000000000000000000000000000000f7a79bf9b93f699843639458",
     "type": "deployment"
   },
   {

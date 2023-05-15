@@ -4,14 +4,14 @@
     "constructorArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
-    "contractAddress": "0x88881161ecba4a1ce046b43c5e205ed4dcca4f1f",
+    "contractAddress": "0x88881187088d7fcbb1527a19cb997e68938c099b",
     "deployments": null,
     "leading": "888811",
     "name": "OptiDomains_MetadataService",
     "parsedArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000c0baeb6137a4029c729f3ae6",
+    "salt": "0x00000000000000000000000000000000000000003804528ad4f7dec505f00ee6",
     "type": "deployment"
   }
 ]

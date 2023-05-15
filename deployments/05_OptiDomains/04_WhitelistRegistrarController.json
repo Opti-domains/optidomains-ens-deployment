@@ -9,19 +9,19 @@
       0,
       "op"
     ],
-    "contractAddress": "0x8888118d642d27b525c3812f6d93dd291bb1761d",
+    "contractAddress": "0x8888112d0a6263aa401adda981238182764fdc41",
     "deployments": null,
     "leading": "888811",
     "name": "OptiDomains_WhitelistRegistrarController",
     "parsedArguments": [
-      "0x8888117a4cc9d7623cce75aad3c005395e0ca678",
-      "0x888811fc56bd2b65ea6b8b5d23b62945b021512d",
-      "0x88881171db979a0af7ed77e40543bbe9541c8b24",
-      "0x88881111a0358cdf10Bc095aa14B95936aDA741f",
+      "0x8888112fdef1da2f8a291786af607e34829f70cb",
+      "0x888811008edca0aef8e47f44815cdbc05b7d4d63",
+      "0x888811a56d6816d86c81b60f47fd4dccbc03c2ee",
+      "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A",
       0,
       "op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000f40e93d17d84e41a10ef7e4f",
+    "salt": "0x000000000000000000000000000000000000000066df101d0628cccc5936606e",
     "type": "deployment"
   },
   {

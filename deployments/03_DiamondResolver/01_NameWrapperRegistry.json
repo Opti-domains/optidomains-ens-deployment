@@ -4,14 +4,14 @@
     "constructorArguments": [
       "<ENSRegistry>"
     ],
-    "contractAddress": "0x8888111adbfa4dd35b2ffa8b7ff31ca579b22be3",
+    "contractAddress": "0x888811129031a33bba5e92c82f527a27f5557885",
     "deployments": null,
     "leading": "888811",
     "name": "NameWrapperRegistry",
     "parsedArguments": [
-      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9"
+      "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989"
     ],
-    "salt": "0x0000000000000000000000000000000000000000a004a493cf028c66b8223b68",
+    "salt": "0x00000000000000000000000000000000000000007d505288510349324bdb1442",
     "type": "deployment"
   }
 ]

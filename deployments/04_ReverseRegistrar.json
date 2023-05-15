@@ -4,14 +4,14 @@
     "constructorArguments": [
       "<ENSRegistry>"
     ],
-    "contractAddress": "0x888811fc56bd2b65ea6b8b5d23b62945b021512d",
+    "contractAddress": "0x888811008edca0aef8e47f44815cdbc05b7d4d63",
     "deployments": null,
     "leading": "888811",
     "name": "ReverseRegistrar",
     "parsedArguments": [
-      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9"
+      "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989"
     ],
-    "salt": "0x0000000000000000000000000000000000000000ee5f39bb1565468a54cbcd6b",
+    "salt": "0x00000000000000000000000000000000000000000a7b688785deba46ee54b84a",
     "type": "deployment"
   },
   {

@@ -2,12 +2,12 @@
   {
     "artifact": "diamond-resolver/facets/auth/RegistryWhitelistAuthFacet.sol",
     "constructorArguments": [],
-    "contractAddress": "0x888811662fce592fa554869d29b47140d5d9be15",
+    "contractAddress": "0x888811d4f5de064fdb03ef25c5394a6ac9aab329",
     "deployments": null,
     "leading": "888811",
     "name": "RegistryWhitelistAuthFacet",
     "parsedArguments": [],
-    "salt": "0x0000000000000000000000000000000000000000b517a9f1e79d76dee16d204c",
+    "salt": "0x0000000000000000000000000000000000000000006a31293f28a8816a61074b",
     "type": "deployment"
   },
   {

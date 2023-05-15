@@ -4,14 +4,25 @@
     "constructorArguments": [
       "<OWNER>"
     ],
-    "contractAddress": "0x888811b6e0fa5528a01ae08e61a2001442487128",
+    "contractAddress": "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f",
     "deployments": null,
     "leading": "888811",
     "name": "Root",
     "parsedArguments": [
-      "0x8888e46A81E8732Dca896D5e9ceAAd86a7306bE0"
+      "0x88881111a0358cdf10Bc095aa14B95936aDA741f"
     ],
-    "salt": "0x0000000000000000000000000000000000000000328c23246ccaf08b02683ce0",
+    "salt": "0x0000000000000000000000000000000000000000ba33f276c3c3816869f499f8",
+    "type": "deployment"
+  },
+  {
+    "artifact": "Multicall3.sol",
+    "constructorArguments": [],
+    "contractAddress": "0x8888119922f9638ad346ff89eb9c2f106180c738",
+    "deployments": null,
+    "leading": "888811",
+    "name": "Multicall",
+    "parsedArguments": [],
+    "salt": "0x00000000000000000000000000000000000000007c31288634cdcf1f74519c87",
     "type": "deployment"
   }
 ]

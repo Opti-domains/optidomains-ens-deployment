@@ -7,5 +7,14 @@
     "leading": "888811",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
+  },
+  {
+    "type": "deployment",
+    "name": "Multicall",
+    "artifact": "Multicall3.sol",
+    "constructorArguments": [],
+    "leading": "888811",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
   }
 ]

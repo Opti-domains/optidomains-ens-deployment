@@ -5,15 +5,15 @@
       "<NameWrapperRegistry>",
       "<Root>"
     ],
-    "contractAddress": "0x888811c6d53815cc9948addf8de149ac0b493047",
+    "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
     "deployments": null,
     "leading": "888811",
     "name": "OptiDomainsAttestation",
     "parsedArguments": [
-      "0x8888111adbfa4dd35b2ffa8b7ff31ca579b22be3",
-      "0x888811b6e0fa5528a01ae08e61a2001442487128"
+      "0x888811129031a33bba5e92c82f527a27f5557885",
+      "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f"
     ],
-    "salt": "0x0000000000000000000000000000000000000000e203cdc47a446537ef248051",
+    "salt": "0x0000000000000000000000000000000000000000746f060358796d023e3aafec",
     "type": "deployment"
   },
   {
@@ -26,7 +26,7 @@
   },
   {
     "args": [
-      "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84"
+      "0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd"
     ],
     "selector": "function activate(address)",
     "target": "<OptiDomainsAttestation>",

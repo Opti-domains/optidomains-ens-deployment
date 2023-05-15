@@ -7,17 +7,17 @@
       "<BoredTown_MetadataService>",
       "town"
     ],
-    "contractAddress": "0xb02edaeb35bca26b3d5d782a0efe0e391b5ac8ed",
+    "contractAddress": "0xb02ed93f5012e765349ed0312300f9f5e02c97cf",
     "deployments": null,
     "leading": "b02ed",
     "name": "BoredTown_NameWrapper",
     "parsedArguments": [
-      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9",
-      "0xb02edeffc9895219f4f3bb668602247932dcafae",
-      "0xb02ed8ae6a3491d013fedc7c985d255b1ddd5552",
+      "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
+      "0xb02ed6a43239eb8b9ac816ccd4148dd92e47e520",
+      "0xb02ed766bb7718d51cd1ac50c00cae0fad6adf6c",
       "town"
     ],
-    "salt": "0x000000000000000000000000000000000000000088c27421d4b82795947afbe0",
+    "salt": "0x0000000000000000000000000000000000000000bbc26c0204e220c4cb23b687",
     "type": "deployment"
   },
   {

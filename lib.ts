@@ -18,7 +18,7 @@ let Root: ethers.Contract
 let provider, wallet;
 
 export function setupWallet(chain: string, pk = process.env.DEPLOYER_KEY) {
-  provider = new ethers.providers.JsonRpcProvider(CHAINS[chain].url);
+  provider = new ethers.providers.JsonRpcProvider(CHAINS[chain].rpc);
   wallet = new ethers.Wallet(pk, provider);
 
   ImmutableCreate2Factory = new ethers.Contract("0x0000000000ffe8b47b3e2130213b802212439497", ImmutableCreate2FactoryABI, wallet)

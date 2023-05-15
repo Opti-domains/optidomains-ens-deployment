@@ -5,15 +5,15 @@
       "<ENSRegistry>",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "contractAddress": "0x8888117a4cc9d7623cce75aad3c005395e0ca678",
+    "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
     "deployments": null,
     "leading": "888811",
     "name": "OptiDomains_BaseRegistrarImplementation",
     "parsedArguments": [
-      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9",
+      "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "salt": "0x0000000000000000000000000000000000000000bdb4f6f229231882af388cd8",
+    "salt": "0x0000000000000000000000000000000000000000da81d8b5984d4a8a152bc3f8",
     "type": "deployment"
   },
   {

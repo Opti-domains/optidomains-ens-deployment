@@ -28,98 +28,103 @@ async function main() {
   const wallet = getWallet()
   const provider = getProvider()
 
-  const balance = await provider.getBalance(KEYLESS_ADDRESS);
-
-  if (balance.toNumber() == 0) {
-    // Transfer 0.1 ETH to that address
-    let tx = {
-      to: KEYLESS_ADDRESS,
-      value: ethers.utils.parseEther("0.1")
-    }
-
-    const signedTransaction = await wallet.sendTransaction(tx);
-    console.log('Transfer ETH to keyless deployer:', signedTransaction.hash);
-  }
-
-  const keylessDeployerResponse = await provider.sendTransaction(KEYLESS_PRESIGNED);
-  console.log('KEYLESS_CREATE2_DEPLOYER:', keylessDeployerResponse.hash);
-
   // Auto-calculate the gas price
   const gasPrice = await provider.getGasPrice();
 
-  // Deploy INEFFICIENT_IMMUTABLE_CREATE2_FACTORY
-  {
-    const nonce = await wallet.getTransactionCount();
-    const gasLimit = 2000000
-    const rawTransaction = {
-      nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
-      gasPrice, // Gas price (adjust as needed)
-      gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
-      to: KEYLESS_DEPLOYER, // Contract address
-      value: '0x0', // Amount of Ether to send (0 for contract interactions)
-      data: INEFFICIENT_PAYLOAD, // Encoded contract function data
-    };
-    const signedTransaction = await wallet.signTransaction(rawTransaction);
-    const transactionResponse = await provider.sendTransaction(signedTransaction);
-    console.log('INEFFICIENT_IMMUTABLE_CREATE2_FACTORY:', transactionResponse.hash);
+  if (!args[1] || args[1] == 'FACTORY') {
+    const balance = await provider.getBalance(KEYLESS_ADDRESS);
+
+    if (balance.toNumber() == 0) {
+      // Transfer 0.1 ETH to that address
+      let tx = {
+        to: KEYLESS_ADDRESS,
+        value: ethers.utils.parseEther("0.1")
+      }
+
+      const signedTransaction = await wallet.sendTransaction(tx);
+      console.log('Transfer ETH to keyless deployer:', signedTransaction.hash);
+    }
+
+    const keylessDeployerResponse = await provider.sendTransaction(KEYLESS_PRESIGNED);
+    console.log('KEYLESS_CREATE2_DEPLOYER:', keylessDeployerResponse.hash);
+
+    // Deploy INEFFICIENT_IMMUTABLE_CREATE2_FACTORY
+    {
+      const nonce = await wallet.getTransactionCount();
+      const gasLimit = 2000000
+      const rawTransaction = {
+        nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
+        gasPrice, // Gas price (adjust as needed)
+        gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
+        to: KEYLESS_DEPLOYER, // Contract address
+        value: '0x0', // Amount of Ether to send (0 for contract interactions)
+        data: INEFFICIENT_PAYLOAD, // Encoded contract function data
+      };
+      const signedTransaction = await wallet.signTransaction(rawTransaction);
+      const transactionResponse = await provider.sendTransaction(signedTransaction);
+      console.log('INEFFICIENT_IMMUTABLE_CREATE2_FACTORY:', transactionResponse.hash);
+    }
+    
+    // Deploy IMMUTABLE_CREATE2_FACTORY
+    {
+      const nonce = await wallet.getTransactionCount();
+      const gasLimit = 2000000
+      const rawTransaction = {
+        nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
+        gasPrice, // Gas price (adjust as needed)
+        gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
+        to: INEFFICIENT_ADDRESS, // Contract address
+        value: '0x0', // Amount of Ether to send (0 for contract interactions)
+        data: IMMUTABLE_PAYLOAD, // Encoded contract function data
+      };
+      const signedTransaction = await wallet.signTransaction(rawTransaction);
+      const transactionResponse = await provider.sendTransaction(signedTransaction);
+      console.log('IMMUTABLE_CREATE2_FACTORY:', transactionResponse.hash);
+    }
   }
 
-  // Deploy IMMUTABLE_CREATE2_FACTORY
-  {
-    const nonce = await wallet.getTransactionCount();
-    const gasLimit = 2000000
-    const rawTransaction = {
-      nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
-      gasPrice, // Gas price (adjust as needed)
-      gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
-      to: INEFFICIENT_ADDRESS, // Contract address
-      value: '0x0', // Amount of Ether to send (0 for contract interactions)
-      data: IMMUTABLE_PAYLOAD, // Encoded contract function data
-    };
-    const signedTransaction = await wallet.signTransaction(rawTransaction);
-    const transactionResponse = await provider.sendTransaction(signedTransaction);
-    console.log('IMMUTABLE_CREATE2_FACTORY:', transactionResponse.hash);
+  if (!args[1] || args[1] == 'EAS') {
+    // Deploy SCHEMA_REGISTRY
+    {
+      const nonce = await wallet.getTransactionCount();
+      const gasLimit = 2000000
+      const rawTransaction = {
+        nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
+        gasPrice, // Gas price (adjust as needed)
+        gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
+        to: IMMUTABLE_ADDRESS, // Contract address
+        value: '0x0', // Amount of Ether to send (0 for contract interactions)
+        data: '0x64e03087' + ethers.utils.defaultAbiCoder.encode(
+          ['bytes32', 'bytes'],
+          [SCHEMA_REGISTRY_SALT, SCHEMA_REGISTRY_PAYLOAD],
+        ).substring(2), // Encoded contract function data
+      };
+      const signedTransaction = await wallet.signTransaction(rawTransaction);
+      const transactionResponse = await provider.sendTransaction(signedTransaction);
+      console.log('SCHEMA_REGISTRY:', transactionResponse.hash);
+    }
+
+    // Deploy EAS
+    {
+      const nonce = await wallet.getTransactionCount();
+      const gasLimit = 4000000
+      const rawTransaction = {
+        nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
+        gasPrice, // Gas price (adjust as needed)
+        gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
+        to: IMMUTABLE_ADDRESS, // Contract address
+        value: '0x0', // Amount of Ether to send (0 for contract interactions)
+        data: '0x64e03087' + ethers.utils.defaultAbiCoder.encode(
+          ['bytes32', 'bytes'],
+          [EAS_SALT, EAS_PAYLOAD],
+        ).substring(2), // Encoded contract function data
+      };
+      const signedTransaction = await wallet.signTransaction(rawTransaction);
+      const transactionResponse = await provider.sendTransaction(signedTransaction);
+      console.log('EAS:', transactionResponse.hash);
+    }
   }
 
-  // Deploy SCHEMA_REGISTRY
-  {
-    const nonce = await wallet.getTransactionCount();
-    const gasLimit = 2000000
-    const rawTransaction = {
-      nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
-      gasPrice, // Gas price (adjust as needed)
-      gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
-      to: IMMUTABLE_ADDRESS, // Contract address
-      value: '0x0', // Amount of Ether to send (0 for contract interactions)
-      data: ethers.utils.defaultAbiCoder.encode(
-        ['bytes32', 'bytes'],
-        [SCHEMA_REGISTRY_SALT, SCHEMA_REGISTRY_PAYLOAD],
-      ), // Encoded contract function data
-    };
-    const signedTransaction = await wallet.signTransaction(rawTransaction);
-    const transactionResponse = await provider.sendTransaction(signedTransaction);
-    console.log('SCHEMA_REGISTRY:', transactionResponse.hash);
-  }
-
-  // Deploy EAS
-  {
-    const nonce = await wallet.getTransactionCount();
-    const gasLimit = 2000000
-    const rawTransaction = {
-      nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
-      gasPrice, // Gas price (adjust as needed)
-      gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
-      to: IMMUTABLE_ADDRESS, // Contract address
-      value: '0x0', // Amount of Ether to send (0 for contract interactions)
-      data: ethers.utils.defaultAbiCoder.encode(
-        ['bytes32', 'bytes'],
-        [EAS_SALT, EAS_PAYLOAD],
-      ), // Encoded contract function data
-    };
-    const signedTransaction = await wallet.signTransaction(rawTransaction);
-    const transactionResponse = await provider.sendTransaction(signedTransaction);
-    console.log('EAS:', transactionResponse.hash);
-  }
 }
 
 main().then(() => process.exit(0)).catch(err => {
