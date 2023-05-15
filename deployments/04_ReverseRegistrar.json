@@ -4,20 +4,14 @@
     "constructorArguments": [
       "<ENSRegistry>"
     ],
-    "contractAddress": "0x8888ef1e5699a70e16b524ec8000ad69c084ee3d",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "contractAddress": "0x8888ef1e5699a70e16b524ec8000ad69c084ee3d",
-        "transactionHash": "0xa4f2a28837885dcd8b52bc258fb8748850f7b4386129d14f860c1c30686513f2"
-      }
-    ],
-    "leading": "8888",
+    "contractAddress": "0x888811fc56bd2b65ea6b8b5d23b62945b021512d",
+    "deployments": null,
+    "leading": "888811",
     "name": "ReverseRegistrar",
     "parsedArguments": [
-      "0x8888f11e97df012ad3a390ccc6429a4942cd7d68"
+      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9"
     ],
-    "salt": "0x00000000000000000000000000000000000000005ec67668979d861a84b0308d",
+    "salt": "0x0000000000000000000000000000000000000000ee5f39bb1565468a54cbcd6b",
     "type": "deployment"
   },
   {
@@ -26,13 +20,7 @@
     ],
     "selector": "function setDefaultResolver(address)",
     "target": "<ReverseRegistrar>",
-    "type": "rootTx",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "transactionHash": "0xcc9036a67e46587528c6361f0470d370d18b336e91dd43b05a9a89e83999ab05"
-      }
-    ]
+    "type": "rootTx"
   },
   {
     "args": [
@@ -42,13 +30,7 @@
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
     "target": "<Root>",
-    "type": "rootTx",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "transactionHash": "0x10c5b7c60bb57697bfcfa62172068d5be97b719af9b2867ee2c33506c5c4528c"
-      }
-    ]
+    "type": "rootTx"
   },
   {
     "args": [
@@ -58,13 +40,7 @@
     ],
     "selector": "function setSubnodeOwner(bytes32,bytes32,address)",
     "target": "<ENSRegistry>",
-    "type": "rootTx",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "transactionHash": "0x28482f0fd416efedf25740ff2f7ccf5ac6bf825c334242d41415e8ee5f4675a4"
-      }
-    ]
+    "type": "rootTx"
   },
   {
     "args": [
@@ -73,12 +49,6 @@
     ],
     "selector": "function setWhitelisted(address,bool)",
     "target": "<DiamondResolver>",
-    "type": "rootTx",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "transactionHash": "0xde61be32d76632a6e6c938aa4523c4f7bac02f4bb19e2b2c07e975054e3279ae"
-      }
-    ]
+    "type": "rootTx"
   }
 ]

@@ -4,7 +4,7 @@
     "name": "ReverseRegistrar",
     "artifact": "reverseRegistrar/ReverseRegistrar.sol",
     "constructorArguments": ["<ENSRegistry>"],
-    "leading": "8888",
+    "leading": "888811",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   },

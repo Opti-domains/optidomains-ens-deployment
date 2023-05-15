@@ -1,0 +1,40 @@
+[
+  {
+    "artifact": "wrapper/TownDomains.sol",
+    "constructorArguments": [
+      "<ENSRegistry>",
+      "<BoredTown_BaseRegistrarImplementation>",
+      "<BoredTown_MetadataService>",
+      "town"
+    ],
+    "contractAddress": "0xb02edaeb35bca26b3d5d782a0efe0e391b5ac8ed",
+    "deployments": null,
+    "leading": "b02ed",
+    "name": "BoredTown_NameWrapper",
+    "parsedArguments": [
+      "0x888811ed78d50109de2a842cbf0e4ef5c49114e9",
+      "0xb02edeffc9895219f4f3bb668602247932dcafae",
+      "0xb02ed8ae6a3491d013fedc7c985d255b1ddd5552",
+      "town"
+    ],
+    "salt": "0x000000000000000000000000000000000000000088c27421d4b82795947afbe0",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      "<BoredTown_NameWrapper>"
+    ],
+    "selector": "function addController(address)",
+    "target": "<BoredTown_BaseRegistrarImplementation>",
+    "type": "rootTx"
+  },
+  {
+    "args": [
+      "0x0000000000000000000000000000000000000000",
+      "<BoredTown_NameWrapper>"
+    ],
+    "selector": "function upgrade(address,address)",
+    "target": "<NameWrapperRegistry>",
+    "type": "rootTx"
+  }
+]

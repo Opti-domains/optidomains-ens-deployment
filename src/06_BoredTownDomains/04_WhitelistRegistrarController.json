@@ -1,36 +1,36 @@
 [
   {
     "type": "deployment",
-    "name": "OptiDomains_WhitelistRegistrarController",
+    "name": "BoredTown_WhitelistRegistrarController",
     "artifact": "ethregistrar/WhitelistRegistrarController.sol",
     "constructorArguments": [
-      "<OptiDomains_BaseRegistrarImplementation>",
+      "<BoredTown_BaseRegistrarImplementation>",
       "<ReverseRegistrar>",
-      "<OptiDomains_NameWrapper>",
+      "<BoredTown_NameWrapper>",
       "<OPERATOR>",
       0,
-      "op"
+      "town"
     ],
-    "leading": "888811",
+    "leading": "b02ed",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   },
   {
     "type": "rootTx",
-    "target": "<OptiDomains_NameWrapper>",
+    "target": "<BoredTown_NameWrapper>",
     "selector": "function setController(address,bool)",
-    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+    "args": ["<BoredTown_WhitelistRegistrarController>", true]
   },
   {
     "type": "rootTx",
     "target": "<ReverseRegistrar>",
     "selector": "function setController(address,bool)",
-    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+    "args": ["<BoredTown_WhitelistRegistrarController>", true]
   },
   {
     "type": "rootTx",
     "target": "<DiamondResolver>",
     "selector": "function setWhitelisted(address,bool)",
-    "args": ["<OptiDomains_WhitelistRegistrarController>", true]
+    "args": ["<BoredTown_WhitelistRegistrarController>", true]
   }
 ]

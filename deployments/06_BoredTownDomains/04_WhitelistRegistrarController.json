@@ -2,40 +2,40 @@
   {
     "artifact": "ethregistrar/WhitelistRegistrarController.sol",
     "constructorArguments": [
-      "<OptiDomains_BaseRegistrarImplementation>",
+      "<BoredTown_BaseRegistrarImplementation>",
       "<ReverseRegistrar>",
-      "<OptiDomains_NameWrapper>",
+      "<BoredTown_NameWrapper>",
       "<OPERATOR>",
       0,
-      "op"
+      "town"
     ],
-    "contractAddress": "0x8888118d642d27b525c3812f6d93dd291bb1761d",
+    "contractAddress": "0xb02ed0dca3313ff00264b9d5e697477b6a587cac",
     "deployments": null,
-    "leading": "888811",
-    "name": "OptiDomains_WhitelistRegistrarController",
+    "leading": "b02ed",
+    "name": "BoredTown_WhitelistRegistrarController",
     "parsedArguments": [
-      "0x8888117a4cc9d7623cce75aad3c005395e0ca678",
+      "0xb02edeffc9895219f4f3bb668602247932dcafae",
       "0x888811fc56bd2b65ea6b8b5d23b62945b021512d",
-      "0x88881171db979a0af7ed77e40543bbe9541c8b24",
+      "0xb02edaeb35bca26b3d5d782a0efe0e391b5ac8ed",
       "0x88881111a0358cdf10Bc095aa14B95936aDA741f",
       0,
-      "op"
+      "town"
     ],
-    "salt": "0x0000000000000000000000000000000000000000f40e93d17d84e41a10ef7e4f",
+    "salt": "0x00000000000000000000000000000000000000004c00eab1b10d5453f5b97310",
     "type": "deployment"
   },
   {
     "args": [
-      "<OptiDomains_WhitelistRegistrarController>",
+      "<BoredTown_WhitelistRegistrarController>",
       true
     ],
     "selector": "function setController(address,bool)",
-    "target": "<OptiDomains_NameWrapper>",
+    "target": "<BoredTown_NameWrapper>",
     "type": "rootTx"
   },
   {
     "args": [
-      "<OptiDomains_WhitelistRegistrarController>",
+      "<BoredTown_WhitelistRegistrarController>",
       true
     ],
     "selector": "function setController(address,bool)",
@@ -44,7 +44,7 @@
   },
   {
     "args": [
-      "<OptiDomains_WhitelistRegistrarController>",
+      "<BoredTown_WhitelistRegistrarController>",
       true
     ],
     "selector": "function setWhitelisted(address,bool)",

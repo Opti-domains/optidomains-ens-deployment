@@ -1,8 +1,12 @@
 package main
 
 import (
+	"context"
+	"crypto/aes"
+	"crypto/cipher"
 	"crypto/ecdsa"
 	"crypto/rand"
+	"crypto/sha256"
 	"encoding/hex"
 	"encoding/json"
 	"errors"
@@ -13,13 +17,17 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/math"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/joho/godotenv"
+	"golang.org/x/crypto/pbkdf2"
 )
+
+const THREAD_COUNT = 16
 
 var (
 	ImmutableCreate2FactoryAddress = common.HexToAddress("0x0000000000ffe8b47b3e2130213b802212439497")
@@ -153,34 +161,75 @@ func buildInitCode(dict map[string]string, action *DeploymentAction) (string, er
 	return artifact["bytecode"].(string) + common.Bytes2Hex(encodedArgs), nil
 }
 
-func calculateAddressBySalt(initCode, salt string) string {
-	initCodeHash := crypto.Keccak256Hash(common.FromHex(initCode))
-
-	create2Hash := crypto.Keccak256Hash([]byte{0xff}, ImmutableCreate2FactoryAddress.Bytes(), common.FromHex(salt), initCodeHash.Bytes())
+func calculateAddressBySalt(initCodeHash []byte, salt string) string {
+	create2Hash := crypto.Keccak256Hash([]byte{0xff}, ImmutableCreate2FactoryAddress.Bytes(), common.FromHex(salt), initCodeHash)
 
 	deploymentAddress := "0x" + create2Hash.Hex()[len(create2Hash.Hex())-40:]
 
 	return deploymentAddress
 }
 
-func scanSalt(initCode, leading string) (string, string) {
+func scanSaltAgent(ctx context.Context, initCodeHash []byte, leading string, ch chan string, wg *sync.WaitGroup) {
+	defer wg.Done()
+
 	address := ""
 	salt := ""
 
-	leadingTemplate := leading[:3]
+	leadingTemplate := leading[:5]
 
-	for !strings.HasPrefix(address, "0x"+leading) {
+	for i := 0; i < 100000; i++ {
 		saltBytes := make([]byte, 12)
 		rand.Read(saltBytes)
 		saltHex := hex.EncodeToString(saltBytes)
 		salt = "0x0000000000000000000000000000000000000000" + saltHex
-		address = calculateAddressBySalt(initCode, salt)
+		address = calculateAddressBySalt(initCodeHash, salt)
 		if strings.HasPrefix(address, "0x"+leadingTemplate) {
 			fmt.Println(salt, address)
 		}
-	}
+		if strings.HasPrefix(address, "0x"+leading) {
+			select {
+			case <-ctx.Done():
+				return
 
-	return salt, address
+			default:
+				ch <- (salt + ";" + address)
+				return
+			}
+		}
+	}
+}
+
+func scanSalt(initCode, leading string) (string, string) {
+	initCodeHash := crypto.Keccak256Hash(common.FromHex(initCode)).Bytes()
+
+	for {
+		wg := sync.WaitGroup{}
+		messageCh := make(chan string)
+		notFoundCh := make(chan string)
+		ctx, cancel := context.WithCancel(context.Background())
+
+		wg.Add(THREAD_COUNT)
+
+		go func() {
+			// Scan with 16 threads
+			for i := 0; i < THREAD_COUNT; i++ {
+				go scanSaltAgent(ctx, initCodeHash, leading, messageCh, &wg)
+			}
+
+			wg.Wait()
+			notFoundCh <- "notfound"
+		}()
+
+		select {
+		case <-notFoundCh:
+			cancel()
+			continue
+		case data := <-messageCh:
+			parts := strings.Split(data, ";")
+			cancel()
+			return parts[0], parts[1]
+		}
+	}
 }
 
 func generateAddressPipeline(dict map[string]string, action *DeploymentAction) error {
@@ -322,6 +371,30 @@ func getAddressFromPk(pk string) (string, error) {
 	return address, nil
 }
 
+func Aes256Decode(cipherText string, encKey string, iv string) (decryptedString string) {
+	ivHex, err := hex.DecodeString(iv)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Println(len(ivHex))
+
+	bKey := pbkdf2.Key([]byte(encKey), ivHex, 100000, 32, sha256.New)
+	cipherTextDecoded, err := hex.DecodeString(cipherText)
+	if err != nil {
+		panic(err)
+	}
+
+	block, err := aes.NewCipher(bKey)
+	if err != nil {
+		panic(err)
+	}
+
+	mode := cipher.NewCBCDecrypter(block, ivHex)
+	mode.CryptBlocks([]byte(cipherTextDecoded), []byte(cipherTextDecoded))
+	return string(cipherTextDecoded)
+}
+
 func main() {
 	godotenv.Load()
 
@@ -339,7 +412,12 @@ func main() {
 	}
 	dict["DEPLOYER"] = deployerAddress
 
-	operatorAddress, err := getAddressFromPk(os.Getenv("OPERATOR_KEY"))
+	decryptKey := os.Args[1]
+	iv := os.Getenv("IV")
+	operatorKeyEncrypted := os.Getenv("OPERATOR_KEY")
+	operatorKey := Aes256Decode(operatorKeyEncrypted, decryptKey, iv)[0:66]
+
+	operatorAddress, err := getAddressFromPk(operatorKey)
 	if err != nil {
 		panic(err)
 	}

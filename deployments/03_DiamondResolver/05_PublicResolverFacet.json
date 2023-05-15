@@ -2,18 +2,12 @@
   {
     "artifact": "diamond-resolver/facets/public-resolver/PublicResolverFacet.sol",
     "constructorArguments": [],
-    "contractAddress": "0x888846eb2b16f438a25e2a6c0997ee5896553b7a",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "contractAddress": "0x888846eb2b16f438a25e2a6c0997ee5896553b7a",
-        "transactionHash": "0x2f892f47ff184982a1ab7d663609d2a7bf964099bad4aec62ec43c97fce2acb5"
-      }
-    ],
-    "leading": "8888",
+    "contractAddress": "0x888811d51d23bc88c7f39375db8900edef9a18ae",
+    "deployments": null,
+    "leading": "888811",
     "name": "PublicResolverFacet",
     "parsedArguments": [],
-    "salt": "0x0000000000000000000000000000000000000000c6d42eb94521cd1cd91e80ae",
+    "salt": "0x0000000000000000000000000000000000000000adbcfc1c70b0bd2b185122c4",
     "type": "deployment"
   },
   {
@@ -54,12 +48,6 @@
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
     "target": "<DiamondResolver>",
-    "type": "rootTx",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "transactionHash": "0x17f231c5b04db9ce8db4469da80211bbf76bc41f18066d765b571a1b253577ce"
-      }
-    ]
+    "type": "rootTx"
   }
 ]

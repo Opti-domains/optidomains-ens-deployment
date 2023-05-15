@@ -1,28 +1,28 @@
 [
   {
     "type": "deployment",
-    "name": "OptiDomains_NameWrapper",
-    "artifact": "wrapper/OptiDomains.sol",
+    "name": "BoredTown_NameWrapper",
+    "artifact": "wrapper/TownDomains.sol",
     "constructorArguments": [
       "<ENSRegistry>",
-      "<OptiDomains_BaseRegistrarImplementation>",
-      "<OptiDomains_MetadataService>",
-      "op"
+      "<BoredTown_BaseRegistrarImplementation>",
+      "<BoredTown_MetadataService>",
+      "town"
     ],
-    "leading": "888811",
+    "leading": "b02ed",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   },
   {
     "type": "rootTx",
-    "target": "<OptiDomains_BaseRegistrarImplementation>",
+    "target": "<BoredTown_BaseRegistrarImplementation>",
     "selector": "function addController(address)",
-    "args": ["<OptiDomains_NameWrapper>"]
+    "args": ["<BoredTown_NameWrapper>"]
   },
   {
     "type": "rootTx",
     "target": "<NameWrapperRegistry>",
     "selector": "function upgrade(address,address)",
-    "args": ["0x0000000000000000000000000000000000000000", "<OptiDomains_NameWrapper>"]
+    "args": ["0x0000000000000000000000000000000000000000", "<BoredTown_NameWrapper>"]
   }
 ]

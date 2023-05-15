@@ -1,10 +1,10 @@
 [
   {
     "type": "deployment",
-    "name": "OptiDomains_MetadataService",
+    "name": "BoredTown_MetadataService",
     "artifact": "wrapper/OptiDomainsMetadataService.sol",
-    "constructorArguments": ["https://metadata.opti.domains/token/domains/op"],
-    "leading": "888811",
+    "constructorArguments": ["https://metadata.opti.domains/token/domains/town"],
+    "leading": "b02ed",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   }

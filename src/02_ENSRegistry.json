@@ -4,7 +4,7 @@
     "name": "ENSRegistry",
     "artifact": "registry/ENSRegistry.sol",
     "constructorArguments": ["<Root>"],
-    "leading": "8888",
+    "leading": "888811",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   }

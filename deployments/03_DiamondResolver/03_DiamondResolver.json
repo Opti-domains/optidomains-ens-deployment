@@ -5,21 +5,15 @@
       "<Root>",
       "<NameWrapperRegistry>"
     ],
-    "contractAddress": "0x88888b63462d0b781fa3fb8c3a11b287ee623cd0",
-    "deployments": [
-      {
-        "chain": "hardhat",
-        "contractAddress": "0x88888b63462d0b781fa3fb8c3a11b287ee623cd0",
-        "transactionHash": "0x5a566bd980454436d1495b88129f0e30d7cdc94c72ad64be706c51a19386c6fa"
-      }
-    ],
-    "leading": "8888",
+    "contractAddress": "0x8888117f6947e2cce2fe6cdc54ca04d9f87c2106",
+    "deployments": null,
+    "leading": "888811",
     "name": "DiamondResolver",
     "parsedArguments": [
-      "0x88885d7708eae16d2e418079de90caef4a247b84",
-      "0x88885e38f5bfc754676d8634bf1ade1b362a1ef6"
+      "0x888811b6e0fa5528a01ae08e61a2001442487128",
+      "0x8888111adbfa4dd35b2ffa8b7ff31ca579b22be3"
     ],
-    "salt": "0x00000000000000000000000000000000000000007f424e16c157130213591669",
+    "salt": "0x00000000000000000000000000000000000000006293860a560e7ccbe6451237",
     "type": "deployment"
   }
 ]
