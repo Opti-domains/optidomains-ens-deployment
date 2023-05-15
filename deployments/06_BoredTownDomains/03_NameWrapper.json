@@ -1,0 +1,60 @@
+[
+  {
+    "artifact": "wrapper/TownDomains.sol",
+    "constructorArguments": [
+      "<ENSRegistry>",
+      "<BoredTown_BaseRegistrarImplementation>",
+      "<BoredTown_MetadataService>",
+      "town"
+    ],
+    "contractAddress": "0xb02ed7fa4d37c88742d2f20a9a281ae94ce3438a",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xb02ed7fa4d37c88742d2f20a9a281ae94ce3438a",
+        "transactionHash": "0xdbb36fc4d1c98a81c91354e1d2b246c62c5ca7be3ed0553de298e93e632e78bc"
+      }
+    ],
+    "leading": "b02ed",
+    "name": "BoredTown_NameWrapper",
+    "parsedArguments": [
+      "0x8888113d7ff563051463920edaa06c391a544543",
+      "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
+      "0xb02ed48e9d264a5be6a0dc59103f7f28917dcb68",
+      "town"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000edf61251e92ab2926b978ced",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      "<BoredTown_NameWrapper>"
+    ],
+    "selector": "function addController(address)",
+    "target": "<BoredTown_BaseRegistrarImplementation>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x330bf49d261b1ff99cda82bed5069d13178f7dd3ab99d1bdb80014795add9e40"
+      }
+    ],
+    "signature": "0xd249c8e2bbbade9a5c8d4e8839bdb9cf261eb2ced9393c83124030b3b831f52d5e1b3f7f9bb39943ad380f11c3a0c2e8b9f052d5261543872db2d02aac78db081b"
+  },
+  {
+    "args": [
+      "0x0000000000000000000000000000000000000000",
+      "<BoredTown_NameWrapper>"
+    ],
+    "selector": "function upgrade(address,address)",
+    "target": "<NameWrapperRegistry>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0xcc861d4bfb02c5bfc987823df6938e7506094558ca030057c77e1c0722c2f1d6"
+      }
+    ],
+    "signature": "0x7ea2426022ba702da715562e994ff23e6cc1f5675879d471c71cd7b43de5147a3834c46ec9de33273ef3ea14ef63f0a5b415cfbfe28fa6bb05bf08f6bd8f8a781c"
+  }
+]

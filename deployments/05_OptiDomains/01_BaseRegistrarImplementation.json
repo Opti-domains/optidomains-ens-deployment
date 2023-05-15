@@ -5,31 +5,21 @@
       "<ENSRegistry>",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
+    "contractAddress": "0x888811e41cd054ea5e8965532b5c82cec8963b11",
     "deployments": [
       {
-        "chain": "hardhat",
-        "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
-        "transactionHash": "0x3b1f24525608a2a06917ea729b45c968c4e5da493a8c95af07522aa37de83795"
-      },
-      {
         "chain": "optimism_goerli",
-        "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
-        "transactionHash": "0x13233f581735bc4f1a4314cf03226670573bbb7bc1b1088052bed560ba107a9e"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "contractAddress": "0x8888112fdef1da2f8a291786af607e34829f70cb",
-        "transactionHash": "0x4b7312753689ca37165a874728b2215acb26bb4736c8bd0f71a7b74346dc5096"
+        "contractAddress": "0x888811e41cd054ea5e8965532b5c82cec8963b11",
+        "transactionHash": "0xc011ee46cb89b6858d6547a1724538458e128d25e25ba2ce769b4ca4aa3073e5"
       }
     ],
     "leading": "888811",
     "name": "OptiDomains_BaseRegistrarImplementation",
     "parsedArguments": [
-      "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
+      "0x8888113d7ff563051463920edaa06c391a544543",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "salt": "0x0000000000000000000000000000000000000000da81d8b5984d4a8a152bc3f8",
+    "salt": "0x000000000000000000000000000000000000000062c7bd3f7ed3935e1179bb9c",
     "type": "deployment"
   },
   {
@@ -43,18 +33,10 @@
     "type": "rootTx",
     "deployments": [
       {
-        "chain": "hardhat",
-        "transactionHash": "0x463c35a66f2b07502f7ceee846498052d01e1024909b01f27a02469b407cffb1"
-      },
-      {
         "chain": "optimism_goerli",
-        "transactionHash": "0xcd85c253696415277db19648878bf6b904cca30c65ce81326321c6cc28b4dcae"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "transactionHash": "0xb42e13fcc2e782f89ee6f4584042f671cb7d449da98c63254b1820ce850c17e2"
+        "transactionHash": "0xe8208c7250cfde8a3a61ca1a203e723e8a0397f59d7b46f974461d41c6a15bd9"
       }
     ],
-    "signature": "0x5982b698c2b90f40d81461140981ff56add384f454e2a92615f1ee90e14e4f1e43e95c9e93a4713da8c06e870442ee8724dd6fc33a6d4fa766fd3d5e79e19d441b"
+    "signature": "0x12546539c4f5a9ade5cc50333af08d085844a866fe0d7ea104aba5fe155106c817b59b7cf72d9a45ecffb83597f45b8f69ed138ad54ec82ac0b58466eb8dba871b"
   }
 ]

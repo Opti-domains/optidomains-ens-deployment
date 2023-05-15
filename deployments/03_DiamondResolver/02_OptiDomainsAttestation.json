@@ -2,103 +2,71 @@
   {
     "artifact": "attestation/OptiDomainsAttestation.sol",
     "constructorArguments": [
-      "0x888811129031a33bba5e92c82f527a27f5557885",
-      "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f"
+      "<NameWrapperRegistry>",
+      "<Root>"
     ],
-    "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
+    "contractAddress": "0x88881190127de1d6a2ff466c87b856dee6d216a2",
     "deployments": [
       {
-        "chain": "hardhat",
-        "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
-        "transactionHash": "0xabde06cb15dfe1f86220d5864c7ad256784d7485ff4b26b1f34b8cbc76fd7b0c"
-      },
-      {
         "chain": "optimism_goerli",
-        "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
-        "transactionHash": "0x46b09c76c6916216cdfd6024d1a748aa2f0db8d8ea58dd5d8278f4ab7b7395c4"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "contractAddress": "0x88881102eca792633671a93ad34a091db1c4c69e",
-        "transactionHash": "0xe60cf53e719074deef22a256e6f436b0f8fc1fd8d2742fe5b0edf8d12a4d97da"
+        "contractAddress": "0x88881190127de1d6a2ff466c87b856dee6d216a2",
+        "transactionHash": "0xb2830a9f8a9bf01e9274b1ce1dbd69eb3883c6de705938cda61e6937d3356caa"
       }
     ],
     "leading": "888811",
     "name": "OptiDomainsAttestation",
     "parsedArguments": [
-      "0x888811129031a33bba5e92c82f527a27f5557885",
-      "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f"
+      "0x888811e207e33f4eaf8169253dcecd8f0b86b8c3",
+      "0x888811d9e698fda43f33ba6a7d64b969c8eec00b"
     ],
-    "salt": "0x0000000000000000000000000000000000000000746f060358796d023e3aafec",
+    "salt": "0x00000000000000000000000000000000000000001a1c2edb440453deca0f7b09",
     "type": "deployment"
   },
   {
     "args": [
-      "0x88881102eca792633671a93ad34a091db1c4c69e"
+      "<OptiDomainsAttestation>"
     ],
     "selector": "function setAttestation(address)",
-    "target": "0x888811129031a33bba5e92c82f527a27f5557885",
+    "target": "<NameWrapperRegistry>",
     "type": "rootTx",
     "deployments": [
       {
-        "chain": "hardhat",
-        "transactionHash": "0x03bb5e9f4abd442640c90dbcd31884e3107a5c4c22c094dcd841f825211e2c60"
-      },
-      {
         "chain": "optimism_goerli",
-        "transactionHash": "0xc8e2bfb54aa51cafbb9b53c45898908f1a92c6c65b21d395b405364c846dfc4a"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "transactionHash": "0xdf361d1651277300aaf178616a7cb94ccda732867471e9a2cc0390969fa63e62"
+        "transactionHash": "0x96a1aa1dba5188ef24053f3f084fba9b2e0136808896eb30534500cc2f3b5083"
       }
     ],
-    "signature": "0xb02284b9cee2a4a87be3e0a54b89da127ff536f5cae78719610d6f2b78da24b675a8738ca1bfa91162962e6714ead41ca5f13ef034425208345792b48d0a461a1b"
+    "signature": "0xc3293041c7b064cf0bb02ff724b136b1f8c4dd9af7f96b8159cddfea8c08417b102d9c30d5755e12561a9fd35f3c3ba94b046d6b7476f39c86b3930685f1cb651c"
   },
   {
     "args": [
-      "0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd"
+      "0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd",
+      1
     ],
-    "selector": "function activate(address)",
-    "target": "0x88881102eca792633671a93ad34a091db1c4c69e",
+    "selector": "function activate(address,uint256)",
+    "target": "<OptiDomainsAttestation>",
     "type": "rootTx",
     "deployments": [
       {
-        "chain": "hardhat",
-        "transactionHash": "0xf641b0fb8a7f789610e69b58ec1b6d2df9e6337b0d1d4175b23048d4f4b92f6a"
-      },
-      {
         "chain": "optimism_goerli",
-        "transactionHash": "0x380a574bcb52a49d493304e2dfd31911da261e73a04957ad59ca1ec0505377ef"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "transactionHash": "0x9904927dfce7f625a358726d78d60d2be8135591148fac4f73892d22acba6fe7"
+        "transactionHash": "0x5104081d5d5949d812d90fa94094c26ad7f31e563a7589e63fbf1a1e454c83c4"
       }
     ],
-    "signature": "0xd1b2d91333147caa1f962902fcb6ef1ecd87642fc9bbfc4edc4c191801f19f4f4aa7598e84133ea5368231a3b27a06665a4015e81ad7a9d5e44f77f1edd148281c"
+    "signature": "0x161cd40c2a20455cd382b51600a2329a85b78d7f3f7d657875fdfa03244cbace2a01db599b9244212897a982f55fe324686dfbe1cbba28e2a17782a914805b251c"
   },
   {
     "args": [
-      "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84"
+      "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84",
+      2
     ],
-    "selector": "function activate(address)",
-    "target": "0x88881102eca792633671a93ad34a091db1c4c69e",
+    "selector": "function activate(address,uint256)",
+    "target": "<OptiDomainsAttestation>",
     "type": "rootTx",
     "deployments": [
       {
-        "chain": "hardhat",
-        "transactionHash": "0xaa5222326f67ed3b9cfed1d671623f5bccb2198777b07717eb5b6ee5e9f9d80f"
-      },
-      {
         "chain": "optimism_goerli",
-        "transactionHash": "0xea1e03f98b81c873f87c6e2fe882cd52234605739a19816c131f219cb6954424"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "transactionHash": "0xbf04753d00bf6d4b70eee969cefe098b36e4642ffefd502b84b3ef83abbb58d5"
+        "transactionHash": "0xb7b3c5fa234b925a4f24c680a2f3c62c3b49de66a93a4c3096265f76f5171fd7"
       }
     ],
-    "signature": "0x54dd445c3ff43d8644fb0a8e168b36dbdcfb6fa28a90cb469fabb5f8523312237a0bcb546222fb5ae043e0b641bd310975a3f344694110ff7c1fd07d0ebfe73f1b"
+    "signature": "0xfd0edaadf951c5739a19c97551a9845e9c4fd2c42751b30342c1bed30146474435f7fdca40915dc486da1450b5c0c18881a8b4977ffbc44a14f4b5b95cf989031b"
   }
 ]

@@ -4,22 +4,12 @@
     "constructorArguments": [
       "<OWNER>"
     ],
-    "contractAddress": "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f",
+    "contractAddress": "0x888811d9e698fda43f33ba6a7d64b969c8eec00b",
     "deployments": [
       {
-        "chain": "hardhat",
-        "contractAddress": "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f",
-        "transactionHash": "0xe5d69478fc32832eab94d14cf8f6187e98e7af8a7a432d5edcff386716c467f6"
-      },
-      {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f",
-        "transactionHash": "0x5f8dfaa899362f90d406fbb1309fa596c6c314789475ecaf2e4b8863bf6d1e30"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "contractAddress": "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f",
-        "transactionHash": "0x85eb567bdf8ce2fc8933aa4e760772683639569e6b429cd0528fe07b514ff0a5"
+        "contractAddress": "0x888811d9e698fda43f33ba6a7d64b969c8eec00b",
+        "transactionHash": "0xa9f87570898b9025dfec5c0e8f99665aa5da1dbf71882c331b14e49318b4f348"
       }
     ],
     "leading": "888811",
@@ -27,34 +17,24 @@
     "parsedArguments": [
       "0x88881111a0358cdf10Bc095aa14B95936aDA741f"
     ],
-    "salt": "0x0000000000000000000000000000000000000000ba33f276c3c3816869f499f8",
+    "salt": "0x000000000000000000000000000000000000000078978633bd8be159bcadb190",
     "type": "deployment"
   },
   {
     "artifact": "Multicall3.sol",
     "constructorArguments": [],
-    "contractAddress": "0x8888119922f9638ad346ff89eb9c2f106180c738",
+    "contractAddress": "0x8888111bfdd9d5b339d0bc2ef82b409630a8350c",
     "deployments": [
       {
-        "chain": "hardhat",
-        "contractAddress": "0x8888119922f9638ad346ff89eb9c2f106180c738",
-        "transactionHash": "0xf1bdfe1023b48314752fed9ce88c49ea8ff736c50f97279d33906e5bfca159bc"
-      },
-      {
         "chain": "optimism_goerli",
-        "contractAddress": "0x8888119922f9638ad346ff89eb9c2f106180c738",
-        "transactionHash": "0x341455ebb449c38c32970e37a0a05d05a1c05deddae05acd625e2f8b61c9d4a8"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "contractAddress": "0x8888119922f9638ad346ff89eb9c2f106180c738",
-        "transactionHash": "0xe9da9bbd5d0c35fdd0e916b8667d3ea11870da0ade77c736573f03d3b580e3c1"
+        "contractAddress": "0x8888111bfdd9d5b339d0bc2ef82b409630a8350c",
+        "transactionHash": "0x0e2cab8568351aab944d814cab438c152a7e0468904dc58a88ec7452be663a61"
       }
     ],
     "leading": "888811",
     "name": "Multicall",
     "parsedArguments": [],
-    "salt": "0x00000000000000000000000000000000000000007c31288634cdcf1f74519c87",
+    "salt": "0x0000000000000000000000000000000000000000683d7e7670143c030ece0029",
     "type": "deployment"
   }
 ]

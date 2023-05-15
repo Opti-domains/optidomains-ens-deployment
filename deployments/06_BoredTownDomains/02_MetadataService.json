@@ -1,0 +1,23 @@
+[
+  {
+    "artifact": "wrapper/OptiDomainsMetadataService.sol",
+    "constructorArguments": [
+      "https://metadata.opti.domains/token/domains/town"
+    ],
+    "contractAddress": "0xb02ed48e9d264a5be6a0dc59103f7f28917dcb68",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xb02ed48e9d264a5be6a0dc59103f7f28917dcb68",
+        "transactionHash": "0xb79379a57b356e5a5054f3f9880e2ec884b8ad4ec52edafdd3809f194b455aed"
+      }
+    ],
+    "leading": "b02ed",
+    "name": "BoredTown_MetadataService",
+    "parsedArguments": [
+      "https://metadata.opti.domains/token/domains/town"
+    ],
+    "salt": "0x00000000000000000000000000000000000000003e0e7c50ba7615d746276685",
+    "type": "deployment"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "artifact": "ethregistrar/WhitelistRegistrarController.sol",
+    "constructorArguments": [
+      "<BoredTown_BaseRegistrarImplementation>",
+      "<ReverseRegistrar>",
+      "<BoredTown_NameWrapper>",
+      "<OPERATOR>",
+      0,
+      "town"
+    ],
+    "contractAddress": "0xb02edaa356b737843402a187ce61661f08df7b66",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xb02edaa356b737843402a187ce61661f08df7b66",
+        "transactionHash": "0x457c9a0fe10b34d63f10a91a272453f0e9bc2538d936a0b06839262996111cf1"
+      }
+    ],
+    "leading": "b02ed",
+    "name": "BoredTown_WhitelistRegistrarController",
+    "parsedArguments": [
+      "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
+      "0x888811fdd458bb7c2db8e674a3dfc1b6a8548ab3",
+      "0xb02ed7fa4d37c88742d2f20a9a281ae94ce3438a",
+      "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A",
+      0,
+      "town"
+    ],
+    "salt": "0x00000000000000000000000000000000000000007ed00f5efe3a80b63596cc00",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      "<BoredTown_WhitelistRegistrarController>",
+      true
+    ],
+    "selector": "function setController(address,bool)",
+    "target": "<BoredTown_NameWrapper>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x0c3f4922ac244d4ff86b69fd4efced9feef4ebd436ce874931bfca0640e811d9"
+      }
+    ],
+    "signature": "0x305cb1ea6beba2f341802a88abc98975adf3fde3bb56149257b677452914e326749609ef1a5ac345f9cdaeecac3d35a13947b7876f5275de64cc1178b5cd00831b"
+  },
+  {
+    "args": [
+      "<BoredTown_WhitelistRegistrarController>",
+      true
+    ],
+    "selector": "function setController(address,bool)",
+    "target": "<ReverseRegistrar>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0xe8ec07dde7a708e356cbca29127eb55553e198dcb859bd37c603c8feb0f24a1f"
+      }
+    ],
+    "signature": "0x56d811bb642a7c704afa267c3055f0331d1e251c24625a058356bcb86527394727065ee81b159d34d1280b244f571b611bd1b6daafb21657e89e991a65ec9e4a1c"
+  },
+  {
+    "args": [
+      "<BoredTown_WhitelistRegistrarController>",
+      true
+    ],
+    "selector": "function setWhitelisted(address,bool)",
+    "target": "<DiamondResolver>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0xf40a0fc7a332ac0c3205d139984a47ef12b92c0dc25a3a7827300207e399a206"
+      }
+    ],
+    "signature": "0x8d908f670ae655d0fe9a056199dee6878791a6dfd12cea4299e1f3bdf5a57ed829790aafa2bb5441a9bfb285a9751b71a09aa622175a386d3be0f10ae4766f6b1b"
+  }
+]

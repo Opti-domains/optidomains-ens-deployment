@@ -17,13 +17,13 @@
   {
     "type": "rootTx",
     "target": "<OptiDomainsAttestation>",
-    "selector": "function activate(address)",
-    "args": ["0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd"]
+    "selector": "function activate(address,uint256)",
+    "args": ["0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd", 1]
   },
   {
     "type": "rootTx",
     "target": "<OptiDomainsAttestation>",
-    "selector": "function activate(address)",
-    "args": ["0x1a5650d0ecbca349dd84bafa85790e3e6955eb84"]
+    "selector": "function activate(address,uint256)",
+    "args": ["0x1a5650d0ecbca349dd84bafa85790e3e6955eb84", 2]
   }
 ]

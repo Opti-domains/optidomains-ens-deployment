@@ -4,30 +4,20 @@
     "constructorArguments": [
       "<Root>"
     ],
-    "contractAddress": "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
+    "contractAddress": "0x8888113d7ff563051463920edaa06c391a544543",
     "deployments": [
       {
-        "chain": "hardhat",
-        "contractAddress": "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
-        "transactionHash": "0x060a16a931320b25107a44427803a2c571a3a832940822586bb12341de5687ea"
-      },
-      {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
-        "transactionHash": "0x0ca2921c74ba3e2ff8e7ae782406a235bce2875e6ba9eed20b545d2577e6af90"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "contractAddress": "0x888811ce6272fb0da34ca4d9b1e6c4d8a72cf989",
-        "transactionHash": "0x917762e49762e0fc9ac926f1854e09169535a75965d1d6e475908f5cac4aa07d"
+        "contractAddress": "0x8888113d7ff563051463920edaa06c391a544543",
+        "transactionHash": "0x70005d082e0d1b94e7831864352c9f55404ea2ba053e51337a640493bc6840d2"
       }
     ],
     "leading": "888811",
     "name": "ENSRegistry",
     "parsedArguments": [
-      "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f"
+      "0x888811d9e698fda43f33ba6a7d64b969c8eec00b"
     ],
-    "salt": "0x0000000000000000000000000000000000000000a5d65daf26d462dd6170ead2",
+    "salt": "0x0000000000000000000000000000000000000000f1ed01b6b1b918a0f16b3ba6",
     "type": "deployment"
   }
 ]

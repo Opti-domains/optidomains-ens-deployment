@@ -1,0 +1,42 @@
+[
+  {
+    "artifact": "ethregistrar/BaseRegistrarImplementation.sol",
+    "constructorArguments": [
+      "<ENSRegistry>",
+      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+    ],
+    "contractAddress": "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
+        "transactionHash": "0x2fb3ee2f94d397269440e04fdaaaba5a9e25b9675b96558f85f9a1c68e51844c"
+      }
+    ],
+    "leading": "b02ed",
+    "name": "BoredTown_BaseRegistrarImplementation",
+    "parsedArguments": [
+      "0x8888113d7ff563051463920edaa06c391a544543",
+      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+    ],
+    "salt": "0x000000000000000000000000000000000000000074a4733ba571032f00e64bad",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      "<ENSRegistry>",
+      "0xe40a47948fcb30b4978646ca22093b3c66a8848f34d56268d937c3938869035b",
+      "<BoredTown_BaseRegistrarImplementation>"
+    ],
+    "selector": "function setSubnodeOwner(address,bytes32,address)",
+    "target": "<Root>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x24d7ac37e0e9e51b762239bdff7b863a436b35a4bab5f3aac1a2c3881d64ec76"
+      }
+    ],
+    "signature": "0x936b33e6f329f938d898b7a96260da2749c884b804e98d864a934364ac1aaa3e5bf4afb203798aaa83770215edd1422f7fa227515e5a240a4162faa34a84c08b1b"
+  }
+]

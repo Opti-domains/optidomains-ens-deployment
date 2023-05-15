@@ -5,31 +5,21 @@
       "<Root>",
       "<NameWrapperRegistry>"
     ],
-    "contractAddress": "0x88881124bcf23860acca486f1f78dc073644f378",
+    "contractAddress": "0x888811cc779f9eb17026c4d99f3b82e899098bf5",
     "deployments": [
       {
-        "chain": "hardhat",
-        "contractAddress": "0x88881124bcf23860acca486f1f78dc073644f378",
-        "transactionHash": "0x09a9f441f89ea9539b57f89b8e6be4a3ece5bde5430e0bd8982f210d8526c1c2"
-      },
-      {
         "chain": "optimism_goerli",
-        "contractAddress": "0x88881124bcf23860acca486f1f78dc073644f378",
-        "transactionHash": "0x1e617daa45e223a8bb2fa161770239495b6e3360835b9cea0862e5b5edc279b8"
-      },
-      {
-        "chain": "polygonzkevm_goerli",
-        "contractAddress": "0x88881124bcf23860acca486f1f78dc073644f378",
-        "transactionHash": "0x5f23bf90a751903c9c889a1ff4e3c5263a85fc76acf39daec00cad129a8e215a"
+        "contractAddress": "0x888811cc779f9eb17026c4d99f3b82e899098bf5",
+        "transactionHash": "0x1f079d4a867ff7fc29cc4f78c6774bb11782d5a6269d7762300bb2f126b7cb9d"
       }
     ],
     "leading": "888811",
     "name": "DiamondResolver",
     "parsedArguments": [
-      "0x888811dbe8ce3d510a2ab3acb3850a2e2b6ff44f",
-      "0x888811129031a33bba5e92c82f527a27f5557885"
+      "0x888811d9e698fda43f33ba6a7d64b969c8eec00b",
+      "0x888811e207e33f4eaf8169253dcecd8f0b86b8c3"
     ],
-    "salt": "0x00000000000000000000000000000000000000008e7d027c1c422e3d69540423",
+    "salt": "0x00000000000000000000000000000000000000001b2a3f2513044eb2150b3727",
     "type": "deployment"
   }
 ]

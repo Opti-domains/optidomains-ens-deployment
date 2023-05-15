@@ -12,6 +12,6 @@
     "type": "rootTx",
     "target": "<Root>",
     "selector": "function setSubnodeOwner(address,bytes32,address)",
-    "args": ["<ENSRegistry>", "0x277a89cfc9aab916962e1c12c6d844290cb1ed068e1ca5b05e9a27eb9ef2aada", "<BoredTown_BaseRegistrarImplementation>"]
+    "args": ["<ENSRegistry>", "0xe40a47948fcb30b4978646ca22093b3c66a8848f34d56268d937c3938869035b", "<BoredTown_BaseRegistrarImplementation>"]
   }
 ]
