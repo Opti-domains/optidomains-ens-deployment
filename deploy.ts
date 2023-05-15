@@ -6,6 +6,7 @@ import path from "path";
 import { buildInitCode, calculateAddressBySalt, deployContract, getAddressFromPk, getProvider, getWallet, performRootTx, resolveAddress, setupWallet } from "./lib";
 import { cloneDeep } from "lodash";
 import { ethers } from "ethers";
+import { decryptText } from "./encrypt";
 
 async function readFilesRecursively(directory) {
   try {
@@ -100,7 +101,7 @@ async function processSingle(dict, filePath) {
             transactionHash: tx.transactionHash,
           })
         } else {
-          const tx = await performRootTx(dict, action)
+          const {tx, signature} = await performRootTx(dict, action)
           console.log(`Root TX on ${action[RAW_ACTION_SYMBOL].target} (Tx: ${tx.transactionHash})`)
 
           // Save on deployments
@@ -109,6 +110,9 @@ async function processSingle(dict, filePath) {
             chain: dict.CHAIN_NAME,
             transactionHash: tx.transactionHash,
           })
+
+          // Save signature
+          action.signature = signature
         }
 
         // Rollback to raw action
@@ -153,7 +157,7 @@ async function main() {
   const dict = {
     DEPLOYER: getAddressFromPk(process.env.DEPLOYER_KEY),
     OPERATOR: getAddressFromPk(process.env.OPERATOR_KEY),
-    OWNER: getAddressFromPk(process.env.OWNER_KEY),
+    OWNER: getAddressFromPk(decryptText(process.env.OWNER_KEY, args[1])),
     CHAIN_NAME: chainName,
   }
 

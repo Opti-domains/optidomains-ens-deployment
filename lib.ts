@@ -212,5 +212,8 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
     signature,
   )
 
-  return await tx.wait();
+  return {
+    tx: await tx.wait(),
+    signature
+  }
 }

@@ -29,13 +29,13 @@ function deriveKeyFromPassphrase(passphrase: string): Buffer {
 }
 
 // Example usage
-const args: string[] = process.argv.slice(2)
+// const args: string[] = process.argv.slice(2)
 // const plaintext: string = args[0];
-const encryptedText: string = args[0];
-const encryptionKey: string = args[1];
+// const encryptedText: string = args[0];
+// const encryptionKey: string = args[1];
 
 // const encryptedText: string = encryptText(plaintext, encryptionKey);
 // console.log('Encrypted text:', encryptedText);
 
-const decryptedText: string = decryptText(encryptedText, encryptionKey);
-console.log('Decrypted text:', decryptedText);
+// const decryptedText: string = decryptText(encryptedText, encryptionKey);
+// console.log('Decrypted text:', decryptedText);

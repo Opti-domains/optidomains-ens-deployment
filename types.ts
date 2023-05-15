@@ -24,6 +24,7 @@ export interface TxAction {
   type: string
   target: string
   selector: string
+  signature?: string
   args: (string | number)[]
   deployments: null | undefined | DeploymentActionResult[]
 }
