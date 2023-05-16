@@ -10,6 +10,11 @@
         "chain": "optimism_goerli",
         "contractAddress": "0x88881191aba4DEFD926dE9708C457d092120beaa",
         "transactionHash": "0x22e234482b85e7750fc709127cd3477592dda74bf9f78b6f56d52e129e87c61e"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "contractAddress": "0x88881191aba4DEFD926dE9708C457d092120beaa",
+        "transactionHash": "0x018536c6b41266fd183df271ea1909867f6f75cb1e50682a51efaa1178f7d879"
       }
     ],
     "leading": "888811",

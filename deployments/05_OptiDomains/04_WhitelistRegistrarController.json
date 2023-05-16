@@ -15,6 +15,11 @@
         "chain": "optimism_goerli",
         "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
         "transactionHash": "0x0dd7c6b91f956cac6133eb53693f1c196a783e3b0d29b7fa091f8a58abd4dc01"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
+        "transactionHash": "0xba3a44fd67250ad59974d60bf4f6bc9305d4e213acc7404f976bbcf5e0a65880"
       }
     ],
     "leading": "888811",
@@ -42,6 +47,10 @@
       {
         "chain": "optimism_goerli",
         "transactionHash": "0xbab352a415293715f3eff8072fdb7bcb2176243ff1332c93af501e27084146d0"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "transactionHash": "0x3d7fb63c54613e3353a88d08fd115e4da149e50ae991b1540403f3b0e79d1d83"
       }
     ],
     "signature": "0x73d00d301ab80b6d40f00f5cd2efb20df2d3168aec86549a21510603298f308a7cec9e4dfb8d1ac2cc77390939fd90270ac598dcfcfeb468a4e17a16b90dfcb91c"
@@ -58,6 +67,10 @@
       {
         "chain": "optimism_goerli",
         "transactionHash": "0x58c333e251e82145d20859bf09880651af08a608c689e0f92bed937a39f2354d"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "transactionHash": "0xd645605126ee5f4f35f5acc916d14391b6d1c0a018f157d1bd8e9aff8be103d9"
       }
     ],
     "signature": "0xc552535567cffa91228a988131a2e8325fc509440bfcc6a90c93a2e496afa9b321f26e72fa85bf402c59c1067978fa43bc3daf6276f28e9cc9c22dcd1bb2f3bd1c"
@@ -74,6 +87,10 @@
       {
         "chain": "optimism_goerli",
         "transactionHash": "0x7b94d258403b1c823c20c27fd635cba191be35951b2d6a59ce2416b2bc44a533"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "transactionHash": "0xa46c1351f3db7c7dc27547ebd7fa6a38a4da8e2c6286b02bc58a34dbae942495"
       }
     ],
     "signature": "0x9964020197340749d51f118bfda07915b381e48baa023f1030a90574e9af948556bbd6d9bc6a0c84f70b5295402825ec07d0d10c91e9efea5c37029578c937a11c"
