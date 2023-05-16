@@ -3,23 +3,23 @@
     "artifact": "ethregistrar/BaseRegistrarImplementation.sol",
     "constructorArguments": [
       "<ENSRegistry>",
-      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+      "0x4e64474f406bfb88babba9d48fc501844ea2246343195cdcfe2fb6b54571b71b"
     ],
-    "contractAddress": "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
+    "contractAddress": "0xB02ED512702C46dbDB260053C97f79c3F467E39E",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
-        "transactionHash": "0x2fb3ee2f94d397269440e04fdaaaba5a9e25b9675b96558f85f9a1c68e51844c"
+        "contractAddress": "0xB02ED512702C46dbDB260053C97f79c3F467E39E",
+        "transactionHash": "0x65668da87961ff2fd72b9045ece6644a0304cd89fe223475ebcd4bc64c9a2bf9"
       }
     ],
-    "leading": "b02ed",
+    "leading": "B02ED",
     "name": "BoredTown_BaseRegistrarImplementation",
     "parsedArguments": [
-      "0x8888113d7ff563051463920edaa06c391a544543",
-      "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
+      "0x888811b3DFC94566Fc8F6aC5e86069981a50B490",
+      "0x4e64474f406bfb88babba9d48fc501844ea2246343195cdcfe2fb6b54571b71b"
     ],
-    "salt": "0x000000000000000000000000000000000000000074a4733ba571032f00e64bad",
+    "salt": "0x00000000000000000000000000000000000000000587f5370b2f22897d54d627",
     "type": "deployment"
   },
   {
@@ -34,9 +34,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0x24d7ac37e0e9e51b762239bdff7b863a436b35a4bab5f3aac1a2c3881d64ec76"
+        "transactionHash": "0x6b81a3bd7cc1ff768e301af9c96ff6788c84123f4591c3a958e27814a7846c98"
       }
     ],
-    "signature": "0x936b33e6f329f938d898b7a96260da2749c884b804e98d864a934364ac1aaa3e5bf4afb203798aaa83770215edd1422f7fa227515e5a240a4162faa34a84c08b1b"
+    "signature": "0x78202f887b60d03b4317d5deb109d162f2e7518d79cac786b0f58ce3573e160c1592042a118eb53b6847903df0d46c28ff3e7a8d57bb7a7ba12a7ebfbeae9c2f1c"
   }
 ]

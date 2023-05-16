@@ -4,20 +4,20 @@
     "constructorArguments": [
       "<Root>"
     ],
-    "contractAddress": "0x8888113d7ff563051463920edaa06c391a544543",
+    "contractAddress": "0x888811b3DFC94566Fc8F6aC5e86069981a50B490",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x8888113d7ff563051463920edaa06c391a544543",
-        "transactionHash": "0x70005d082e0d1b94e7831864352c9f55404ea2ba053e51337a640493bc6840d2"
+        "contractAddress": "0x888811b3DFC94566Fc8F6aC5e86069981a50B490",
+        "transactionHash": "0x68248b182fbf15f2a2cf1de9df987003a62770fc246d8d355fe273c9e8799c8d"
       }
     ],
     "leading": "888811",
     "name": "ENSRegistry",
     "parsedArguments": [
-      "0x888811d9e698fda43f33ba6a7d64b969c8eec00b"
+      "0x88881190D24e8ecA11F0262972cff8081b2AFc45"
     ],
-    "salt": "0x0000000000000000000000000000000000000000f1ed01b6b1b918a0f16b3ba6",
+    "salt": "0x0000000000000000000000000000000000000000d51e255825e9268ebf0304f8",
     "type": "deployment"
   }
 ]

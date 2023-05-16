@@ -9,25 +9,25 @@
       0,
       "op"
     ],
-    "contractAddress": "0x88881184bcb832883a865896bf7ddd8eeabb3926",
+    "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x88881184bcb832883a865896bf7ddd8eeabb3926",
-        "transactionHash": "0x1d9b63a9cd2b79d5ad1e05aa94e6f047169da8849366b77db5d47bc1e71822bd"
+        "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
+        "transactionHash": "0x0dd7c6b91f956cac6133eb53693f1c196a783e3b0d29b7fa091f8a58abd4dc01"
       }
     ],
     "leading": "888811",
     "name": "OptiDomains_WhitelistRegistrarController",
     "parsedArguments": [
-      "0x888811e41cd054ea5e8965532b5c82cec8963b11",
-      "0x888811fdd458bb7c2db8e674a3dfc1b6a8548ab3",
-      "0x888811ebd9d66b13a691bdf1d0aabd4bcb60f2da",
+      "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
+      "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
+      "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
       "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A",
       0,
       "op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000883450920faaed8932706161",
+    "salt": "0x0000000000000000000000000000000000000000a0a8f70089184057123b9e21",
     "type": "deployment"
   },
   {
@@ -41,10 +41,10 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0x2b8871457a4b103951509d5fafbf7e2818836a2ba242758d67a61dcd39d53253"
+        "transactionHash": "0xbab352a415293715f3eff8072fdb7bcb2176243ff1332c93af501e27084146d0"
       }
     ],
-    "signature": "0x8533d78fee884e8fc2db260a79b9503caa8f93ca52a2e32a77192059141abb696698eb5fc5ef6253b02521893bb3a2f118d07c6c05ed833ce9e4e69710222cbe1b"
+    "signature": "0x73d00d301ab80b6d40f00f5cd2efb20df2d3168aec86549a21510603298f308a7cec9e4dfb8d1ac2cc77390939fd90270ac598dcfcfeb468a4e17a16b90dfcb91c"
   },
   {
     "args": [
@@ -57,10 +57,10 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0xee823f5482d679ebda7cf7dafb25f98ea4923d6541c29d563c616c758fae2271"
+        "transactionHash": "0x58c333e251e82145d20859bf09880651af08a608c689e0f92bed937a39f2354d"
       }
     ],
-    "signature": "0x4b2630a9b678d954521976e88906023673ad1c2701874989fdb1aad738c98cba266252fbbd1da55e66fd6b7c45b07f71b5318c6d5c217b4d79b4c0341ce0ad491b"
+    "signature": "0xc552535567cffa91228a988131a2e8325fc509440bfcc6a90c93a2e496afa9b321f26e72fa85bf402c59c1067978fa43bc3daf6276f28e9cc9c22dcd1bb2f3bd1c"
   },
   {
     "args": [
@@ -73,9 +73,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0xce2954fd65728c2db64e1e0c19291c7cea9edc9091f603d21e443d600a001dee"
+        "transactionHash": "0x7b94d258403b1c823c20c27fd635cba191be35951b2d6a59ce2416b2bc44a533"
       }
     ],
-    "signature": "0x37c1579100c9e5d04e20d7b32b5873bf64602ae710316f335a129ad6dc53fa4b7da18f0ac3dbea46454b5166e94f84e087ae2f8219220ce57238c1b64c4064c51b"
+    "signature": "0x9964020197340749d51f118bfda07915b381e48baa023f1030a90574e9af948556bbd6d9bc6a0c84f70b5295402825ec07d0d10c91e9efea5c37029578c937a11c"
   }
 ]

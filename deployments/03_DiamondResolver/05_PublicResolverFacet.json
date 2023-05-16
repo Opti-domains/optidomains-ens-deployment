@@ -2,18 +2,18 @@
   {
     "artifact": "diamond-resolver/facets/public-resolver/PublicResolverFacet.sol",
     "constructorArguments": [],
-    "contractAddress": "0x8888117a3c9303e69a7f17128913fafb35f82e84",
+    "contractAddress": "0x888811B3c11F37a978eED349b174F7e9cCec14D7",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x8888117a3c9303e69a7f17128913fafb35f82e84",
-        "transactionHash": "0xcc44e2f51abb4cbd6f1a057edc7eaa6c30369ec469fa3d35dc0a65bd8c8397e2"
+        "contractAddress": "0x888811B3c11F37a978eED349b174F7e9cCec14D7",
+        "transactionHash": "0xe77e50f3e6855df089fdb589e5c6dfa93d7411e8a63eff568291a4fd6ad7382d"
       }
     ],
     "leading": "888811",
     "name": "PublicResolverFacet",
     "parsedArguments": [],
-    "salt": "0x000000000000000000000000000000000000000077e22936de75c4ba183d2baa",
+    "salt": "0x00000000000000000000000000000000000000007bc0a2123ef7ab5546977507",
     "type": "deployment"
   },
   {
@@ -58,9 +58,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0x7014edc6df254d00f5fa6e7d6cca3ff5301dee26aa033223040e62dc4e8279a4"
+        "transactionHash": "0xfe2d2aad8542fd23d9373496b72219abd2b3a67200077cee1577dc538b053733"
       }
     ],
-    "signature": "0x5df515316303ee8e9bfe705313c83cf3297b60247f08dba54a3ff6d71227d60f6b70cbb376a6eb1284d5aee6ac40aeeb2aa1dab4230c1985d8cf7e4b5151cb601c"
+    "signature": "0x61c47d840cc2445fc4b818f8a9c9651760f6872fa5625c3b2a1acd22a32c54cd6e4ee2af48128b8c230fea04b345af6d37dcd8a955de9413e0b193ba213d073a1c"
   }
 ]

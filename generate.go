@@ -164,9 +164,11 @@ func buildInitCode(dict map[string]string, action *DeploymentAction) (string, er
 func calculateAddressBySalt(initCodeHash []byte, salt string) string {
 	create2Hash := crypto.Keccak256Hash([]byte{0xff}, ImmutableCreate2FactoryAddress.Bytes(), common.FromHex(salt), initCodeHash)
 
-	deploymentAddress := "0x" + create2Hash.Hex()[len(create2Hash.Hex())-40:]
+	deploymentAddress := create2Hash.Hex()[len(create2Hash.Hex())-40:]
 
-	return deploymentAddress
+	address := common.HexToAddress("0x" + deploymentAddress)
+
+	return address.String()
 }
 
 func scanSaltAgent(ctx context.Context, initCodeHash []byte, leading string, ch chan string, wg *sync.WaitGroup) {

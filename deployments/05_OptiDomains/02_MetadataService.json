@@ -4,12 +4,12 @@
     "constructorArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
-    "contractAddress": "0x8888116cb5dc234a455fb1412c3b3125c65c9119",
+    "contractAddress": "0x88881191aba4DEFD926dE9708C457d092120beaa",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x8888116cb5dc234a455fb1412c3b3125c65c9119",
-        "transactionHash": "0x40da2f7574b5241fc82ae814087572e49a36c884cd1ab089b54e13ebefd8eccf"
+        "contractAddress": "0x88881191aba4DEFD926dE9708C457d092120beaa",
+        "transactionHash": "0x22e234482b85e7750fc709127cd3477592dda74bf9f78b6f56d52e129e87c61e"
       }
     ],
     "leading": "888811",
@@ -17,7 +17,7 @@
     "parsedArguments": [
       "https://metadata.opti.domains/token/domains/op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000029965eadbb7851419dcc851",
+    "salt": "0x0000000000000000000000000000000000000000f31895d0b096664c943193ed",
     "type": "deployment"
   }
 ]

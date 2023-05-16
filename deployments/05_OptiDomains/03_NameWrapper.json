@@ -7,23 +7,23 @@
       "<OptiDomains_MetadataService>",
       "op"
     ],
-    "contractAddress": "0x888811ebd9d66b13a691bdf1d0aabd4bcb60f2da",
+    "contractAddress": "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811ebd9d66b13a691bdf1d0aabd4bcb60f2da",
-        "transactionHash": "0xfcaf092e5aead2aaf351812742c68f1016a6823cc459b86c07018888c4f40f03"
+        "contractAddress": "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
+        "transactionHash": "0x4b94eb4a5777ea433e7be2d51ba8d5771e66eda5cc622f516974f5390a7b69e9"
       }
     ],
     "leading": "888811",
     "name": "OptiDomains_NameWrapper",
     "parsedArguments": [
-      "0x8888113d7ff563051463920edaa06c391a544543",
-      "0x888811e41cd054ea5e8965532b5c82cec8963b11",
-      "0x8888116cb5dc234a455fb1412c3b3125c65c9119",
+      "0x888811b3DFC94566Fc8F6aC5e86069981a50B490",
+      "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
+      "0x88881191aba4DEFD926dE9708C457d092120beaa",
       "op"
     ],
-    "salt": "0x0000000000000000000000000000000000000000552b26dc4a783e6b8d61efaa",
+    "salt": "0x0000000000000000000000000000000000000000cf75b0055ede7bc4ed311d02",
     "type": "deployment"
   },
   {
@@ -36,10 +36,10 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0x485418b937c5ed7ab41fb38f1ca8ccf1df37320639a72e9df025f94812ffd367"
+        "transactionHash": "0xa9c831034ae56519752fa84f1c2d86abf31ce158b7d1ca379e4938bbb539d0ae"
       }
     ],
-    "signature": "0x68c1188eccd7103bc6f9192e0e0af2782c40fb8d5d1a58e01cdd99c04ae2afb233efcb464b052495e9fb91ab908e50a568699f606b07f7d7b94558a3a7ce58971b"
+    "signature": "0xe01342c4a1652f89be4044310cdd33002ab6fec51e77738c7dc099825804a8121138b871edd1974fef78eeccdb3c75e6186c442625eb7b2c991ee60e539bc0e21c"
   },
   {
     "args": [
@@ -52,9 +52,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0xf1bb8879b5f80584851f05a508df5045afec76398c9ca548fc04f4e1ab48e850"
+        "transactionHash": "0x56cc1af6ba9f46cf539726c8b80dba296589adf7bbbf3db52f049dfee5035279"
       }
     ],
-    "signature": "0x413a1ea583b817a177b3fe4aad2764ecb5e88de4500cfa25a658f9dccc3b5ed013635c0a1c00bc9debed8c7a39e0f5d6954e3f5035a1e4db764da8b7f8422f601c"
+    "signature": "0x1e403973561b4e52ff8710b021c94af033cf05b13d3700f1efbe4d20c8a141915e8da655125b82b578ee523150d83e5ecee8c11b91824220ca6357bcba0d29dc1c"
   }
 ]

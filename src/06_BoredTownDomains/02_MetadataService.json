@@ -4,7 +4,7 @@
     "name": "BoredTown_MetadataService",
     "artifact": "wrapper/OptiDomainsMetadataService.sol",
     "constructorArguments": ["https://metadata.opti.domains/token/domains/town"],
-    "leading": "b02ed",
+    "leading": "B02ED",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   }

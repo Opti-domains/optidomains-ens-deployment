@@ -5,21 +5,21 @@
       "<Root>",
       "<NameWrapperRegistry>"
     ],
-    "contractAddress": "0x888811cc779f9eb17026c4d99f3b82e899098bf5",
+    "contractAddress": "0x888811Da0c852089cc8DFE6f3bAd190a46acaAE6",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811cc779f9eb17026c4d99f3b82e899098bf5",
-        "transactionHash": "0x1f079d4a867ff7fc29cc4f78c6774bb11782d5a6269d7762300bb2f126b7cb9d"
+        "contractAddress": "0x888811Da0c852089cc8DFE6f3bAd190a46acaAE6",
+        "transactionHash": "0x42e554ab83e17b3494592ee6987fa52cc9b28f4099a7e07dbdb5748c4c649d96"
       }
     ],
     "leading": "888811",
     "name": "DiamondResolver",
     "parsedArguments": [
-      "0x888811d9e698fda43f33ba6a7d64b969c8eec00b",
-      "0x888811e207e33f4eaf8169253dcecd8f0b86b8c3"
+      "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
+      "0x888811E08f362edB8B1BF4A52c08fED2A58a427E"
     ],
-    "salt": "0x00000000000000000000000000000000000000001b2a3f2513044eb2150b3727",
+    "salt": "0x0000000000000000000000000000000000000000d743ac3c0bdc5257c7ee92fa",
     "type": "deployment"
   }
 ]

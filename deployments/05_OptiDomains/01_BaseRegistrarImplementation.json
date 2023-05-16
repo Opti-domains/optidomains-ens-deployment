@@ -5,21 +5,21 @@
       "<ENSRegistry>",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "contractAddress": "0x888811e41cd054ea5e8965532b5c82cec8963b11",
+    "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811e41cd054ea5e8965532b5c82cec8963b11",
-        "transactionHash": "0xc011ee46cb89b6858d6547a1724538458e128d25e25ba2ce769b4ca4aa3073e5"
+        "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
+        "transactionHash": "0x0b9c42856f684cb252e7f159a4ead5c05cd6c430e87e5ee91cbc4e390b77fe36"
       }
     ],
     "leading": "888811",
     "name": "OptiDomains_BaseRegistrarImplementation",
     "parsedArguments": [
-      "0x8888113d7ff563051463920edaa06c391a544543",
+      "0x888811b3DFC94566Fc8F6aC5e86069981a50B490",
       "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"
     ],
-    "salt": "0x000000000000000000000000000000000000000062c7bd3f7ed3935e1179bb9c",
+    "salt": "0x00000000000000000000000000000000000000006c9606ba80568c15626cd553",
     "type": "deployment"
   },
   {
@@ -34,9 +34,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0xe8208c7250cfde8a3a61ca1a203e723e8a0397f59d7b46f974461d41c6a15bd9"
+        "transactionHash": "0x08ae923d9e56d8e8604a7031cb07914996e53c0d25f2f4c78f06a8bc4497a272"
       }
     ],
-    "signature": "0x12546539c4f5a9ade5cc50333af08d085844a866fe0d7ea104aba5fe155106c817b59b7cf72d9a45ecffb83597f45b8f69ed138ad54ec82ac0b58466eb8dba871b"
+    "signature": "0x3bcfffa155435eab13040a0a334e5c7cb95404bd889c1383e80b47b740c9d94b1deb87e3c5ed9d2664dcdfe5bef49f71f7dc5eb74c59c890af962fd087f540931c"
   }
 ]

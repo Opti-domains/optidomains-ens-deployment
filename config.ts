@@ -19,4 +19,9 @@ export const CHAINS = {
     rpc: `https://rpc.public.zkevm-test.net`,
     chainId: 1442,
   },
+  xdc_testnet: {
+    type: "evm",
+    rpc: "https://rpc.apothem.network",
+    chainId: 51,
+  }
 };

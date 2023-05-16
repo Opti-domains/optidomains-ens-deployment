@@ -2,18 +2,18 @@
   {
     "artifact": "diamond-resolver/facets/auth/RegistryWhitelistAuthFacet.sol",
     "constructorArguments": [],
-    "contractAddress": "0x888811b8c883c76d10840cc6fce1154e541653b6",
+    "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811b8c883c76d10840cc6fce1154e541653b6",
-        "transactionHash": "0xc6d6120750e23eb0917e329c15335b8a6f3a2799fb548890cdc0768c06497125"
+        "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
+        "transactionHash": "0x36c19211451062016cd70fd1901e0ee60267c87be5f445be21bb2792215938b3"
       }
     ],
     "leading": "888811",
     "name": "RegistryWhitelistAuthFacet",
     "parsedArguments": [],
-    "salt": "0x00000000000000000000000000000000000000009e0cbd46f9cd2da12d3abdc4",
+    "salt": "0x0000000000000000000000000000000000000000773528b51fb3402cf634face",
     "type": "deployment"
   },
   {
@@ -37,9 +37,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0x3b676068322e43b4e0e925bbe8773675104dad73556bd28c4864fee0698fd475"
+        "transactionHash": "0x2b0f63665a3a181b9f0aa1be8278484141db6b4dd7147e12f974456935437a02"
       }
     ],
-    "signature": "0x475eee2b49cc2a97faaeb12cde9e0fb8681a4908da15224c5016f93171b977d20b9119beca7ea70dd098de6e591d6c49ea592e401d180bf5845a2265295371db1b"
+    "signature": "0xa3089baf1baeb27da4bfa82df47331c8b3c154c9aa82684027df7f3c749c968f499459709c9d736f881bad781460f9b752fe215a9063e051fea457e19405bae81b"
   }
 ]

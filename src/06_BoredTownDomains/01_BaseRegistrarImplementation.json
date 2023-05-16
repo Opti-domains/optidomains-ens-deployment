@@ -3,8 +3,8 @@
     "type": "deployment",
     "name": "BoredTown_BaseRegistrarImplementation",
     "artifact": "ethregistrar/BaseRegistrarImplementation.sol",
-    "constructorArguments": ["<ENSRegistry>", "0x070904f45402bbf3992472be342c636609db649a8ec20a8aaa65faaafd4b8701"],
-    "leading": "b02ed",
+    "constructorArguments": ["<ENSRegistry>", "0x4e64474f406bfb88babba9d48fc501844ea2246343195cdcfe2fb6b54571b71b"],
+    "leading": "B02ED",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   },

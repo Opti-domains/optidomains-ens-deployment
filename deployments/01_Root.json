@@ -4,12 +4,12 @@
     "constructorArguments": [
       "<OWNER>"
     ],
-    "contractAddress": "0x888811d9e698fda43f33ba6a7d64b969c8eec00b",
+    "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x888811d9e698fda43f33ba6a7d64b969c8eec00b",
-        "transactionHash": "0xa9f87570898b9025dfec5c0e8f99665aa5da1dbf71882c331b14e49318b4f348"
+        "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
+        "transactionHash": "0xd10cfac9215f6966674637167318a72be6bdc34d68f32c3cf8fbaed64de87fa8"
       }
     ],
     "leading": "888811",
@@ -17,24 +17,24 @@
     "parsedArguments": [
       "0x88881111a0358cdf10Bc095aa14B95936aDA741f"
     ],
-    "salt": "0x000000000000000000000000000000000000000078978633bd8be159bcadb190",
+    "salt": "0x00000000000000000000000000000000000000004f0da10734ed51bc05a223e3",
     "type": "deployment"
   },
   {
     "artifact": "Multicall3.sol",
     "constructorArguments": [],
-    "contractAddress": "0x8888111bfdd9d5b339d0bc2ef82b409630a8350c",
+    "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0x8888111bfdd9d5b339d0bc2ef82b409630a8350c",
-        "transactionHash": "0x0e2cab8568351aab944d814cab438c152a7e0468904dc58a88ec7452be663a61"
+        "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
+        "transactionHash": "0xc64168cd832b73fa5728729a7d83150a9a31945fb6c7f4678d3e0c30e0ddf6c3"
       }
     ],
     "leading": "888811",
     "name": "Multicall",
     "parsedArguments": [],
-    "salt": "0x0000000000000000000000000000000000000000683d7e7670143c030ece0029",
+    "salt": "0x00000000000000000000000000000000000000008cbe806d464f6a081dadecd2",
     "type": "deployment"
   }
 ]

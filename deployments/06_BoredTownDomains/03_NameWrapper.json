@@ -7,23 +7,23 @@
       "<BoredTown_MetadataService>",
       "town"
     ],
-    "contractAddress": "0xb02ed7fa4d37c88742d2f20a9a281ae94ce3438a",
+    "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0xb02ed7fa4d37c88742d2f20a9a281ae94ce3438a",
-        "transactionHash": "0xdbb36fc4d1c98a81c91354e1d2b246c62c5ca7be3ed0553de298e93e632e78bc"
+        "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
+        "transactionHash": "0x41db8f670fedba0ae19f8cd999681ed37bc77ef60bc5de4b52807dd5a29f5224"
       }
     ],
-    "leading": "b02ed",
+    "leading": "B02ED",
     "name": "BoredTown_NameWrapper",
     "parsedArguments": [
-      "0x8888113d7ff563051463920edaa06c391a544543",
-      "0xb02ed9b5a05987865f8e84aa06aad47602a8d272",
-      "0xb02ed48e9d264a5be6a0dc59103f7f28917dcb68",
+      "0x888811b3DFC94566Fc8F6aC5e86069981a50B490",
+      "0xB02ED512702C46dbDB260053C97f79c3F467E39E",
+      "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
       "town"
     ],
-    "salt": "0x0000000000000000000000000000000000000000edf61251e92ab2926b978ced",
+    "salt": "0x000000000000000000000000000000000000000034fb04beafe6843eb4953ba2",
     "type": "deployment"
   },
   {
@@ -36,10 +36,10 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0x330bf49d261b1ff99cda82bed5069d13178f7dd3ab99d1bdb80014795add9e40"
+        "transactionHash": "0x6dee2d858b106f199c07fa47689ecf16e15692f5a22caeb864b3826182998afd"
       }
     ],
-    "signature": "0xd249c8e2bbbade9a5c8d4e8839bdb9cf261eb2ced9393c83124030b3b831f52d5e1b3f7f9bb39943ad380f11c3a0c2e8b9f052d5261543872db2d02aac78db081b"
+    "signature": "0x92bf7101aea83e967a0e8ed736d71e8bc34ce8bee1c66e9a80ad0e828ea0d8fa5feef176c8aabf0aad6cfc295b863441d60bdb586da5ca5359c3df558d216af91c"
   },
   {
     "args": [
@@ -52,9 +52,9 @@
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "transactionHash": "0xcc861d4bfb02c5bfc987823df6938e7506094558ca030057c77e1c0722c2f1d6"
+        "transactionHash": "0x117a363c7f44c8d98a46d6e10c4a27bd702662f5bb71b27b15eefdde2e513210"
       }
     ],
-    "signature": "0x7ea2426022ba702da715562e994ff23e6cc1f5675879d471c71cd7b43de5147a3834c46ec9de33273ef3ea14ef63f0a5b415cfbfe28fa6bb05bf08f6bd8f8a781c"
+    "signature": "0xdc30d52ae61972f605821fde752dd7d2c8607f9c001e2fa3668cef7e5583308d3869709e62bb3e0c8438e21cb9f3ae2fa1a2177020df42c849e5737410d4e7761c"
   }
 ]

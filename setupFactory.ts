@@ -31,6 +31,8 @@ async function main() {
   // Auto-calculate the gas price
   const gasPrice = await provider.getGasPrice();
 
+  let nonce = await wallet.getTransactionCount();
+
   if (!args[1] || args[1] == 'FACTORY') {
     const balance = await provider.getBalance(KEYLESS_ADDRESS);
 
@@ -50,7 +52,6 @@ async function main() {
 
     // Deploy INEFFICIENT_IMMUTABLE_CREATE2_FACTORY
     {
-      const nonce = await wallet.getTransactionCount();
       const gasLimit = 2000000
       const rawTransaction = {
         nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
@@ -63,11 +64,11 @@ async function main() {
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
       console.log('INEFFICIENT_IMMUTABLE_CREATE2_FACTORY:', transactionResponse.hash);
+      nonce++
     }
     
     // Deploy IMMUTABLE_CREATE2_FACTORY
     {
-      const nonce = await wallet.getTransactionCount();
       const gasLimit = 2000000
       const rawTransaction = {
         nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
@@ -80,13 +81,13 @@ async function main() {
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
       console.log('IMMUTABLE_CREATE2_FACTORY:', transactionResponse.hash);
+      nonce++
     }
   }
 
   if (!args[1] || args[1] == 'EAS') {
     // Deploy SCHEMA_REGISTRY
     {
-      const nonce = await wallet.getTransactionCount();
       const gasLimit = 2000000
       const rawTransaction = {
         nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
@@ -102,11 +103,11 @@ async function main() {
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
       console.log('SCHEMA_REGISTRY:', transactionResponse.hash);
+      nonce++
     }
 
     // Deploy EAS
     {
-      const nonce = await wallet.getTransactionCount();
       const gasLimit = 4000000
       const rawTransaction = {
         nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
@@ -122,6 +123,7 @@ async function main() {
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
       console.log('EAS:', transactionResponse.hash);
+      nonce++
     }
   }
 
