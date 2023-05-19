@@ -15,6 +15,16 @@
         "chain": "polygonzkevm_goerli",
         "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
         "transactionHash": "0x6680ea085dd5d57761e11420a3fd602fd4aaf9737ec7ab4ff540fca4a6811fc7"
+      },
+      {
+        "chain": "xdc_testnet",
+        "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+        "transactionHash": "0x0a2cccd87fbabc391f5878ec3cc7979d6a67d41c7334309a43fec67b507226a9"
+      },
+      {
+        "chain": "zksync_goerli",
+        "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+        "transactionHash": "0x5939ad014f1b0c2e2599aa7037bfd8eee0a7c8b5163fbb83a008cc2820528d34"
       }
     ],
     "leading": "888811",

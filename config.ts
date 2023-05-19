@@ -19,9 +19,14 @@ export const CHAINS = {
     rpc: `https://rpc.public.zkevm-test.net`,
     chainId: 1442,
   },
+  zksync_goerli: {
+    type: "evm",
+    rpc: `https://testnet.era.zksync.dev`,
+    chainId: 280,
+  },
   xdc_testnet: {
     type: "evm",
-    rpc: "https://rpc.apothem.network",
+    rpc: "https://erpc.apothem.network",
     chainId: 51,
   }
 };

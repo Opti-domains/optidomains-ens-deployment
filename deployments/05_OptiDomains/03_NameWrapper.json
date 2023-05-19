@@ -18,6 +18,11 @@
         "chain": "polygonzkevm_goerli",
         "contractAddress": "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
         "transactionHash": "0x4afcc66f3b02be3ec6e0fabdf134ed8731638f1c37c7647549fa728f2345e917"
+      },
+      {
+        "chain": "xdc_testnet",
+        "contractAddress": "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
+        "transactionHash": "0xb0c62437cd93faff90ef6b0635999cdf04bccbba1ce92e73de4a229f640cafb0"
       }
     ],
     "leading": "888811",
@@ -46,6 +51,10 @@
       {
         "chain": "polygonzkevm_goerli",
         "transactionHash": "0xbcb413de3d73486a9ac2b91cb57b4c878b247aa560ef801caba6b4102f2d4dd1"
+      },
+      {
+        "chain": "xdc_testnet",
+        "transactionHash": "0xec42bebdd39e31003f92ad3da5de5514068e1908f65962c6d9247368997f737a"
       }
     ],
     "signature": "0xe01342c4a1652f89be4044310cdd33002ab6fec51e77738c7dc099825804a8121138b871edd1974fef78eeccdb3c75e6186c442625eb7b2c991ee60e539bc0e21c"
@@ -66,6 +75,10 @@
       {
         "chain": "polygonzkevm_goerli",
         "transactionHash": "0xbddf1ebaec81ecf71b02b056451b816b33724f6e4a090ebd917430016e72ddf4"
+      },
+      {
+        "chain": "xdc_testnet",
+        "transactionHash": "0xb19a2ea7d758af2d4fe4c3ff8816222a69a403398675cad46a160c9880493a82"
       }
     ],
     "signature": "0x1e403973561b4e52ff8710b021c94af033cf05b13d3700f1efbe4d20c8a141915e8da655125b82b578ee523150d83e5ecee8c11b91824220ca6357bcba0d29dc1c"

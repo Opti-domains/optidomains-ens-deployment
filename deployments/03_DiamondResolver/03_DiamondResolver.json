@@ -16,6 +16,11 @@
         "chain": "polygonzkevm_goerli",
         "contractAddress": "0x888811Da0c852089cc8DFE6f3bAd190a46acaAE6",
         "transactionHash": "0xd7565a82452de1cd351fedfe325814fef8b6a9492c123355a3977f0f1b104e02"
+      },
+      {
+        "chain": "xdc_testnet",
+        "contractAddress": "0x888811Da0c852089cc8DFE6f3bAd190a46acaAE6",
+        "transactionHash": "0x91723277a5ca757b479a4c7600a7599d85659ce29afbfbe460088da803e14c8e"
       }
     ],
     "leading": "888811",

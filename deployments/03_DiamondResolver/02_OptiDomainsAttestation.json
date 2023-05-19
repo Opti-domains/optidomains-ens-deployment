@@ -16,6 +16,16 @@
         "chain": "polygonzkevm_goerli",
         "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
         "transactionHash": "0x739927654b6a303ecde83cbe09aa6688ec23065724d9a4e1439650878a78af6e"
+      },
+      {
+        "chain": "xdc_testnet",
+        "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+        "transactionHash": "0x49b04729dfab8599af5732594fedd9c71e4a3cbaba053bcd2f38e1bbbc0849f5"
+      },
+      {
+        "chain": "zksync_goerli",
+        "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+        "transactionHash": "0xa06ea7432a418aa68eef3e15f9cd5b21b60a6de32589aeac5214b5eb68bf2648"
       }
     ],
     "leading": "888811",
@@ -29,10 +39,10 @@
   },
   {
     "args": [
-      "<OptiDomainsAttestation>"
+      "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3"
     ],
     "selector": "function setAttestation(address)",
-    "target": "<NameWrapperRegistry>",
+    "target": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
     "type": "rootTx",
     "deployments": [
       {
@@ -42,6 +52,10 @@
       {
         "chain": "polygonzkevm_goerli",
         "transactionHash": "0xcac8b57d74a622336aafc331785ceacd71a335c43cdb6bc7f2bcd6fb5be26ce8"
+      },
+      {
+        "chain": "xdc_testnet",
+        "transactionHash": "0xd3402938ce3dcf8d96aae74721ef27e38b0184e5bebce0d2ee1eefad6dfa8415"
       }
     ],
     "signature": "0x3cf20efce6ac90c211ba58d0af7b5448ed63bd23c85cd3984b958deb964013381bd47ed19d2e04540750c2da74003ec4c76dd819bb9786b60fff6dce24613cf81c"
@@ -52,7 +66,7 @@
       1
     ],
     "selector": "function activate(address,uint256)",
-    "target": "<OptiDomainsAttestation>",
+    "target": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
     "type": "rootTx",
     "deployments": [
       {
@@ -62,6 +76,10 @@
       {
         "chain": "polygonzkevm_goerli",
         "transactionHash": "0x793944dc77c369a21e1029635b29d8e83da5a361cc947d7adb11aed328ceedd4"
+      },
+      {
+        "chain": "xdc_testnet",
+        "transactionHash": "0x829ed19254d65afa83527ae07e20039991d8e2fc1d6fa60f5a3802902fec4ecf"
       }
     ],
     "signature": "0xbec61f2d5e58f99f4cddc12f76a46fdf851777f91adfcc4c3ef270e69310a1a440d5e46f937dcf41c9924e3aa2e77bc0a3136ef794d650048fbac92305d1d05e1c"
@@ -72,7 +90,7 @@
       2
     ],
     "selector": "function activate(address,uint256)",
-    "target": "<OptiDomainsAttestation>",
+    "target": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
     "type": "rootTx",
     "deployments": [
       {
@@ -82,6 +100,10 @@
       {
         "chain": "polygonzkevm_goerli",
         "transactionHash": "0x8265adb54a2bc09798e037a1e21dcc0dbb3cc8f97a6c1ccf487e50b33dbcf54e"
+      },
+      {
+        "chain": "xdc_testnet",
+        "transactionHash": "0x5131dae6b7232be155f0172458e79974a40d1f1874f29bc7586df32f13c36d99"
       }
     ],
     "signature": "0xa9304ac757945d7a708d72760347c6a7d0cefdb4b73a47777b21cfa7f3a7ba0761e9277068b66f517c96e868da6e798b03d20eee4d491b4d224c2125be0223b51b"
