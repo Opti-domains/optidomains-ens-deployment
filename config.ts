@@ -28,5 +28,10 @@ export const CHAINS = {
     type: "evm",
     rpc: "https://erpc.apothem.network",
     chainId: 51,
+  },
+  gnosis_testnet: {
+    type: "evm",
+    rpc: "https://rpc.chiadochain.net",
+    chainId: 10200,
   }
 };

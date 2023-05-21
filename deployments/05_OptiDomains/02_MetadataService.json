@@ -20,6 +20,11 @@
         "chain": "xdc_testnet",
         "contractAddress": "0x88881191aba4DEFD926dE9708C457d092120beaa",
         "transactionHash": "0x37f6014d390f9bdb25a33a9b9d13390615f86f7604848380aa776b4371f959cb"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0x88881191aba4DEFD926dE9708C457d092120beaa",
+        "transactionHash": "0xc6d03e538360ffad55303d84a048ce4593bb8e72ac684e15b21c2a1f4a32f229"
       }
     ],
     "leading": "888811",

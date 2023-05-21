@@ -25,6 +25,11 @@
         "chain": "zksync_goerli",
         "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
         "transactionHash": "0xfac3c2b96a3426d49b7e5e046db10c834fae5efa2bf93a6824f0ed1fcbfb733e"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
+        "transactionHash": "0x9ae3975308fb6d55d32ee6a2cd584a75b6b2654b649bcc8f94d82472dac3bbbe"
       }
     ],
     "leading": "888811",
@@ -59,6 +64,11 @@
         "chain": "zksync_goerli",
         "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
         "transactionHash": "0x58f06336e8938de9964dcc40250db5c0e10b6c72dbb87fe949aff97c83cfa106"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
+        "transactionHash": "0x8c3eb9890d7c8db9075b6a220b7b7d2a38543f8217a22553ea54f3c61bca81a2"
       }
     ],
     "leading": "888811",

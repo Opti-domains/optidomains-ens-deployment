@@ -20,6 +20,11 @@
         "chain": "xdc_testnet",
         "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
         "transactionHash": "0x360d0b9642ffcdb80cfc91ea50e9ea4ef76760ab9b46cb24ed76fb05b427e499"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
+        "transactionHash": "0xcad8590bcad53c147eb10de178c118690c1b36e4e67630d98cbd3be9b9e224cf"
       }
     ],
     "leading": "B02ED",

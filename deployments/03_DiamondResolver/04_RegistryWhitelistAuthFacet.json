@@ -18,6 +18,11 @@
         "chain": "xdc_testnet",
         "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
         "transactionHash": "0x039f81aa4a36e08339c2db0c42f07ff53742d454d4088d3fb438b6110c9f039b"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
+        "transactionHash": "0x780bfbab38942816f3e15a06c0194470e74f50e82830edbba95549c403f3c880"
       }
     ],
     "leading": "888811",
@@ -56,6 +61,10 @@
       {
         "chain": "xdc_testnet",
         "transactionHash": "0x5f9dd125b129d4edba7077f6e826f935e09801766f6167121fd18a95eabc6cfc"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "transactionHash": "0x5a2e8d25f0c0eb6f887234f035b44c79ae789a2bfff35a831af30b441e7ff302"
       }
     ],
     "signature": "0xa3089baf1baeb27da4bfa82df47331c8b3c154c9aa82684027df7f3c749c968f499459709c9d736f881bad781460f9b752fe215a9063e051fea457e19405bae81b"

@@ -33,7 +33,7 @@ function recursiveReadFiles(dir: string): string[] {
         const itemFormattedStrings = jsonData.map(item => {
           const formattedArguments = item.parsedArguments.map(wrapWithQuotesIfNeeded);
           const argumentsString = formattedArguments.join(" ");
-          return `#${item.name}\nnpx hardhat verify ${item.contractAddress} ${argumentsString} --network $1\n`;
+          return `# ${item.name}\nnpx hardhat verify ${item.contractAddress} ${argumentsString} --network $1\n`;
         });
         formattedStrings.push(...itemFormattedStrings);
       } catch (error) {

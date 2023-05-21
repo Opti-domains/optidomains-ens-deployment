@@ -1,0 +1,8 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_WhitelistRegistrarController>",
+    "selector": "function setBaseFuses(uint16)",
+    "args": [5]
+  }
+]

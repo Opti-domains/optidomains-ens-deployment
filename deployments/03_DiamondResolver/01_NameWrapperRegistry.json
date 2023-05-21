@@ -25,6 +25,11 @@
         "chain": "zksync_goerli",
         "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
         "transactionHash": "0x5939ad014f1b0c2e2599aa7037bfd8eee0a7c8b5163fbb83a008cc2820528d34"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+        "transactionHash": "0xa0b6f43dc8efa42d072d39b69c3f0fe8ba3ffd80d9550c1a6b863a971ade4371"
       }
     ],
     "leading": "888811",

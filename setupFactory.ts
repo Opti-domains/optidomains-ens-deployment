@@ -87,24 +87,24 @@ async function main() {
 
   if (!args[1] || args[1] == 'EAS') {
     // Deploy SCHEMA_REGISTRY
-    // {
-    //   const gasLimit = 2000000
-    //   const rawTransaction = {
-    //     nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
-    //     gasPrice, // Gas price (adjust as needed)
-    //     gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
-    //     to: IMMUTABLE_ADDRESS, // Contract address
-    //     value: '0x0', // Amount of Ether to send (0 for contract interactions)
-    //     data: '0x64e03087' + ethers.utils.defaultAbiCoder.encode(
-    //       ['bytes32', 'bytes'],
-    //       [SCHEMA_REGISTRY_SALT, SCHEMA_REGISTRY_PAYLOAD],
-    //     ).substring(2), // Encoded contract function data
-    //   };
-    //   const signedTransaction = await wallet.signTransaction(rawTransaction);
-    //   const transactionResponse = await provider.sendTransaction(signedTransaction);
-    //   console.log('SCHEMA_REGISTRY:', transactionResponse.hash);
-    //   nonce++
-    // }
+    {
+      const gasLimit = 2000000
+      const rawTransaction = {
+        nonce: '0x'+nonce.toString(16), // Nonce of the sender's address
+        gasPrice, // Gas price (adjust as needed)
+        gasLimit: '0x'+gasLimit.toString(16), // Gas limit (adjust as needed)
+        to: IMMUTABLE_ADDRESS, // Contract address
+        value: '0x0', // Amount of Ether to send (0 for contract interactions)
+        data: '0x64e03087' + ethers.utils.defaultAbiCoder.encode(
+          ['bytes32', 'bytes'],
+          [SCHEMA_REGISTRY_SALT, SCHEMA_REGISTRY_PAYLOAD],
+        ).substring(2), // Encoded contract function data
+      };
+      const signedTransaction = await wallet.signTransaction(rawTransaction);
+      const transactionResponse = await provider.sendTransaction(signedTransaction);
+      console.log('SCHEMA_REGISTRY:', transactionResponse.hash);
+      nonce++
+    }
 
     // Deploy EAS
     {

@@ -20,6 +20,11 @@
         "chain": "xdc_testnet",
         "contractAddress": "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
         "transactionHash": "0x31cc519290c1c0d0bbdc216cb353c2cb5454105e9254ea11fda43d4878a58515"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "contractAddress": "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
+        "transactionHash": "0xd421dfc8a22d26c9c5113c803f9fe00d51f93feed96243fce04963014f883612"
       }
     ],
     "leading": "888811",
@@ -49,6 +54,10 @@
       {
         "chain": "xdc_testnet",
         "transactionHash": "0x03961be25dc37310289e26da9253f0b35e0dc287466481cf32750dd2a50eb193"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "transactionHash": "0xbada291a654eb2edff9bed34bdf58cdccbf25ddcf0bfeb6f9d17c83e585ec5f7"
       }
     ],
     "signature": "0x50572d88fa4c89021f305c2d933f57982d870211591d8d415a92681752ffd9806e710a59ebb417194165667354cb46af21cc73b58c0dabb351784ff648a1c3e91b"
@@ -74,6 +83,10 @@
       {
         "chain": "xdc_testnet",
         "transactionHash": "0x93d86b58ff67b05bb751c41c2c675c0104bdd105046e798b7960cfa09d11d05d"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "transactionHash": "0x0968bc5f36d7c7790f976ab61ff2786a428bc325f06cadd7b65f3e1e37e6f8fa"
       }
     ],
     "signature": "0x5b4ceed9540dd4720186011656f8c3c218746676b17086d5c8b49f7b32fa700d31e2f2cbd38d9391f7bd96ecf9ebcab95204ca07d308d75e398064afdb30fe741b"
@@ -99,6 +112,10 @@
       {
         "chain": "xdc_testnet",
         "transactionHash": "0xc213ab4c8da835491b1d80338afa875a1c829393dec4d702001bc2483700b4e8"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "transactionHash": "0x0158655d4b46726726a585357aca20ffd8afbcabc224c48ab42f238021f11b0d"
       }
     ],
     "signature": "0x380566749fa507ed3f26bb2fd50902a841fa6bb9ea5b89a27093447ce16d66b014f151d9e1a17da493745fbdf55ce4d641c0a3c9bfe756472ca711e13d9ed45f1b"
@@ -123,6 +140,10 @@
       {
         "chain": "xdc_testnet",
         "transactionHash": "0x491ee45d3749be29fa47079675c62f8f8199c99f547ccacbc81043de5e7185a7"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "transactionHash": "0x6ee0efa7849c036fecb231167b8ba4402a98c1b05d9fecc0acf708514fdda446"
       }
     ],
     "signature": "0x7ef425302efb21f586368f4f2c7c297c7641cb8e4b1c00f981d681b4bbe25e2c531c217416786807345279fff0480eed8737fde8447fbcd538eb48239d41d61f1b"

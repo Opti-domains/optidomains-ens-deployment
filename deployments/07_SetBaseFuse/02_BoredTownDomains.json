@@ -1,0 +1,25 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_WhitelistRegistrarController>",
+    "selector": "function setBaseFuses(uint16)",
+    "args": [
+      5
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x4a8b59e3e8d1ba356b2276942d010ff54791e45457c2d8b1060296c85ecda67d"
+      },
+      {
+        "chain": "polygonzkevm_goerli",
+        "transactionHash": "0xbd2d17607f25c377960b57d21d66a338006b27d7575a51440693ec1c57aaaff4"
+      },
+      {
+        "chain": "gnosis_testnet",
+        "transactionHash": "0xe7bdd9906606f3d35856452c1c9b2e43eb72383210a1d679290dbd7a19d4ce6f"
+      }
+    ],
+    "signature": "0x6c3a5899e72de24890cda15661feee5b08e72d33234668e87775d897fdf6133d045c1a3ddfe1e7aa3040d9ddfa3efac483fde29c0f589bbb3fe441cb99d376c31b"
+  }
+]
