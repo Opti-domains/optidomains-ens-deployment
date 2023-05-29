@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "name": "AxelarProposalController",
+    "artifact": "ethregistrar/AxelarProposalController.sol",
+    "constructorArguments": ["<ENSRegistry>"],
+    "leading": "a881",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]

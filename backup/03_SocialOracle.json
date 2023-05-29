@@ -1,0 +1,51 @@
+[
+  {
+    "artifact": "attestation/OptiDomainsSocialOracle.sol",
+    "constructorArguments": [
+      "<OPERATOR>",
+      "<OptiDomainsAttestation>"
+    ],
+    "contractAddress": "0x8888117aCB058d3EBf976bb327997Ec5Fa8fC115",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x8888117aCB058d3EBf976bb327997Ec5Fa8fC115",
+        "transactionHash": "0x3d48c6437b3bebfa243894aa0e6dedaecf6b41f14d8ae94f60d67c35da956c71"
+      }
+    ],
+    "leading": "888811",
+    "name": "OptiDomainsSocialOracle",
+    "parsedArguments": [
+      "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A",
+      "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3"
+    ],
+    "salt": "0x000000000000000000000000000000000000000099b1120d13e8f06f99181dc9",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      [
+        [
+          "<OptiDomainsSocialOracle>",
+          0,
+          [
+            "0xfd828c6c",
+            "0xd043e7eb"
+          ]
+        ]
+      ],
+      "0x0000000000000000000000000000000000000000",
+      "0x"
+    ],
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "target": "<DiamondResolver>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x21f8edf08d5cd43656e06f311b8fcd849e859b289b179cdbaa9660ead50a7a58"
+      }
+    ],
+    "signature": "0x9530af2375eba2070b13b9eccc38e4cf416f0558f6de39bb82e181514be851981eb53cc1e69d392e91f3ed1670c3fa3c5ea01780d614e78bc51ada8fbf5a129b1c"
+  }
+]

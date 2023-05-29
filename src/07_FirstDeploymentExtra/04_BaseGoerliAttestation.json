@@ -1,0 +1,8 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<OptiDomainsAttestation>",
+    "selector": "function activate(address,uint256)",
+    "args": ["0xAcfE09Fd03f7812F022FBf636700AdEA18Fd2A7A", 2]
+  }
+]

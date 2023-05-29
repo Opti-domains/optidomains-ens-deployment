@@ -23,6 +23,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
         "transactionHash": "0x780bfbab38942816f3e15a06c0194470e74f50e82830edbba95549c403f3c880"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
+        "transactionHash": "0x132a988fed96c7761c46e3570c289067784be8aa1067e10591c4149655e80b39"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
+        "transactionHash": "0xc6b9b7f3f822bb470a5b0bf6f8e39734547f537618aefc76112ccb5f4d713af6"
       }
     ],
     "leading": "888811",
@@ -46,9 +56,6 @@
       "<DiamondResolver>",
       "0x717dbd4c00000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000125f3670400000000000000000000000000000000000000000000000000000000"
     ],
-    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
-    "target": "<DiamondResolver>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -65,8 +72,19 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x5a2e8d25f0c0eb6f887234f035b44c79ae789a2bfff35a831af30b441e7ff302"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x5426bf5cad8b0728db4d93f5b3eb3ac84c14f7f65d2244601997be1c0f90b326"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0xd120e4c9a8e79b3f5af6044d99d260e2d234827c3be04b4136e5af913688eb02"
       }
     ],
-    "signature": "0xa3089baf1baeb27da4bfa82df47331c8b3c154c9aa82684027df7f3c749c968f499459709c9d736f881bad781460f9b752fe215a9063e051fea457e19405bae81b"
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "signature": "0xa3089baf1baeb27da4bfa82df47331c8b3c154c9aa82684027df7f3c749c968f499459709c9d736f881bad781460f9b752fe215a9063e051fea457e19405bae81b",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
   }
 ]

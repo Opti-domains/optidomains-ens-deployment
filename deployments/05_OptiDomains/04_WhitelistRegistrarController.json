@@ -30,6 +30,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
         "transactionHash": "0x6ae7e092f3de259f93981b24070c9d711f481df0bc8dc002089546d572c6794a"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
+        "transactionHash": "0x3af08fc6e43039f7d7e74d64e9445499705efd6912788ec8802b58d7c4a16976"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
+        "transactionHash": "0xfe610a2ad4542d881dde61c74602b4a3dcc15d1e1b3e9b902b7ccd4c654d747f"
       }
     ],
     "leading": "888811",
@@ -50,9 +60,6 @@
       "<OptiDomains_WhitelistRegistrarController>",
       true
     ],
-    "selector": "function setController(address,bool)",
-    "target": "<OptiDomains_NameWrapper>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -69,18 +76,26 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x1a0d963365f6b678874648f6e6b8b54efbd0d31cb40434d5d202fdf3913104e8"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x064c53d88e7a5d3596c0f6b3f086c10dc8cf9b8b11426c18a978c0a0ca9db5b7"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0xd673258a5887ca34a0c78a2bd92efc21c0cd1ff18e6c82d802993ef40a48385c"
       }
     ],
-    "signature": "0x73d00d301ab80b6d40f00f5cd2efb20df2d3168aec86549a21510603298f308a7cec9e4dfb8d1ac2cc77390939fd90270ac598dcfcfeb468a4e17a16b90dfcb91c"
+    "selector": "function setController(address,bool)",
+    "signature": "0x73d00d301ab80b6d40f00f5cd2efb20df2d3168aec86549a21510603298f308a7cec9e4dfb8d1ac2cc77390939fd90270ac598dcfcfeb468a4e17a16b90dfcb91c",
+    "target": "<OptiDomains_NameWrapper>",
+    "type": "rootTx"
   },
   {
     "args": [
       "<OptiDomains_WhitelistRegistrarController>",
       true
     ],
-    "selector": "function setController(address,bool)",
-    "target": "<ReverseRegistrar>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -97,18 +112,26 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0xcaea46017402b63ef9eaf93a07fc25043b0d193722d96e4ea61319cf562f1312"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x1213efc96ed3ffa35f0cb6f154a680beaba7a7605e0fc085364def56d98ddf83"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0xae8d9489df015431946dcc2aff87982d0bb0e1fa20e2115379180c4b21d4a3c0"
       }
     ],
-    "signature": "0xc552535567cffa91228a988131a2e8325fc509440bfcc6a90c93a2e496afa9b321f26e72fa85bf402c59c1067978fa43bc3daf6276f28e9cc9c22dcd1bb2f3bd1c"
+    "selector": "function setController(address,bool)",
+    "signature": "0xc552535567cffa91228a988131a2e8325fc509440bfcc6a90c93a2e496afa9b321f26e72fa85bf402c59c1067978fa43bc3daf6276f28e9cc9c22dcd1bb2f3bd1c",
+    "target": "<ReverseRegistrar>",
+    "type": "rootTx"
   },
   {
     "args": [
       "<OptiDomains_WhitelistRegistrarController>",
       true
     ],
-    "selector": "function setWhitelisted(address,bool)",
-    "target": "<DiamondResolver>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -125,8 +148,19 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x1e21fa0531470b1fc6a6cbe8c723937095198282ff80d9f5adaf2d80adafd58b"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0xf9efaae188bed66e186638009304fee215145b2aada98cd8175945976428bb21"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0xa086c69f37a0017dac8a14f72259886e491c329c18b1d4544d73296cd44226b9"
       }
     ],
-    "signature": "0x9964020197340749d51f118bfda07915b381e48baa023f1030a90574e9af948556bbd6d9bc6a0c84f70b5295402825ec07d0d10c91e9efea5c37029578c937a11c"
+    "selector": "function setWhitelisted(address,bool)",
+    "signature": "0x9964020197340749d51f118bfda07915b381e48baa023f1030a90574e9af948556bbd6d9bc6a0c84f70b5295402825ec07d0d10c91e9efea5c37029578c937a11c",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
   }
 ]

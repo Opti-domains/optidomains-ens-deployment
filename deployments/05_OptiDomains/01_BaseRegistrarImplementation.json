@@ -26,6 +26,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
         "transactionHash": "0xffc1d91931efe8e394d177eb49132eaebd1601dc00ea80275895b54a0ca46021"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
+        "transactionHash": "0xe12ad2e715e83e301419ad57894f2d118a89e9811c8522e6515bedb0505c7ba1"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
+        "transactionHash": "0x70c585ab1418a13b7b561ec197f9d8409e9faa1dd43ce3e6a726549d5226d561"
       }
     ],
     "leading": "888811",
@@ -43,9 +53,6 @@
       "0xbc41dd7236fa8be09e593a876f5868355879efd89a87f2a6d06bb0b228b3a3b2",
       "<OptiDomains_BaseRegistrarImplementation>"
     ],
-    "selector": "function setSubnodeOwner(address,bytes32,address)",
-    "target": "<Root>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -62,8 +69,19 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x6e94c78cbd4b9e659ad78ccd7f3dc28efe6f27f2c02a4d4251a41a8d5c925038"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x6e60ac2a68189bab39993922921c83aaceeab0dcc2d5c0d6b6d53d69ef1c4257"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0x784c11d1db46367fce53491a7540d5783d65fb0e9468f19184cf94f5c0c51625"
       }
     ],
-    "signature": "0x3bcfffa155435eab13040a0a334e5c7cb95404bd889c1383e80b47b740c9d94b1deb87e3c5ed9d2664dcdfe5bef49f71f7dc5eb74c59c890af962fd087f540931c"
+    "selector": "function setSubnodeOwner(address,bytes32,address)",
+    "signature": "0x3bcfffa155435eab13040a0a334e5c7cb95404bd889c1383e80b47b740c9d94b1deb87e3c5ed9d2664dcdfe5bef49f71f7dc5eb74c59c890af962fd087f540931c",
+    "target": "<Root>",
+    "type": "rootTx"
   }
 ]

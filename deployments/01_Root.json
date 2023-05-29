@@ -30,6 +30,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
         "transactionHash": "0x9ae3975308fb6d55d32ee6a2cd584a75b6b2654b649bcc8f94d82472dac3bbbe"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
+        "transactionHash": "0xf0e7f8fa9f887877dfb86af3f952faec232253ac411608b7c7d9207712bcdf71"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
+        "transactionHash": "0x28c3bcf2816601a17fff448d1245af7e0c003e23ef848bcb93fae5645b8d7109"
       }
     ],
     "leading": "888811",
@@ -69,6 +79,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
         "transactionHash": "0x8c3eb9890d7c8db9075b6a220b7b7d2a38543f8217a22553ea54f3c61bca81a2"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
+        "transactionHash": "0x1dda422ad3aa69ce7477540828533f2bee453d35bc3d63aff6edf5b4e7911b7d"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
+        "transactionHash": "0x4fdf47217eb8d51d76abbf7ea52a10890131c7227edbb937bfc860cffea13636"
       }
     ],
     "leading": "888811",

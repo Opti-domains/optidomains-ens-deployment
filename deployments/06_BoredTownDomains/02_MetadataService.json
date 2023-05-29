@@ -25,6 +25,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
         "transactionHash": "0xcad8590bcad53c147eb10de178c118690c1b36e4e67630d98cbd3be9b9e224cf"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
+        "transactionHash": "0x05c5404110c092b7928a758ea063d03a006b802bf29f27d875204d7460ebd95d"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
+        "transactionHash": "0xc2c3e2283d041215b87e840c1f657823a071b5fa97b97d092a34ddb28d224514"
       }
     ],
     "leading": "B02ED",

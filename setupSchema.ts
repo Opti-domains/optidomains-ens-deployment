@@ -39,6 +39,9 @@ async function main() {
   await (await schemaRegistry.register("bytes32 node,string key,string value", "0x0000000000000000000000000000000000000000", true)).wait()
   await (await schemaRegistry.register("bytes32 node,bytes32 x,bytes32 y", "0x0000000000000000000000000000000000000000", true)).wait()
 
+  await (await schemaRegistry.register("bytes32 node,uint256 coinType,bytes walletAddress,bytes proof", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,string provider,string identity,string displayName,bytes proof", "0x0000000000000000000000000000000000000000", true)).wait()
+
   console.log('Setup success')
 }
 

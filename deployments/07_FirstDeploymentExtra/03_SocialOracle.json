@@ -1,0 +1,69 @@
+[
+  {
+    "artifact": "attestation/OptiDomainsSocialOracle.sol",
+    "constructorArguments": [
+      "<OPERATOR>",
+      "<OptiDomainsAttestation>"
+    ],
+    "contractAddress": "0x8888117aCB058d3EBf976bb327997Ec5Fa8fC115",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x8888117aCB058d3EBf976bb327997Ec5Fa8fC115",
+        "transactionHash": "0x3d48c6437b3bebfa243894aa0e6dedaecf6b41f14d8ae94f60d67c35da956c71"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x8888117aCB058d3EBf976bb327997Ec5Fa8fC115",
+        "transactionHash": "0x01a04116fb6db85ab5999a6fbba33190ab3e629b6f6e0fa179c57153cc6c20f1"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x8888117aCB058d3EBf976bb327997Ec5Fa8fC115",
+        "transactionHash": "0xb6bbfbfb6fdbe0195a2c0e8710d6dbebe026218c3403aa041af10f8e5ac1515c"
+      }
+    ],
+    "leading": "888811",
+    "name": "OptiDomainsSocialOracle",
+    "parsedArguments": [
+      "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A",
+      "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3"
+    ],
+    "salt": "0x000000000000000000000000000000000000000099b1120d13e8f06f99181dc9",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      [
+        [
+          "<OptiDomainsSocialOracle>",
+          0,
+          [
+            "0xfd828c6c",
+            "0xd043e7eb"
+          ]
+        ]
+      ],
+      "0x0000000000000000000000000000000000000000",
+      "0x"
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x21f8edf08d5cd43656e06f311b8fcd849e859b289b179cdbaa9660ead50a7a58"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x54c165427b161010e3729ea3c3faa6ba9fe9de280a7774985b8e8ccbc9bf24ff"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0x561b79765b9aba264026a2b9991ebb85f59e3ed4af643f4451d2ef70fab156b8"
+      }
+    ],
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "signature": "0x9530af2375eba2070b13b9eccc38e4cf416f0558f6de39bb82e181514be851981eb53cc1e69d392e91f3ed1670c3fa3c5ea01780d614e78bc51ada8fbf5a129b1c",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
+  }
+]

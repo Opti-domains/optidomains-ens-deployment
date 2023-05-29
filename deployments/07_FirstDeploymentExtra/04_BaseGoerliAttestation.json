@@ -1,0 +1,22 @@
+[
+  {
+    "args": [
+      "0xAcfE09Fd03f7812F022FBf636700AdEA18Fd2A7A",
+      2
+    ],
+    "deployments": [
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x6fd6e4b009ac404d509d4251f8011330964017cd395751d09753f1df8f8048ff"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0x6745de3f24e73a2a0fb9a18a499f1edecf465270325bf9ba7b0753d46de383f1"
+      }
+    ],
+    "selector": "function activate(address,uint256)",
+    "signature": "0x608bb23dcc783923a2f1a8159f9a23d35cf60a04942c8f92be973a4aa4e1e02a785c7bd830234918abf7936ca8d790b131e20d6e62fab81fe4725c16f06567bb1b",
+    "target": "<OptiDomainsAttestation>",
+    "type": "rootTx"
+  }
+]

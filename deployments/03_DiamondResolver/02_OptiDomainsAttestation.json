@@ -31,6 +31,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
         "transactionHash": "0xa91c4bc9f712540801b1237dd128d99f4e44756f4a134f90d8b3c25b4cc960f4"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+        "transactionHash": "0x953c37529362b3f134d5e984a7c7fa0accfa018598e98a66c63469d80e6d1130"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+        "transactionHash": "0xbd0b10ca0e0eac9d4075c052e5413b8e7fc0f0384adeddd3c1978672402ac276"
       }
     ],
     "leading": "888811",
@@ -46,9 +56,6 @@
     "args": [
       "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3"
     ],
-    "selector": "function setAttestation(address)",
-    "target": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -65,18 +72,26 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0xd3c0e5956ef53b47d5f1d7c8fa9caa30755f27e8eedc4dbc93e3c52a1c7ae464"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0xce8b48226f9c8355cff6fa469f24aaf40987257ad4607cd177833c7d2628b7a8"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0x6df4156451a2db7b7def9ede104ffe0d5769620ed5e45deac392c4f9195edd8a"
       }
     ],
-    "signature": "0x3cf20efce6ac90c211ba58d0af7b5448ed63bd23c85cd3984b958deb964013381bd47ed19d2e04540750c2da74003ec4c76dd819bb9786b60fff6dce24613cf81c"
+    "selector": "function setAttestation(address)",
+    "signature": "0x3cf20efce6ac90c211ba58d0af7b5448ed63bd23c85cd3984b958deb964013381bd47ed19d2e04540750c2da74003ec4c76dd819bb9786b60fff6dce24613cf81c",
+    "target": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+    "type": "rootTx"
   },
   {
     "args": [
       "0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd",
       1
     ],
-    "selector": "function activate(address,uint256)",
-    "target": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -93,18 +108,26 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x4392d4ea3843362b243e753c0c4ec3553c702ba5d883197cf94b0a9534f920b1"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x190c3a91079e40412b2af030fb4b92223489a01bf0c26ffe52bd859c6cebe4c8"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0xf701ecc27b3a178c092419446df17b0e7f8004a2c0db4571680ac5ebf46e5227"
       }
     ],
-    "signature": "0xbec61f2d5e58f99f4cddc12f76a46fdf851777f91adfcc4c3ef270e69310a1a440d5e46f937dcf41c9924e3aa2e77bc0a3136ef794d650048fbac92305d1d05e1c"
+    "selector": "function activate(address,uint256)",
+    "signature": "0xbec61f2d5e58f99f4cddc12f76a46fdf851777f91adfcc4c3ef270e69310a1a440d5e46f937dcf41c9924e3aa2e77bc0a3136ef794d650048fbac92305d1d05e1c",
+    "target": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+    "type": "rootTx"
   },
   {
     "args": [
       "0x1a5650d0ecbca349dd84bafa85790e3e6955eb84",
       2
     ],
-    "selector": "function activate(address,uint256)",
-    "target": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -121,8 +144,19 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0xdcde3b12d99e6f9368a2f6ce74f19d7890a186d1c85de20c59fd6fec57279e61"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x1f98fe6345a4b2e15b6b8900098cf38c22e55cceebad6d390e19372ce4d6cd89"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0x4bdc6309846bc9ba78380226f5d47fb25a8eaa8bebd15acb8f87f3f6ceda88b2"
       }
     ],
-    "signature": "0xa9304ac757945d7a708d72760347c6a7d0cefdb4b73a47777b21cfa7f3a7ba0761e9277068b66f517c96e868da6e798b03d20eee4d491b4d224c2125be0223b51b"
+    "selector": "function activate(address,uint256)",
+    "signature": "0xa9304ac757945d7a708d72760347c6a7d0cefdb4b73a47777b21cfa7f3a7ba0761e9277068b66f517c96e868da6e798b03d20eee4d491b4d224c2125be0223b51b",
+    "target": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+    "type": "rootTx"
   }
 ]

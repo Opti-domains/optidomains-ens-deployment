@@ -28,6 +28,16 @@
         "chain": "gnosis_testnet",
         "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
         "transactionHash": "0xa7ca9800eb346094574fa99d64e4f7b9e38b283987cf39e3a3ae32639cf85c1e"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
+        "transactionHash": "0xe78b1c46549a737a40b00a52a5a806b9298905b97ff00423e17604bd26a2668d"
+      },
+      {
+        "chain": "goerli",
+        "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
+        "transactionHash": "0x5eeb0699e3874a207824471e8a00cc37bb91ccda7b1c478a7d1e84dfe4a6c275"
       }
     ],
     "leading": "B02ED",
@@ -45,9 +55,6 @@
     "args": [
       "<BoredTown_NameWrapper>"
     ],
-    "selector": "function addController(address)",
-    "target": "<BoredTown_BaseRegistrarImplementation>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -64,18 +71,26 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x49bb4e64593e74c5285a70b3bf4f3e313f7519f99c8680ef77c1e4b68881b1d6"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x7e0a3c2c86783615ffe5682c9eb1c4f632d8fffc8a0fce06e88b1e2b4f2555ff"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0x1908762895f175f847850a4deb20c19db8cee73ca0a501f326d7e8b85b5fc157"
       }
     ],
-    "signature": "0x92bf7101aea83e967a0e8ed736d71e8bc34ce8bee1c66e9a80ad0e828ea0d8fa5feef176c8aabf0aad6cfc295b863441d60bdb586da5ca5359c3df558d216af91c"
+    "selector": "function addController(address)",
+    "signature": "0x92bf7101aea83e967a0e8ed736d71e8bc34ce8bee1c66e9a80ad0e828ea0d8fa5feef176c8aabf0aad6cfc295b863441d60bdb586da5ca5359c3df558d216af91c",
+    "target": "<BoredTown_BaseRegistrarImplementation>",
+    "type": "rootTx"
   },
   {
     "args": [
       "0x0000000000000000000000000000000000000000",
       "<BoredTown_NameWrapper>"
     ],
-    "selector": "function upgrade(address,address)",
-    "target": "<NameWrapperRegistry>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -92,8 +107,19 @@
       {
         "chain": "gnosis_testnet",
         "transactionHash": "0x95cfb1876d39308e2cadbe5f2903bbded68a0a78ce9fa22097b0af553f97c573"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x46fd1690d95223cff24c43c5e4f4b996c62eaa1cbbcc1e1355d54b76a50f3274"
+      },
+      {
+        "chain": "goerli",
+        "transactionHash": "0xac5b734d3d095e5cbb97954c0134956531129c3afc9ec4d2311934286ae2f025"
       }
     ],
-    "signature": "0xdc30d52ae61972f605821fde752dd7d2c8607f9c001e2fa3668cef7e5583308d3869709e62bb3e0c8438e21cb9f3ae2fa1a2177020df42c849e5737410d4e7761c"
+    "selector": "function upgrade(address,address)",
+    "signature": "0xdc30d52ae61972f605821fde752dd7d2c8607f9c001e2fa3668cef7e5583308d3869709e62bb3e0c8438e21cb9f3ae2fa1a2177020df42c849e5737410d4e7761c",
+    "target": "<NameWrapperRegistry>",
+    "type": "rootTx"
   }
 ]

@@ -4,6 +4,11 @@ export const CHAINS = {
     rpc: "http://127.0.0.1:8545",
     chainId: 31337,
   },
+  goerli: {
+    type: "evm",
+    rpc: `https://eth-goerli.g.alchemy.com/v2/Kb0-sSQHUeURzm-QCj-pXKS0Viefa_kX`,
+    chainId: 5,
+  },
   optimism_goerli: {
     type: "evm",
     rpc: `https://opt-goerli.g.alchemy.com/v2/Uqc2nrzJBeN1oVuuDQ0ON_aPUokXzApf`,

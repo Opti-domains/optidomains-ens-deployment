@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "name": "AxelarWhitelistRegistrarController",
+    "artifact": "ethregistrar/AxelarWhitelistRegistrarController.sol",
+    "constructorArguments": ["<OptiDomains_NameWrapper>", "<OPERATOR>"],
+    "leading": "a881",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]
