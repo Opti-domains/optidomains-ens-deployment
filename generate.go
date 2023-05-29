@@ -177,7 +177,7 @@ func scanSaltAgent(ctx context.Context, initCodeHash []byte, leading string, ch 
 	address := ""
 	salt := ""
 
-	leadingTemplate := leading[:5]
+	leadingTemplate := leading[:len(leading)-1]
 
 	for i := 0; i < 100000; i++ {
 		saltBytes := make([]byte, 12)

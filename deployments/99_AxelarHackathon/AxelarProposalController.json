@@ -1,11 +1,28 @@
 [
   {
-    "type": "deployment",
-    "name": "AxelarProposalController",
     "artifact": "ethregistrar/AxelarProposalController.sol",
-    "constructorArguments": ["<ENSRegistry>"],
+    "constructorArguments": [
+      "<ENSRegistry>"
+    ],
+    "contractAddress": "0xa8815F7aA778d846c98b91988D174C46F85Fcbb0",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xa8815F7aA778d846c98b91988D174C46F85Fcbb0",
+        "transactionHash": "0x4a3f5694567203bcf7fb45577af61a393b73119601a56a938109ac6d004c073c"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0xa8815F7aA778d846c98b91988D174C46F85Fcbb0",
+        "transactionHash": "0x402d9c85caf43bcf8627a9f8bbdd3d0d64a8a82e266e88ba90e0a72c1c8cea5e"
+      }
+    ],
     "leading": "a881",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "name": "AxelarProposalController",
+    "parsedArguments": [
+      "0x888811b3DFC94566Fc8F6aC5e86069981a50B490"
+    ],
+    "salt": "0x00000000000000000000000000000000000000004755a7578a2603c26e101573",
+    "type": "deployment"
   }
 ]

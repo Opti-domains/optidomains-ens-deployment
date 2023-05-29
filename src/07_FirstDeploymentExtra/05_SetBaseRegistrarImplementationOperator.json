@@ -1,0 +1,14 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_BaseRegistrarImplementation>",
+    "selector": "function addController(address)",
+    "args": ["<BoredTown_WhitelistRegistrarController>"]
+  },
+  {
+    "type": "rootTx",
+    "target": "<OptiDomains_BaseRegistrarImplementation>",
+    "selector": "function addController(address)",
+    "args": ["<OptiDomains_WhitelistRegistrarController>"]
+  }
+]

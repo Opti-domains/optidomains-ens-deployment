@@ -1,0 +1,32 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_BaseRegistrarImplementation>",
+    "selector": "function addController(address)",
+    "args": [
+      "<BoredTown_WhitelistRegistrarController>"
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0xec8f857e532f193a39cb51aa4ba05e67d93c186e66479b3ea76886d6d412631d"
+      }
+    ],
+    "signature": "0x5c164354eaf373cc71c5719bca999bf53f8288ee88b62011939cb9fcce96348869eaad0d3191c91aec538745e059fb92b0639c326470aca60b43c786050c29b71c"
+  },
+  {
+    "type": "rootTx",
+    "target": "<OptiDomains_BaseRegistrarImplementation>",
+    "selector": "function addController(address)",
+    "args": [
+      "<OptiDomains_WhitelistRegistrarController>"
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0xf58e7e12c88ac09f74839cfe79799fb205c5f248ffa335791b38d4709eee03db"
+      }
+    ],
+    "signature": "0xf6d804463b58d43047a4b44311559cbcd1d1b514bcadbeed47e661e3ddd995680a89408622780d208d9757cb44a5e1a50d3b2ea232d168c931bf22b9a9f5c44f1b"
+  }
+]

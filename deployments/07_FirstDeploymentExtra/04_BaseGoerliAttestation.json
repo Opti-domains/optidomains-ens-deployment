@@ -12,6 +12,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0x6745de3f24e73a2a0fb9a18a499f1edecf465270325bf9ba7b0753d46de383f1"
+      },
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x483384695cf114213757352b575fe2d5421c2634beb9cc516944e7088c6dc9fe"
       }
     ],
     "selector": "function activate(address,uint256)",

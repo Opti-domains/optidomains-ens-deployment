@@ -1,11 +1,30 @@
 [
   {
-    "type": "deployment",
-    "name": "AxelarWhitelistRegistrarController",
     "artifact": "ethregistrar/AxelarWhitelistRegistrarController.sol",
-    "constructorArguments": ["<OptiDomains_NameWrapper>", "<OPERATOR>"],
+    "constructorArguments": [
+      "<OptiDomains_NameWrapper>",
+      "<OPERATOR>"
+    ],
+    "contractAddress": "0xa8816b4100c53D5Ad221CbD36D621Cb652C2247E",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xa8816b4100c53D5Ad221CbD36D621Cb652C2247E",
+        "transactionHash": "0x024bdfc3009b142cb7c24a36a4dbe4d9de468d1f89cd2ee6a51dbaab6119c86e"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0xa8816b4100c53D5Ad221CbD36D621Cb652C2247E",
+        "transactionHash": "0x2d502e291526bba3995351ff7efca0240d31010d49ff75c88c9a9c7c4014e41f"
+      }
+    ],
     "leading": "a881",
-    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
-    "contractAddress": ""
+    "name": "AxelarWhitelistRegistrarController",
+    "parsedArguments": [
+      "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
+      "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000009a262844320cf0a04e2e57",
+    "type": "deployment"
   }
 ]
