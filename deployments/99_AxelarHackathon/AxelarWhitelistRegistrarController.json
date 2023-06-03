@@ -5,17 +5,17 @@
       "<OptiDomains_NameWrapper>",
       "<OPERATOR>"
     ],
-    "contractAddress": "0xa8816b4100c53D5Ad221CbD36D621Cb652C2247E",
+    "contractAddress": "0xa8815cFdf185b57685680a87BF84005C95ea8b5b",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0xa8816b4100c53D5Ad221CbD36D621Cb652C2247E",
-        "transactionHash": "0x024bdfc3009b142cb7c24a36a4dbe4d9de468d1f89cd2ee6a51dbaab6119c86e"
+        "contractAddress": "0xa8815cFdf185b57685680a87BF84005C95ea8b5b",
+        "transactionHash": "0xc348b7d04346ef41c59a6cf43a32df4d8aa598fd0c8c366ab8bbb2c4dc44a831"
       },
       {
         "chain": "base_goerli",
-        "contractAddress": "0xa8816b4100c53D5Ad221CbD36D621Cb652C2247E",
-        "transactionHash": "0x2d502e291526bba3995351ff7efca0240d31010d49ff75c88c9a9c7c4014e41f"
+        "contractAddress": "0xa8815cFdf185b57685680a87BF84005C95ea8b5b",
+        "transactionHash": "0x4643f6857d0e83ac0afebdad6d1e56cca64edc5db230c9f4eec6be4f4f0c3a9f"
       }
     ],
     "leading": "a881",
@@ -24,7 +24,7 @@
       "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
       "0x8888112e21A42eAAD5DD2e9eDcE4BfD8327dAa6A"
     ],
-    "salt": "0x0000000000000000000000000000000000000000009a262844320cf0a04e2e57",
+    "salt": "0x0000000000000000000000000000000000000000b35982b1c31bde6dc3146895",
     "type": "deployment"
   }
 ]

@@ -4,17 +4,17 @@
     "constructorArguments": [
       "<ENSRegistry>"
     ],
-    "contractAddress": "0xa8815F7aA778d846c98b91988D174C46F85Fcbb0",
+    "contractAddress": "0xa8816Acfb9248f9afe10132bf89F63504e0a77F9",
     "deployments": [
       {
         "chain": "optimism_goerli",
-        "contractAddress": "0xa8815F7aA778d846c98b91988D174C46F85Fcbb0",
-        "transactionHash": "0x4a3f5694567203bcf7fb45577af61a393b73119601a56a938109ac6d004c073c"
+        "contractAddress": "0xa8816Acfb9248f9afe10132bf89F63504e0a77F9",
+        "transactionHash": "0xb04221d30e1ae7aa1d8a99ba11591c1ffceb27972525b5b0917c6d29a6fd2573"
       },
       {
         "chain": "base_goerli",
-        "contractAddress": "0xa8815F7aA778d846c98b91988D174C46F85Fcbb0",
-        "transactionHash": "0x402d9c85caf43bcf8627a9f8bbdd3d0d64a8a82e266e88ba90e0a72c1c8cea5e"
+        "contractAddress": "0xa8816Acfb9248f9afe10132bf89F63504e0a77F9",
+        "transactionHash": "0xee9d26a95f2a3f7a84fe7a92a085e997efa1a6b93f5009e0abb4ce1e79192c93"
       }
     ],
     "leading": "a881",
@@ -22,7 +22,7 @@
     "parsedArguments": [
       "0x888811b3DFC94566Fc8F6aC5e86069981a50B490"
     ],
-    "salt": "0x00000000000000000000000000000000000000004755a7578a2603c26e101573",
+    "salt": "0x0000000000000000000000000000000000000000aab176f85a59a5fe12601a00",
     "type": "deployment"
   }
 ]

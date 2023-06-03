@@ -1,0 +1,24 @@
+[
+  {
+    "artifact": "ethregistrar/AxelarSampleProposalExecutable.sol",
+    "constructorArguments": [],
+    "contractAddress": "0xa8816fc72EE7d5e4B9C8ab77860a5071c934940b",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xa8816fc72EE7d5e4B9C8ab77860a5071c934940b",
+        "transactionHash": "0x8d2ed554e14c846d422b827ebda86c0dba26b2c95c0da83868e143e39a3ef6d2"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0xa8816fc72EE7d5e4B9C8ab77860a5071c934940b",
+        "transactionHash": "0x2a624856bb7f84ce32ba68ac61c54ef096d6dfce005117f56b226951aa10eee1"
+      }
+    ],
+    "leading": "a881",
+    "name": "AxelarSampleProposalExecutable",
+    "parsedArguments": [],
+    "salt": "0x00000000000000000000000000000000000000008420a44a6eb6390b7849e75b",
+    "type": "deployment"
+  }
+]

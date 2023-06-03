@@ -9,6 +9,16 @@
           "internalType": "bytes32",
           "name": "proposalId",
           "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "conditionHash",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
         }
       ],
       "name": "execute",
