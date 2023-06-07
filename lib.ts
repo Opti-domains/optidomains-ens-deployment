@@ -159,8 +159,20 @@ export function rootGenerateSignature(
   )
 }
 
-export async function deployContract(initCode: string, salt: string) {
-  return await (await ImmutableCreate2Factory.safeCreate2(salt, initCode)).wait();
+export async function deployContract(initCode: string, salt: string, chainName?: string) {
+  // hardcode for gas price respective to chain ID
+  let gasPrice = undefined;
+  let priorityGasPrice = undefined;
+
+  if (chainName == 'optimism' || chainName == 'base') {
+    gasPrice = "1000000"
+    // priorityGasPrice = "1000000"
+  }
+
+  return await (await ImmutableCreate2Factory.safeCreate2(salt, initCode, {
+    ...(gasPrice ? {gasPrice} : {}),
+    ...(priorityGasPrice ? {priorityGasPrice} : {}),
+  })).wait();
 }
 
 export const TOPIC_LOCK = ethers.utils.keccak256(

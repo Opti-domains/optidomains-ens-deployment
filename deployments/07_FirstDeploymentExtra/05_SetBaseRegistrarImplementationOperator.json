@@ -11,6 +11,10 @@
       {
         "chain": "base_goerli",
         "transactionHash": "0x1582122ec1e770ba34bdfb6b55031858ebc71ec73a86596d6c1af64f44648315"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x6178ffb1fb64e8fe9b92bd2d0cab986beea61d4a3bd07b934c00cc61f0fda4ea"
       }
     ],
     "selector": "function addController(address)",
@@ -30,6 +34,10 @@
       {
         "chain": "base_goerli",
         "transactionHash": "0x7dbdf06ee633de0347cb8c5e092c776638dc3dbeb682f60960f67fc92c1a7f25"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x223d2e80258bde7f439dc76b212105568df1084d81cb976f592a26748a3594d9"
       }
     ],
     "selector": "function addController(address)",

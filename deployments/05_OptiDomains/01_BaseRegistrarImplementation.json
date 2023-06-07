@@ -36,6 +36,11 @@
         "chain": "goerli",
         "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
         "transactionHash": "0x70c585ab1418a13b7b561ec197f9d8409e9faa1dd43ce3e6a726549d5226d561"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0x8888111BAd1a449a6a0618C0fE7DC1727e3aaf99",
+        "transactionHash": "0xd1fc4e885fb9c2548081323f1a8589dfda79b9681dbc478da48ad6996318286a"
       }
     ],
     "leading": "888811",
@@ -77,6 +82,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0x784c11d1db46367fce53491a7540d5783d65fb0e9468f19184cf94f5c0c51625"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0xd3c08a26d0c1f31b2f37d8eb3a505586ae021f28ebc913b7b77ec02bcc800eed"
       }
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",

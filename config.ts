@@ -9,6 +9,11 @@ export const CHAINS = {
     rpc: `https://eth-goerli.g.alchemy.com/v2/Kb0-sSQHUeURzm-QCj-pXKS0Viefa_kX`,
     chainId: 5,
   },
+  optimism: {
+    type: "evm",
+    rpc: `https://mainnet.optimism.io`,
+    chainId: 10,
+  },
   optimism_goerli: {
     type: "evm",
     rpc: `https://opt-goerli.g.alchemy.com/v2/Uqc2nrzJBeN1oVuuDQ0ON_aPUokXzApf`,

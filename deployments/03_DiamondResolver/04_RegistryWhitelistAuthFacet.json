@@ -33,6 +33,11 @@
         "chain": "goerli",
         "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
         "transactionHash": "0xc6b9b7f3f822bb470a5b0bf6f8e39734547f537618aefc76112ccb5f4d713af6"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0x888811761f31b8242fAe670C3f0a054e226D10e8",
+        "transactionHash": "0x1f83be562da124458b3c43805d8accc90fffef54b8b87901170f39e92d4d0287"
       }
     ],
     "leading": "888811",
@@ -80,6 +85,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0xd120e4c9a8e79b3f5af6044d99d260e2d234827c3be04b4136e5af913688eb02"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x1b49a78cabefd71f12bd75d2a9591ed307a63ada5d147ddeed63e1540d2f99fc"
       }
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",

@@ -23,6 +23,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0x72aaf39a8b153ac3689708e1ebaeaaed6f02b9e879a16104ca32eff980c13a72"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0xb2fb00fd90aff9f4a55ff626aacba601b67c9f9c4635d7411b3a160fefe374fb"
       }
     ],
     "selector": "function setBaseFuses(uint16)",

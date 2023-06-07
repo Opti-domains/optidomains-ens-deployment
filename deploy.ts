@@ -89,7 +89,7 @@ async function processSingle(dict, filePath) {
             throw new Error("Address mismatch")
           }
 
-          const tx = await deployContract(initCode, action.salt)
+          const tx = await deployContract(initCode, action.salt, dict.CHAIN_NAME)
 
           console.log(`Contract ${action.name} deployed at ${action.contractAddress} (Tx: ${tx.transactionHash})`)
 

@@ -35,6 +35,11 @@
         "chain": "goerli",
         "contractAddress": "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
         "transactionHash": "0x70194f816d84b12b8196ae5d7b4776c70342b158d67e4614a9d074a972d93282"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
+        "transactionHash": "0xd311bfcd0d07b60d82c6184a6771234786dd8b61ad4cbfd433520f3f551932ad"
       }
     ],
     "leading": "888811",
@@ -73,6 +78,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0x6be4b143de5d3c63ca03f73dd1cda38d8645d288ce5791e14f1ce6e990366d63"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0xd8657a35f75d5915510a7acaafd2c608079c56f8b51d7717b829067dc173b4f9"
       }
     ],
     "selector": "function setDefaultResolver(address)",
@@ -110,6 +119,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0xce54e12409b1629c36c297a43e677ab447d7885ec14b8c7789f3b84c07a72e21"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x752924f439d3b3e69f3fb9ada258fd9c7353137619064d234582f97b9dfee96f"
       }
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
@@ -147,6 +160,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0xfb6e40efa340f4a47ac6fcf53a15eec26b2f56dbed5187178c81394825633684"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x12a5cd075ad11fb2deb8e78cc0c0675fd460673771dea06bfe86cb4ce435dc73"
       }
     ],
     "selector": "function setSubnodeOwner(bytes32,bytes32,address)",
@@ -183,6 +200,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0xb8370fb6e92b8a3ac7d87c3d5d5b5fa4052423f2e298b23e68b0471db4e2c111"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x9e1e71e75a26e3da61813140702bff046f8e65f9ba15a064de69aa9a6395bf19"
       }
     ],
     "selector": "function setWhitelisted(address,bool)",

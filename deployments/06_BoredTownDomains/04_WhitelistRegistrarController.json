@@ -40,6 +40,11 @@
         "chain": "goerli",
         "contractAddress": "0xB02EDc247246ACD78294c62F403B3e64D5917031",
         "transactionHash": "0x71fee587d913eed1db46386f48b0a3a872bbf9c518a1c0588e84fbb443f1de19"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0xB02EDc247246ACD78294c62F403B3e64D5917031",
+        "transactionHash": "0xd2135285201773ee33c8e67f1b1d94cf2dccda141cd49fa9ce24db8f9da8271f"
       }
     ],
     "leading": "B02ED",
@@ -84,6 +89,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0x26d1dd494123bd467a7c6a3c42debb170896b9681c16c4455705d1eaab40fdc2"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0xb552269e1c4aba83a118431122c3104a0fdbaf7b3c2370dad3cbe3eaad3e2f5f"
       }
     ],
     "selector": "function setController(address,bool)",
@@ -120,6 +129,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0x65f12264e3330a7ec26a4953b4acd2298e1e3b6fe24c5486b9cf75f2f116fd8a"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x3d6484a74cf755a91bc52c721246e899fd20b18743dbf72c9b1cc5f25202515d"
       }
     ],
     "selector": "function setController(address,bool)",
@@ -156,6 +169,10 @@
       {
         "chain": "goerli",
         "transactionHash": "0xb220b15d77e3a85ff4c1474f7d225066f44bd2a44f831a07027ea82d9009519f"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x2b40419aa7db5b85ab7071ab5269735d57f7fc46a7a88333a4ac6df61cc6dd45"
       }
     ],
     "selector": "function setWhitelisted(address,bool)",
