@@ -16,7 +16,7 @@ export const CHAINS = {
   },
   optimism_goerli: {
     type: "evm",
-    rpc: `https://opt-goerli.g.alchemy.com/v2/Uqc2nrzJBeN1oVuuDQ0ON_aPUokXzApf`,
+    rpc: `https://goerli.optimism.io`,
     chainId: 420,
   },
   base_goerli: {
@@ -43,5 +43,11 @@ export const CHAINS = {
     type: "evm",
     rpc: "https://rpc.chiadochain.net",
     chainId: 10200,
+  },
+
+  hedera_testnet: {
+    type: "evm",
+    rpc: "https://hashgraph.arkhia.io/hedera/testnet/json-rpc/v1/nT1M9788al140405M1A284I1379To1N5",
+    chainId: 296,
   }
 };

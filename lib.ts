@@ -163,15 +163,18 @@ export async function deployContract(initCode: string, salt: string, chainName?:
   // hardcode for gas price respective to chain ID
   let gasPrice = undefined;
   let priorityGasPrice = undefined;
+  let gasLimit = undefined;
 
-  if (chainName == 'optimism' || chainName == 'base') {
+  if (chainName == 'optimism' || chainName == 'optimism_goerli' || chainName == 'base') {
     gasPrice = "1000000"
     // priorityGasPrice = "1000000"
+    // gasLimit = "4000000"
   }
 
   return await (await ImmutableCreate2Factory.safeCreate2(salt, initCode, {
     ...(gasPrice ? {gasPrice} : {}),
     ...(priorityGasPrice ? {priorityGasPrice} : {}),
+    ...(gasLimit ? {gasLimit} : {}),
   })).wait();
 }
 
@@ -188,7 +191,18 @@ export const TOPIC_SET_CONTROLLER = ethers.utils.keccak256(
   ethers.utils.toUtf8Bytes('setController'),
 )
 
-export async function performRootTx(dict: {[name: string]: string}, action: TxAction, pk: string) {
+export async function performRootTx(dict: {[name: string]: string}, action: TxAction, pk: string, chainName?: string) {
+  // hardcode for gas price respective to chain ID
+  let gasPrice = undefined;
+  let priorityGasPrice = undefined;
+  let gasLimit = undefined;
+
+  if (chainName == 'optimism' || chainName == 'optimism_goerli' || chainName == 'base') {
+    gasPrice = "1000000"
+    // priorityGasPrice = "1000000"
+    // gasLimit = "4000000"
+  }
+
   if (!Root) {
     Root = new ethers.Contract(dict.Root, RootABI, wallet)
   }
@@ -222,6 +236,11 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
     target,
     calldata,
     signature,
+    {
+      ...(gasPrice ? {gasPrice} : {}),
+      ...(priorityGasPrice ? {priorityGasPrice} : {}),
+      ...(gasLimit ? {gasLimit} : {}),
+    },
   )
 
   return {

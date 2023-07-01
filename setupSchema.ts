@@ -28,19 +28,22 @@ async function main() {
 
   const schemaRegistry = new ethers.Contract(contractAddress, SchemaRegistryABI, wallet)
 
-  // await (await schemaRegistry.register("bytes32 node,uint256 contentType,bytes abi", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,uint256 coinType,bytes address", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,bytes hash", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,bytes zonehashes", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,bytes32 nameHash,uint16 resource,bytes data", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,bytes32 nameHash,uint16 count", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,bytes4 interfaceID,address implementer", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,string name", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,string key,string value", "0x0000000000000000000000000000000000000000", true)).wait()
-  // await (await schemaRegistry.register("bytes32 node,bytes32 x,bytes32 y", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,uint256 contentType,bytes abi", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,uint256 coinType,bytes address", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,bytes hash", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,bytes zonehashes", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,bytes32 nameHash,uint16 resource,bytes data", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,bytes32 nameHash,uint16 count", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,bytes4 interfaceID,address implementer", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,string name", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,string key,string value", "0x0000000000000000000000000000000000000000", true)).wait()
+  await (await schemaRegistry.register("bytes32 node,bytes32 x,bytes32 y", "0x0000000000000000000000000000000000000000", true)).wait()
 
   await (await schemaRegistry.register("bytes32 node,uint256 coinType,bytes walletAddress,bytes proof", "0x0000000000000000000000000000000000000000", true)).wait()
   await (await schemaRegistry.register("bytes32 node,string provider,string identity,string displayName,bytes proof", "0x0000000000000000000000000000000000000000", true)).wait()
+
+  await (await schemaRegistry.register("address operator,string endpoint", "0x0000000000000000000000000000000000000000", true)).wait()
+
 
   console.log('Setup success')
 }

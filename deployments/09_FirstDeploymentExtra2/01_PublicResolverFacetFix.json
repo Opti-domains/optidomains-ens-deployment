@@ -1,0 +1,31 @@
+[
+  {
+    "args": [
+      [
+        [
+          "<PublicResolverFacet>",
+          0,
+          [
+            "0x9061b923"
+          ]
+        ]
+      ],
+      "<DiamondResolver>",
+      "0x717dbd4c0000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000019061b92300000000000000000000000000000000000000000000000000000000"
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0xab8e1a7576f8a0979a7bb50c79dd9a2bfb18ff151c3555da5bcf5165f9d40806"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x6d8ab05b6870649e917d70b5f9994dffb0235fc692d4983ea9c3e53633486782"
+      }
+    ],
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "signature": "0x6d8526b00e5ac6abbfd0aff2fb663ab6009ca59e73bdb9b429f204edd480ed18196525d64617c357c843a858e21a23e788c501ce31fac3a0c1172fcdbe4cd7ad1c",
+    "target": "<DiamondResolver>",
+    "type": "rootTx"
+  }
+]

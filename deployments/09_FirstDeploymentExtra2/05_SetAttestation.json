@@ -1,0 +1,21 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<NameWrapperRegistry>",
+    "selector": "function setAttestation(address)",
+    "args": [
+      "<OptiDomainsAttestationDiamond>"
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x9fcf833ce85a7651f00a72eab455129a83d545c9d4a444bebbff710092cc75f9"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x88d8cd67015a2580927bf7b4b8355dd0e9e589b31ef933465813363e2f9728ee"
+      }
+    ],
+    "signature": "0xbc71d2dedfad8907e9b449924d442f207a74f5fb66a03176ce49227018cf06785292db18048b4ec1578e1912e362b3c516b4304ce5c1655dfe766f410bb60bd11c"
+  }
+]

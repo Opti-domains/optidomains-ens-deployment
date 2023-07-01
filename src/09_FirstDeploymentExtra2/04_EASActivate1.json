@@ -1,0 +1,18 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "selector": "function activate(tuple(address,uint256,uint256)[])",
+    "args": [
+      [
+        ["0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd", 1, 0],
+        ["0xA1207F3BBa224E2c9c3c6D5aF63D0eb1582Ce587", 100, 1],
+        ["0xd64059A36EdC1e278BDAB1256bB887668Fe33151", 100, 10],
+        ["0xbD75f629A22Dc1ceD33dDA0b68c546A1c035c458", 100, 42161],
+        ["0xC2679fBD37d54388Ce493F1DB75320D236e1815e", 100, 11155111],
+        ["0xC2679fBD37d54388Ce493F1DB75320D236e1815e", 100, 420],
+        ["0xAcfE09Fd03f7812F022FBf636700AdEA18Fd2A7A", 100, 84531]
+      ]
+    ]
+  }
+]

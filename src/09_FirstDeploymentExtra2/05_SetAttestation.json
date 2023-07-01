@@ -1,0 +1,8 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<NameWrapperRegistry>",
+    "selector": "function setAttestation(address)",
+    "args": ["<OptiDomainsAttestationDiamond>"]
+  }
+]

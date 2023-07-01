@@ -1,0 +1,13 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "selector": "function activate(tuple(address,uint256,uint256)[])",
+    "args": [
+      [
+        ["0xC2679fBD37d54388Ce493F1DB75320D236e1815e", 0, 420],
+        ["0x1a5650D0EcbCa349DD84bAFa85790E3e6955eb84", 100, 420]
+      ]
+    ]
+  }
+]

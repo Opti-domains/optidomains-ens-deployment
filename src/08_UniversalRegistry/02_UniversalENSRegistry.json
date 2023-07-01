@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "name": "UniversalENSRegistry",
+    "artifact": "universal-registry/UniversalENSRegistry.sol",
+    "constructorArguments": ["<UniversalResolverTemplate>"],
+    "leading": "88881100",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]

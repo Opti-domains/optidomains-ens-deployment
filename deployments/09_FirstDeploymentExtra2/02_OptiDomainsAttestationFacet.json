@@ -1,0 +1,30 @@
+[
+  {
+    "artifact": "attestation/OptiDomainsAttestationFacet.sol",
+    "constructorArguments": [
+      "<NameWrapperRegistry>",
+      "<Root>"
+    ],
+    "contractAddress": "0x8888118F6913898253a94d8198207e113378Ae62",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x8888118F6913898253a94d8198207e113378Ae62",
+        "transactionHash": "0x703b7474081a8797baa152aa4a4759e1d17a83c5e450fc2daa673d7bc41a5c02"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0x8888118F6913898253a94d8198207e113378Ae62",
+        "transactionHash": "0xdcff4609a44810276c0c0f8485d735dc8be68abd5febd6ad24bb1a00bed12561"
+      }
+    ],
+    "leading": "888811",
+    "name": "OptiDomainsAttestationFacet",
+    "parsedArguments": [
+      "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+      "0x88881190D24e8ecA11F0262972cff8081b2AFc45"
+    ],
+    "salt": "0x00000000000000000000000000000000000000004066ee3e8c05cb419e813192",
+    "type": "deployment"
+  }
+]

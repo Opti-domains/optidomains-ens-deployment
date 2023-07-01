@@ -1,0 +1,11 @@
+[
+  {
+    "type": "deployment",
+    "name": "UniversalResolverTemplate",
+    "artifact": "universal-registry/UniversalResolverTemplate.sol",
+    "constructorArguments": [],
+    "leading": "888811",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]

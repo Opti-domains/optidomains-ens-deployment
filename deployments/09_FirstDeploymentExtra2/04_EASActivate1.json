@@ -1,0 +1,57 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "selector": "function activate(tuple(address,uint256,uint256)[])",
+    "args": [
+      [
+        [
+          "0x0000000000eF4a4904F35dA8B65D1fB39D451Fbd",
+          1,
+          0
+        ],
+        [
+          "0xA1207F3BBa224E2c9c3c6D5aF63D0eb1582Ce587",
+          100,
+          1
+        ],
+        [
+          "0xd64059A36EdC1e278BDAB1256bB887668Fe33151",
+          100,
+          10
+        ],
+        [
+          "0xbD75f629A22Dc1ceD33dDA0b68c546A1c035c458",
+          100,
+          42161
+        ],
+        [
+          "0xC2679fBD37d54388Ce493F1DB75320D236e1815e",
+          100,
+          11155111
+        ],
+        [
+          "0xC2679fBD37d54388Ce493F1DB75320D236e1815e",
+          100,
+          420
+        ],
+        [
+          "0xAcfE09Fd03f7812F022FBf636700AdEA18Fd2A7A",
+          100,
+          84531
+        ]
+      ]
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x506944d348dad8ef3503a5dd445d91374f19b1222c00257b418d5fe13305245b"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0xbc02b580c59555dd52b6107a0c44b914c1f679b106ba0181fc3acde300ad2dca"
+      }
+    ],
+    "signature": "0x0d7f8d7b43036fab56e9efadaf2eed28d659dfa4403823bccb52381c9ebc6abd3338dc53a76a5b29742d2f1ae9cb24e65f95dbd6513e482f5e1527732c9e1f471b"
+  }
+]

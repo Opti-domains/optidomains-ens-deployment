@@ -1,0 +1,23 @@
+[
+  {
+    "artifact": "universal-registry/UniversalENSRegistry.sol",
+    "constructorArguments": [
+      "<UniversalResolverTemplate>"
+    ],
+    "contractAddress": "0x888811A051FaBdD50a04cf3a22077E1A8A17c075",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x888811A051FaBdD50a04cf3a22077E1A8A17c075",
+        "transactionHash": "0xa781591e27689c85d33f397cb104be795fc916ef9fa0b91c1baa2ec847cf345c"
+      }
+    ],
+    "leading": "888811",
+    "name": "UniversalENSRegistry",
+    "parsedArguments": [
+      "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc"
+    ],
+    "salt": "0x00000000000000000000000000000000000000003a4257aaf5d75d3024fae8eb",
+    "type": "deployment"
+  }
+]

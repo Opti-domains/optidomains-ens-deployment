@@ -1,0 +1,24 @@
+[
+  {
+    "artifact": "universal-registry/UniversalResolverTemplate.sol",
+    "constructorArguments": [],
+    "contractAddress": "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc",
+        "transactionHash": "0xd2fccb712d93ec7b3caa2db30513f4d691b435e9d69db8b3fb229ae436b4e205"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc",
+        "transactionHash": "0xddf00581325dbe0eee20216638eb74c8d344cdff31ec65938309b85fbaff0179"
+      }
+    ],
+    "leading": "888811",
+    "name": "UniversalResolverTemplate",
+    "parsedArguments": [],
+    "salt": "0x0000000000000000000000000000000000000000337e58000563da6030870a50",
+    "type": "deployment"
+  }
+]
