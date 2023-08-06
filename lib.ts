@@ -165,10 +165,14 @@ export async function deployContract(initCode: string, salt: string, chainName?:
   let priorityGasPrice = undefined;
   let gasLimit = undefined;
 
-  if (chainName == 'optimism' || chainName == 'optimism_goerli' || chainName == 'base') {
+  if (chainName == 'optimism' || chainName == 'optimism_goerli') {
     gasPrice = "1000000"
     // priorityGasPrice = "1000000"
     // gasLimit = "4000000"
+  }
+
+  if (chainName == 'base') {
+    gasPrice = "10000000"
   }
 
   return await (await ImmutableCreate2Factory.safeCreate2(salt, initCode, {
@@ -201,6 +205,10 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
     gasPrice = "1000000"
     // priorityGasPrice = "1000000"
     // gasLimit = "4000000"
+  }
+
+  if (chainName == 'base') {
+    gasPrice = "10000000"
   }
 
   if (!Root) {

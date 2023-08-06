@@ -1,0 +1,43 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "selector": "function activate(tuple(address,uint256,uint256)[])",
+    "args": [
+      [
+        [
+          "0x4200000000000000000000000000000000000021",
+          50,
+          0
+        ],
+        [
+          "0x4200000000000000000000000000000000000021",
+          101,
+          10
+        ],
+        [
+          "0x4200000000000000000000000000000000000021",
+          101,
+          420
+        ],
+        [
+          "0x4200000000000000000000000000000000000021",
+          101,
+          8453
+        ],
+        [
+          "0x4200000000000000000000000000000000000021",
+          101,
+          84531
+        ]
+      ]
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x3bfbe6563f1d07a37287e20845556040af64f0cca5c44c969d1fd20342bdab4a"
+      }
+    ],
+    "signature": "0x028982afb6080c014775d8dac5dbfd1a3012f575bb49fabdfc83c51e7afb0ac014bae5de9672d2c133c4714cf85769621a6b5c6cdb642da83d4ca8b1141264521c"
+  }
+]

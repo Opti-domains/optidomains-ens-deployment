@@ -19,6 +19,11 @@ export const CHAINS = {
     rpc: `https://goerli.optimism.io`,
     chainId: 420,
   },
+  base: {
+    type: "evm",
+    rpc: `https://mainnet.base.org`,
+    chainId: 8453,
+  },
   base_goerli: {
     type: "evm",
     rpc: `https://goerli.base.org`,
