@@ -1,0 +1,14 @@
+[
+  {
+    "type": "deployment",
+    "name": "TownSupporterPlan",
+    "artifact": "boredtown/TownSupporterPlan.sol",
+    "constructorArguments": [
+      "0x4200000000000000000000000000000000000021",
+      "<OptiTownRetroToken>"
+    ],
+    "leading": "B02ED",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  }
+]
