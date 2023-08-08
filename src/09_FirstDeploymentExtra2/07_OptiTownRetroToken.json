@@ -4,9 +4,9 @@
     "name": "OptiTownRetroToken",
     "artifact": "boredtown/OptiTownRetroToken.sol",
     "constructorArguments": [
-      "0xe2b0A186a7FE9fee25Ca1bDc7DcE45cB2029e7BD"
+      "0x4200000000000000000000000000000000000042"
     ],
-    "leading": "B02ED",
+    "leading": "B02ED09",
     "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "contractAddress": ""
   }

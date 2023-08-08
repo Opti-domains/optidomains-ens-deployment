@@ -1,8 +1,5 @@
 [
   {
-    "type": "rootTx",
-    "target": "<OptiDomainsAttestationDiamond>",
-    "selector": "function activate(tuple(address,uint256,uint256)[])",
     "args": [
       [
         [
@@ -27,6 +24,9 @@
         "transactionHash": "0xa885193ce88ee916a2536a8740d035e08b272539e8c69be75da4d553add05df9"
       }
     ],
-    "signature": "0x3373166b988977b366819e756b03c2aab7c9e40c0a9f78f3d8221779f30948e214c45223610731f1ac45a37e4455cedb7a64048e4fffd1a9300a7229227e10841c"
+    "selector": "function activate(tuple(address,uint256,uint256)[])",
+    "signature": "0x3373166b988977b366819e756b03c2aab7c9e40c0a9f78f3d8221779f30948e214c45223610731f1ac45a37e4455cedb7a64048e4fffd1a9300a7229227e10841c",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "type": "rootTx"
   }
 ]

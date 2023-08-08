@@ -1,0 +1,23 @@
+[
+  {
+    "artifact": "boredtown/OptiTownRetroToken.sol",
+    "constructorArguments": [
+      "0x4200000000000000000000000000000000000042"
+    ],
+    "contractAddress": "0xB02ED09Df8912fe1EC4abF9b250086B89a018213",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xB02ED09Df8912fe1EC4abF9b250086B89a018213",
+        "transactionHash": "0xe08ce9491ef58e1ef906e68ef9aa9b9782114df56b9a4e9a3aefb90cf4df613a"
+      }
+    ],
+    "leading": "B02ED09",
+    "name": "OptiTownRetroToken",
+    "parsedArguments": [
+      "0x4200000000000000000000000000000000000042"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000bb13886dea37be667f77cbc0",
+    "type": "deployment"
+  }
+]

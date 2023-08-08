@@ -1,0 +1,25 @@
+[
+  {
+    "artifact": "boredtown/TownSupporterPlan.sol",
+    "constructorArguments": [
+      "0x4200000000000000000000000000000000000021",
+      "<OptiTownRetroToken>"
+    ],
+    "contractAddress": "0xB02ED9555C223cF96eEd401744abC21876E243c6",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0xB02ED9555C223cF96eEd401744abC21876E243c6",
+        "transactionHash": "0x8ea5b34e09a15eba3c3f3e0f660544d88dac787a0ebe41235a3f4849cf2b7d82"
+      }
+    ],
+    "leading": "B02ED9",
+    "name": "TownSupporterPlan",
+    "parsedArguments": [
+      "0x4200000000000000000000000000000000000021",
+      "0xB02ED09Df8912fe1EC4abF9b250086B89a018213"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000307212f88548ffdfd8c14359",
+    "type": "deployment"
+  }
+]

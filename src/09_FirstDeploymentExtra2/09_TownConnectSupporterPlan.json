@@ -1,0 +1,10 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_WhitelistRegistrarController>",
+    "selector": "function setSupporterPlan(address)",
+    "args": [
+      "<TownSupporterPlan>"
+    ]
+  }
+]
