@@ -1,0 +1,37 @@
+[
+  {
+    "type": "deployment",
+    "name": "OptiDomainsAttestationFacetFix1",
+    "artifact": "attestation/OptiDomainsAttestationFacetFix1.sol",
+    "constructorArguments": [
+      "<NameWrapperRegistry>",
+      "<Root>"
+    ],
+    "leading": "888811",
+    "salt": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "contractAddress": ""
+  },
+  {
+    "type": "rootTx",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "args": [
+      [
+        [
+          "<OptiDomainsAttestationFacetFix1>",
+          1,
+          [
+            "0xcb81facd",
+            "0x8a6f7fe6",
+            "0xf806f52a",
+            "0x3e57d269",
+            "0xfc031b75",
+            "0xd7561abd"
+          ]
+        ]
+      ],
+      "0x0000000000000000000000000000000000000000",
+      "0x"
+    ]
+  }
+]
