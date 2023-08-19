@@ -1,0 +1,21 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_NameWrapper>",
+    "selector": "function transferOwnership(address)",
+    "args": [
+      "0x8b6c27ec466923fad66Ada94c78AA320eA876969"
+    ],
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x865e1e56ecff438e46642e64d42594bf361098e81c2b2e34c90281f616ec52af"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x77a53e4a2ce8b423a2e506f96ffa3bdeafc7851fb8ab2ffb0fad3f052e707f37"
+      }
+    ],
+    "signature": "0xf21a65b5384b34716c6f90e430ca85a901c6a828e7f8bf82fc1079958818b4697e2a7323aaeba87f1e5145816f1e6e4194f7f5a2f2822f0a1b0f58bc1d9eefe81c"
+  }
+]
