@@ -1,0 +1,10 @@
+[
+  {
+    "type": "rootTx",
+    "target": "<BoredTown_NameWrapper>",
+    "selector": "function transferOwnership(address)",
+    "args": [
+      "0x8b6c27ec466923fad66Ada94c78AA320eA876969"
+    ]
+  }
+]

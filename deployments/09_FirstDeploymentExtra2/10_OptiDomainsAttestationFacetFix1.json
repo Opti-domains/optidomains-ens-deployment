@@ -1,0 +1,64 @@
+[
+  {
+    "artifact": "attestation/OptiDomainsAttestationFacetFix1.sol",
+    "constructorArguments": [
+      "<NameWrapperRegistry>",
+      "<Root>"
+    ],
+    "contractAddress": "0x88881192422293E083a022Edf39611BC7deC7e3e",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "contractAddress": "0x88881192422293E083a022Edf39611BC7deC7e3e",
+        "transactionHash": "0xb21bb630d4b5e240520000ce14d6cf30bb87b3aee270d0ea3dc432d47c0a6a64"
+      },
+      {
+        "chain": "optimism",
+        "contractAddress": "0x88881192422293E083a022Edf39611BC7deC7e3e",
+        "transactionHash": "0xb7e86c37ab434bd47fdcca80a83536594223b48dec05739754ce3e9ac549274c"
+      }
+    ],
+    "leading": "888811",
+    "name": "OptiDomainsAttestationFacetFix1",
+    "parsedArguments": [
+      "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+      "0x88881190D24e8ecA11F0262972cff8081b2AFc45"
+    ],
+    "salt": "0x0000000000000000000000000000000000000000bb199c8ef516c18502ab8f69",
+    "type": "deployment"
+  },
+  {
+    "args": [
+      [
+        [
+          "<OptiDomainsAttestationFacetFix1>",
+          1,
+          [
+            "0xcb81facd",
+            "0x8a6f7fe6",
+            "0xf806f52a",
+            "0x3e57d269",
+            "0xfc031b75",
+            "0xd7561abd"
+          ]
+        ]
+      ],
+      "0x0000000000000000000000000000000000000000",
+      "0x"
+    ],
+    "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",
+    "target": "<OptiDomainsAttestationDiamond>",
+    "type": "rootTx",
+    "deployments": [
+      {
+        "chain": "optimism_goerli",
+        "transactionHash": "0x0a7c461a83eacd93dcebd87f812c186f061620dac6097c87d2e59fd1db276d6b"
+      },
+      {
+        "chain": "optimism",
+        "transactionHash": "0x9634d4f74cd5b73c226a2a303072396f24181908c660c1b54c3299a7e6a887e8"
+      }
+    ],
+    "signature": "0x5009cdac18112f1ee369c2cd5bd9e6ca1e901e7c58627a2dc9de57c33b9dc4a50897e7878c21fcdf157a515bcd3e42acc8099c8e3a628fb638a203db2782e0a81c"
+  }
+]

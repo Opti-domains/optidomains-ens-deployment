@@ -3,9 +3,6 @@
     "args": [
       "<TownSupporterPlan>"
     ],
-    "selector": "function setSupporterPlan(address)",
-    "target": "<BoredTown_WhitelistRegistrarController>",
-    "type": "rootTx",
     "deployments": [
       {
         "chain": "optimism_goerli",
@@ -16,6 +13,9 @@
         "transactionHash": "0xa2e9f510a024a2f7f62ed64e4a879a4fcc900f9914f14435d2c6f7dbada702ce"
       }
     ],
-    "signature": "0x123b8e0987e8abf5f80e7abc80cc492a789c6a7dafbed16ec04943cb011052ac337dc77fa0e9a900ba0a16420e572294f795ab68ad75591c128c788192ea47c01b"
+    "selector": "function setSupporterPlan(address)",
+    "signature": "0x123b8e0987e8abf5f80e7abc80cc492a789c6a7dafbed16ec04943cb011052ac337dc77fa0e9a900ba0a16420e572294f795ab68ad75591c128c788192ea47c01b",
+    "target": "<BoredTown_WhitelistRegistrarController>",
+    "type": "rootTx"
   }
 ]
