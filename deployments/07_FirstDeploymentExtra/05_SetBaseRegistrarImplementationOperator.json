@@ -15,6 +15,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x6178ffb1fb64e8fe9b92bd2d0cab986beea61d4a3bd07b934c00cc61f0fda4ea"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x9270a7537087599866f1d8f6c0e06122c49ac830b75145ebc1befd041e5c6e8d"
       }
     ],
     "selector": "function addController(address)",
@@ -38,6 +42,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x223d2e80258bde7f439dc76b212105568df1084d81cb976f592a26748a3594d9"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0xf2986814110193f62a89a4092522026b8e2d64fe1b04b076c92482c00724c288"
       }
     ],
     "selector": "function addController(address)",

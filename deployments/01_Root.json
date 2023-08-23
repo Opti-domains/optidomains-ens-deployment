@@ -50,6 +50,11 @@
         "chain": "base",
         "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
         "transactionHash": "0x06d0b9cc8b2902f55f0bf5fcf27fe604b214155872bc01929f673c6e1cc9609c"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0x88881190D24e8ecA11F0262972cff8081b2AFc45",
+        "transactionHash": "0xa24ee3132c0f4e0b1aece4d33484f37b3411b51b162162219f865c303003bc5c"
       }
     ],
     "leading": "888811",
@@ -109,6 +114,11 @@
         "chain": "base",
         "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
         "transactionHash": "0x500885b175c02cf8c52dba786a7ecf58b4ef6863ed35d1f1014debdc22655722"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0x888811e68250624944575f8725b9364dB6eFe943",
+        "transactionHash": "0x389f4e80a81aeea53a70c3f1fc885b2bf20b098bbfb2eaeaeb414e58f9f63635"
       }
     ],
     "leading": "888811",

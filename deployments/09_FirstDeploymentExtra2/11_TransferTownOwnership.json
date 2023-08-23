@@ -14,6 +14,14 @@
       {
         "chain": "optimism",
         "transactionHash": "0x77a53e4a2ce8b423a2e506f96ffa3bdeafc7851fb8ab2ffb0fad3f052e707f37"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x18ca027b0e661ab85511400dbc40bf888b31f26c31147ba23d07a9be9e7ae4b5"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x2b234dfbe8a78792f00f01bb1ec31bc7017ac2aecb72cc62ee3bfa59e0cae313"
       }
     ],
     "signature": "0xf21a65b5384b34716c6f90e430ca85a901c6a828e7f8bf82fc1079958818b4697e2a7323aaeba87f1e5145816f1e6e4194f7f5a2f2822f0a1b0f58bc1d9eefe81c"

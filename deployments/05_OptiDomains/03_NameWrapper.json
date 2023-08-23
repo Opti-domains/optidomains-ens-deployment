@@ -43,6 +43,11 @@
         "chain": "optimism",
         "contractAddress": "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
         "transactionHash": "0xef7651d76fc64931f9a784b7396b0235e4e41386c849dc3c60ec70ce343c872c"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0x888811F1B21176E15FB60DF500eA85B490Dd2836",
+        "transactionHash": "0x892b5d22853fc80a093ba005f0c116d41f013d59f8cc805c6352ddb85f679e41"
       }
     ],
     "leading": "888811",
@@ -88,6 +93,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x9fc10d0d0577b0a1f33c21226178ee9fbb8042b9128ccc3709bbb949fa4c7b84"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x132e0cf40d1011e1ff53e86a35e9ff9dfe5310dfceca115576387d2015e107a0"
       }
     ],
     "selector": "function addController(address)",
@@ -128,6 +137,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x9c3eafc30a78d7c78d1c71a72a9593b8da102ae77eaaaacf37147ff1d77246a6"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x2354cd225ae3cdd627be22a91ca7e177240d50b350d3c6e68d091299e45af26a"
       }
     ],
     "selector": "function upgrade(address,address)",

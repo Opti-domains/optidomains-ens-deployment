@@ -37,6 +37,14 @@
       {
         "chain": "optimism",
         "transactionHash": "0x56d2c4ba5e2d1a5751602432624c2ceaedd6dbfa47dc4016d011c83818c1a734"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x26cd81c046c92b2032ddbf08861b5a57e2a31d3bcb9296bbbf951dd17b7faee9"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0xf60a46cfc88994f32b7fc726ba1a83423a6171a3d0692572387d3becabdb83d4"
       }
     ],
     "selector": "function activate(tuple(address,uint256,uint256)[])",

@@ -40,6 +40,11 @@
         "chain": "optimism",
         "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
         "transactionHash": "0x88c0247255ca1bb6fdfabb512ddf85cf23feebc27c3f3beceb48fad7376d5ccc"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
+        "transactionHash": "0x247f260661956e26e876a710c2d2b047d204e10fea9702cdaf2ccd4feaf19663"
       }
     ],
     "leading": "B02ED",

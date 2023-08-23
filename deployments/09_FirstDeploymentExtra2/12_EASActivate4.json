@@ -26,6 +26,17 @@
           0
         ]
       ]
-    ]
+    ],
+    "deployments": [
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0xd4e341f9e79d5d25e206d54801ccfeaa8d58903692f68b0279dbb80c4fb361fb"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x20173b8fddc17bec16ca158d76738d52e706548a196fa6e4cfbd6576b744a2e1"
+      }
+    ],
+    "signature": "0x3cde26608952dfe57a4ae0c236fbae187965858b5965122266a415fc26fcdf9d011a86da59f423d6b00e8dca9203209f18c860bd7731b10de62310f887017e4e1b"
   }
 ]

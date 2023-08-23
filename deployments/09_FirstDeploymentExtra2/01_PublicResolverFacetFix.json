@@ -21,6 +21,14 @@
       {
         "chain": "optimism",
         "transactionHash": "0x6d8ab05b6870649e917d70b5f9994dffb0235fc692d4983ea9c3e53633486782"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x060bd0894e5bdedabe57721906cfa40584bcd983da61f5ae9cf612685b985154"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0xdb1889edbcc4a37ddaf58ee20915007bcb7440d41059aecad77fd4a6f1dc9387"
       }
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",

@@ -20,6 +20,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x686a2a7134a4bf1f7b23486d710d8d572df998c6a477af0ab236797dc0e6c75d"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0xb101f25fd780d1a79ffc0d6d074858c833929dc1b7a1a7075781aa3e24fa896c"
       }
     ],
     "selector": "function activate(address,uint256)",

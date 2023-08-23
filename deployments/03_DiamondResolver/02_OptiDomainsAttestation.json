@@ -46,6 +46,11 @@
         "chain": "optimism",
         "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
         "transactionHash": "0xd87bf70884377ec4acd4bbfb6103a7d15cba78803e2a0ceb656735430f5cfdd6"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+        "transactionHash": "0xfbf1fdd706d5e285fce051645599c60eadc95b27644a0fe0b8279f71b7b83fae"
       }
     ],
     "leading": "888811",
@@ -89,6 +94,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x13899135c209c8e7e3460a0615ab057e5232fcd98207dc142736b7738d39ed8f"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x5f0c27a46b897067bdbf98a5330a79253eb47d8911204572e2470cf64bc9525b"
       }
     ],
     "selector": "function setAttestation(address)",
@@ -129,6 +138,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x3e4cfb2f65dcade2ab0751279c2190a7e561341010946e67a6723903b0b3e50e"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0xa7d987a56cb9c8439d0ac96d42ce3d346bf951dbbd086ee252ac61086ce4cef9"
       }
     ],
     "selector": "function activate(address,uint256)",
@@ -169,6 +182,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x884cca4f6bde738f95331678624c0b5e79e3bdf06ce6e481269751d8476e6512"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x3fca101d3615b0a17fbf173e0079c8fb5bfb627403fb52ba6a44284a5e6cd55e"
       }
     ],
     "selector": "function activate(address,uint256)",

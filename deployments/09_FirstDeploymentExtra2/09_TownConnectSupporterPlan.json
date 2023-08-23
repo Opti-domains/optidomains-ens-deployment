@@ -11,6 +11,14 @@
       {
         "chain": "optimism",
         "transactionHash": "0xa2e9f510a024a2f7f62ed64e4a879a4fcc900f9914f14435d2c6f7dbada702ce"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x2b6a443ec70a4a38788cfa0655b1c1e3d19d66a6a9724a88f86599b72bc77a0c"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x2b8ddad12d9fe15fe6e988b8ae5e8ac906067dce94b51ef95c4f7a7ec21cdb05"
       }
     ],
     "selector": "function setSupporterPlan(address)",

@@ -43,6 +43,11 @@
         "chain": "optimism",
         "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
         "transactionHash": "0xfdc6f5a7f705db75e4d2d26df0531b2de127278555ba34feac4938316a88ffaa"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0xB02ED980693e14E082F0A3A33060046Ae8495EB2",
+        "transactionHash": "0x71090a2a29c0867baa9343b93e8338ba3410fb8471b8d378671864847dabc2c7"
       }
     ],
     "leading": "B02ED",
@@ -88,6 +93,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0xd8c4bd3e462e3238aa1ac5ce5d21d630813aafa6d80c6f1ac49c1ce6b38fa7d1"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x9a2ded3760f2a9fe6a8b77d40826cf5a4cafe3216bc6ff6dc066ae68c9822fc4"
       }
     ],
     "selector": "function addController(address)",
@@ -128,6 +137,10 @@
       {
         "chain": "optimism",
         "transactionHash": "0x580b4ebcca7971c01b5c44b8a74dbafebd9cc0e7d677ad6bcc1178ebc2d3e937"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0x2ee723d70ad452ec33fe5d344da30c535f793ffb5e1599db64e016f162809a31"
       }
     ],
     "selector": "function upgrade(address,address)",

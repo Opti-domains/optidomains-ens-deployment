@@ -11,6 +11,14 @@
       {
         "chain": "optimism",
         "transactionHash": "0x88d8cd67015a2580927bf7b4b8355dd0e9e589b31ef933465813363e2f9728ee"
+      },
+      {
+        "chain": "mode_testnet",
+        "transactionHash": "0xcd867e8c668a8d3fcbab2ff563c15fc281becf0a8ea23337d46de6d5a3afaa6f"
+      },
+      {
+        "chain": "base_goerli",
+        "transactionHash": "0x4e06b2449edac363bc7020ff8667a24634731d78edf695e8fed07223b7508227"
       }
     ],
     "selector": "function setAttestation(address)",

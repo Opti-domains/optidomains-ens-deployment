@@ -45,6 +45,11 @@
         "chain": "optimism",
         "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
         "transactionHash": "0x1610ffb74de0f77bfea27b71395051c0d75564e2e8caf77ad14ddd6b36eb5410"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+        "transactionHash": "0xe9af3be968c51af0ab9edc8679544dbe9c87096f54c818377bfd5a8e48fb513a"
       }
     ],
     "leading": "888811",

@@ -13,6 +13,16 @@
         "chain": "optimism",
         "contractAddress": "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc",
         "transactionHash": "0xddf00581325dbe0eee20216638eb74c8d344cdff31ec65938309b85fbaff0179"
+      },
+      {
+        "chain": "mode_testnet",
+        "contractAddress": "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc",
+        "transactionHash": "0x38bf7539df33b1d976208a5e77e30fce02854d306df019f9dd995c6e1fd9b14e"
+      },
+      {
+        "chain": "base_goerli",
+        "contractAddress": "0x888811D93EE697768FB2Eb23B4225038Beeb7FDc",
+        "transactionHash": "0x18011890675e1d85e53d829534bebeb38b5a7547f837d8b6835ddc11a9f4223b"
       }
     ],
     "leading": "888811",
