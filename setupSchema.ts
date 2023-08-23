@@ -49,6 +49,9 @@ async function main() {
   await (await schemaRegistry.register("bytes32 node,uint256 coinType,bytes walletAddress,bytes proof", "0x0000000000000000000000000000000000000000", true, options)).wait()
   await (await schemaRegistry.register("bytes32 node,string provider,string identity,string displayName,bytes proof", "0x0000000000000000000000000000000000000000", true, options)).wait()
 
+  await (await schemaRegistry.register("bytes32 referrerNode,string referrerDomain,address referrerWallet,string campaign", "0x0000000000000000000000000000000000000000", true, options)).wait()
+  await (await schemaRegistry.register("bytes32 node,string domain,bytes32 referrerNode,string referrerDomain,address referrerWallet,string campaign", "0x0000000000000000000000000000000000000000", true, options)).wait()
+
   // await (await schemaRegistry.register("address operator,string endpoint", "0x0000000000000000000000000000000000000000", true)).wait()
 
 

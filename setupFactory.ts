@@ -28,6 +28,8 @@ async function main() {
   const wallet = getWallet()
   const provider = getProvider()
 
+  const chainId = (await provider.getNetwork()).chainId
+
   // Auto-calculate the gas price
   const gasPrice = await provider.getGasPrice();
 
@@ -37,10 +39,10 @@ async function main() {
     const balance = await provider.getBalance(KEYLESS_ADDRESS);
 
     if (balance.toString() == "0") {
-      // Transfer 0.05 ETH to that address
+      // Transfer 0.01 ETH to that address
       let tx = {
         to: KEYLESS_ADDRESS,
-        value: ethers.utils.parseEther("0.05")
+        value: ethers.utils.parseEther("0.01")
       }
 
       const signedTransaction = await wallet.sendTransaction(tx);
@@ -60,6 +62,7 @@ async function main() {
         to: KEYLESS_DEPLOYER, // Contract address
         value: '0x0', // Amount of Ether to send (0 for contract interactions)
         data: INEFFICIENT_PAYLOAD, // Encoded contract function data
+        chainId,
       };
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
@@ -77,6 +80,7 @@ async function main() {
         to: INEFFICIENT_ADDRESS, // Contract address
         value: '0x0', // Amount of Ether to send (0 for contract interactions)
         data: IMMUTABLE_PAYLOAD, // Encoded contract function data
+        chainId,
       };
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
@@ -99,6 +103,7 @@ async function main() {
           ['bytes32', 'bytes'],
           [SCHEMA_REGISTRY_SALT, SCHEMA_REGISTRY_PAYLOAD],
         ).substring(2), // Encoded contract function data
+        chainId,
       };
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);
@@ -119,6 +124,7 @@ async function main() {
           ['bytes32', 'bytes'],
           [EAS_SALT, EAS_PAYLOAD],
         ).substring(2), // Encoded contract function data
+        chainId,
       };
       const signedTransaction = await wallet.signTransaction(rawTransaction);
       const transactionResponse = await provider.sendTransaction(signedTransaction);

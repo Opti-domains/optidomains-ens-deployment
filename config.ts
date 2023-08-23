@@ -49,6 +49,11 @@ export const CHAINS = {
     rpc: "https://rpc.chiadochain.net",
     chainId: 10200,
   },
+  mode_testnet: {
+    type: "evm",
+    rpc: "https://sepolia.mode.network",
+    chainId: 919,
+  },
 
   hedera_testnet: {
     type: "evm",
