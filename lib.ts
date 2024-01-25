@@ -18,7 +18,12 @@ let Root: ethers.Contract
 let provider, wallet;
 
 export function setupWallet(chain: string, pk = process.env.DEPLOYER_KEY) {
-  provider = new ethers.providers.JsonRpcProvider(CHAINS[chain].rpc);
+  if (!CHAINS[chain]) {
+    provider = new ethers.providers.JsonRpcProvider(chain);
+  } else {
+    provider = new ethers.providers.JsonRpcProvider(CHAINS[chain].rpc);
+  }
+  
   wallet = new ethers.Wallet(pk, provider);
 
   ImmutableCreate2Factory = new ethers.Contract("0x0000000000ffe8b47b3e2130213b802212439497", ImmutableCreate2FactoryABI, wallet)
@@ -174,6 +179,8 @@ export async function deployContract(initCode: string, salt: string, chainName?:
   if (chainName == 'base') {
     gasPrice = "10000000"
   }
+
+  console.log('Run create')
 
   return await (await ImmutableCreate2Factory.safeCreate2(salt, initCode, {
     ...(gasPrice ? {gasPrice} : {}),

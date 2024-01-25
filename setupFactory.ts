@@ -23,26 +23,34 @@ async function main() {
   const args: string[] = process.argv.slice(2);
   const chainName: string = args[0]
 
-  setupWallet(chainName, process.env.FACTORY_KEY)
+  setupWallet(chainName, process.env.FACTORY_KEY || process.env.DEPLOYER_KEY)
 
   const wallet = getWallet()
   const provider = getProvider()
 
   const chainId = (await provider.getNetwork()).chainId
 
+  console.log(chainId)
+
   // Auto-calculate the gas price
   const gasPrice = await provider.getGasPrice();
 
-  let nonce = await wallet.getTransactionCount();
+  console.log(gasPrice)
+
+  let nonce = (await wallet.getTransactionCount()) + 1;
+
+  console.log(nonce)
 
   if (!args[1] || args[1] == 'FACTORY') {
     const balance = await provider.getBalance(KEYLESS_ADDRESS);
+
+    console.log(balance)
 
     if (balance.toString() == "0") {
       // Transfer 0.01 ETH to that address
       let tx = {
         to: KEYLESS_ADDRESS,
-        value: ethers.utils.parseEther("0.01")
+        value: ethers.utils.parseEther("0.1")
       }
 
       const signedTransaction = await wallet.sendTransaction(tx);

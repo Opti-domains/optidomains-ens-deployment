@@ -121,7 +121,9 @@ async function processSingle(dict, filePath) {
         }
 
         // Save result to JSON
-        await fs.writeFile(filePath, JSON.stringify(actions, undefined, 2))
+        if (dict.CHAIN_NAME != 'hardhat') {
+          await fs.writeFile(filePath, JSON.stringify(actions, undefined, 2))
+        }
       }
     }
   }
@@ -133,24 +135,6 @@ async function main() {
   const chainName: string = args[0]
 
   setupWallet(chainName)
-
-  if (chainName == "hardhat") {
-    const wallet = getWallet()
-    const provider = getProvider()
-  
-    const balance = await provider.getBalance(wallet.address);
-  
-    if (parseFloat(ethers.utils.formatEther(balance)) < 0.5) {
-      // Transfer 1 ETH to that address
-      let tx = {
-        to: wallet.address,
-        value: ethers.utils.parseEther("1")
-      }
-  
-      const signedTransaction = await (new ethers.Wallet(process.env.FACTORY_KEY, provider)).sendTransaction(tx);
-      console.log('Transfer ETH to deployer:', signedTransaction.hash);
-    }
-  }
 
   const filePaths = await readFilesRecursively('deployments')
 
