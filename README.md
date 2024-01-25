@@ -19,6 +19,16 @@ DEPLOYER_KEY=<Deployer private key>
 
 ## Add your chain to config.ts
 
+Append config.ts with your chain config like this
+
+```
+[Chain Name]: {
+  type: "evm",
+  rpc: "[RPC URL]",
+  chainId: [Chain ID],
+}
+```
+
 ## Deploy Seaport's Immutable CREATE2 Factory
 
 ### [Recommended] Execute setupFactory.ts

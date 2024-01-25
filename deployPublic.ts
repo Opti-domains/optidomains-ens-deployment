@@ -101,7 +101,8 @@ async function processSingle(dict, filePath) {
             transactionHash: tx.transactionHash,
           })
         } else {
-          const {tx, signature} = await performRootTx(dict, action, dict.OWNER_PK, dict.CHAIN_NAME)
+          console.log(action)
+          const {tx, signature} = await performRootTx(dict, action, dict.OWNER_PK, dict.CHAIN_NAME, action.signature)
           console.log(`Root TX on ${action[RAW_ACTION_SYMBOL].target} (Tx: ${tx.transactionHash})`)
 
           // Save on deployments

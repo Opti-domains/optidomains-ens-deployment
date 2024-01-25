@@ -202,7 +202,7 @@ export const TOPIC_SET_CONTROLLER = ethers.utils.keccak256(
   ethers.utils.toUtf8Bytes('setController'),
 )
 
-export async function performRootTx(dict: {[name: string]: string}, action: TxAction, pk: string, chainName?: string) {
+export async function performRootTx(dict: {[name: string]: string}, action: TxAction, pk: string, chainName?: string, signatureStored?: string) {
   // hardcode for gas price respective to chain ID
   let gasPrice = undefined;
   let priorityGasPrice = undefined;
@@ -233,10 +233,11 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
   const functionName = action.selector.match(/function\s+(\w+)/)[1];
 
   console.log(functionName, action.selector, action.args)
+  // console.log(signatureStored)
 
   const calldata = iface.encodeFunctionData(functionName, action.args)
 
-  const signature = rootGenerateSignature(
+  const signature = signatureStored ?? rootGenerateSignature(
     dict.Root,
     TOPIC_EXECUTE,
     nonce,
