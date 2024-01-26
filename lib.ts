@@ -170,15 +170,15 @@ export async function deployContract(initCode: string, salt: string, chainName?:
   let priorityGasPrice = undefined;
   let gasLimit = undefined;
 
-  if (chainName == 'optimism' || chainName == 'optimism_goerli') {
-    gasPrice = "1000000"
+  if (chainName == 'optimism' || chainName == 'optimism_goerli' || chainName == 'optimism_sepolia' || chainName == 'base' || chainName == 'base_sepolia') {
+    gasPrice = "10000000"
     // priorityGasPrice = "1000000"
     // gasLimit = "4000000"
   }
 
-  if (chainName == 'base') {
-    gasPrice = "10000000"
-  }
+  // if (chainName == 'base') {
+  //   gasPrice = "10000000"
+  // }
 
   console.log('Run create')
 
@@ -247,6 +247,8 @@ export async function performRootTx(dict: {[name: string]: string}, action: TxAc
     ),
     pk,
   )
+
+  console.log('Signature', signature)
 
   const tx = await Root.execute(
     target,

@@ -22,7 +22,7 @@ async function main() {
       value: ethers.utils.parseEther("0.5")
     }
 
-    const signedTransaction = await new ethers.Wallet(process.env.FACTORY_KEY, provider).sendTransaction(tx);
+    const signedTransaction = await new ethers.Wallet(process.env.FACTORY_KEY || process.env.DEPLOYER_KEY, provider).sendTransaction(tx);
     console.log('Transfer ETH to deployer:', signedTransaction.hash);
   }
 
@@ -31,8 +31,8 @@ async function main() {
   const options: any = {}
 
   // hardcode for gas price respective to chain ID
-  if (chainName == 'optimism' || chainName == 'optimism_goerli' || chainName == 'base') {
-    options.gasPrice = "100000"
+  if (chainName == 'optimism' || chainName == 'optimism_goerli' || chainName == 'optimism_sepolia' || chainName == 'base' || chainName == 'base_sepolia') {
+    options.gasPrice = "10000000"
   }
 
   await (await schemaRegistry.register("bytes32 node,uint256 contentType,bytes abi", "0x0000000000000000000000000000000000000000", true, options)).wait()

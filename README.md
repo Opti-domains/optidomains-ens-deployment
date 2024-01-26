@@ -54,13 +54,13 @@ Note: You don't need to deploy ConduitController and Seaport 1.5. Only Immutable
 Simply run below command to deploy Opti.domains on any OP Stack chains
 
 ```bash
-ts-node deployPublic.ts <CHAIN_NAME>
+ts-node deploy.ts <CHAIN_NAME>
 ```
 
 For example
 
 ```bash
-ts-node deployPublic.ts base
+ts-node deploy.ts base
 ```
 
 ## Setup EAS schema
