@@ -6,7 +6,8 @@ async function main() {
   // Retrieve command line arguments
   const args: string[] = process.argv.slice(2);
   const chainName: string = args[0]
-  const contractAddress: string = args[1] ?? "0x0000000000b15ee366c4fe5a24c50dda4cda8660"
+  // const contractAddress: string = args[1] ?? "0x0000000000b15ee366c4fe5a24c50dda4cda8660"
+  const contractAddress: string = args[1] ?? "0x4200000000000000000000000000000000000021"
 
   setupWallet(chainName)
 
