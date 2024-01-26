@@ -19,6 +19,10 @@
       {
         "chain": "base_goerli",
         "transactionHash": "0x4e06b2449edac363bc7020ff8667a24634731d78edf695e8fed07223b7508227"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0xec0ac478b98bf13db1f3fa8655dfe2c11484a07e60be9b11c71f1962b931c423"
       }
     ],
     "selector": "function setAttestation(address)",

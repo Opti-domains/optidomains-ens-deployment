@@ -50,6 +50,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
         "transactionHash": "0x00b410aff1ecb907e73078420cf2e72248accac6b44cc299893b351222dc7b58"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0x8888117A2d8cC4e02A9A9691Ba0e166b2842360D",
+        "transactionHash": "0x22c010d0e5dc5444c7601ee4805445da6b1267e508c7d0672e8fd7c1a20ca9e7"
       }
     ],
     "leading": "888811",
@@ -102,6 +107,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x54c956c2ee7e5f836f23c2570c2d808b049098e92a48d2bea8535ef25b364578"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x8ea48a7cf27a69abc329954943736437badc241e8b3c78984944b6551b8befcc"
       }
     ],
     "selector": "function setController(address,bool)",
@@ -146,6 +155,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x64a7976f06075a6bbb04c8a924853715460f41005e505b7917e587f99fb16328"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x7e7827a235b58698532e47ab0ed034a0d962c5a0298965f07378558dede34b2d"
       }
     ],
     "selector": "function setController(address,bool)",
@@ -190,6 +203,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xe3c0b811729c572850ba6410cf05ffdd148ceb4fb9d68a1b2a07e19613047a7a"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0xe08939b0ba2460c3d97c67df6e192d5f2efdba1893881cf7abebf95b36b957f9"
       }
     ],
     "selector": "function setWhitelisted(address,bool)",

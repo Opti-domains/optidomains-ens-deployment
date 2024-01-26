@@ -43,6 +43,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0x888811B3c11F37a978eED349b174F7e9cCec14D7",
         "transactionHash": "0x889c87c98ea7e6aad2316c82db54dfbd1cb60db0b8ffe007c878d8dc4bed12b6"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0x888811B3c11F37a978eED349b174F7e9cCec14D7",
+        "transactionHash": "0x7cfb8ea92907174632648f582d467eb57d6bef9bd69fd4f57603be218b344e8f"
       }
     ],
     "leading": "888811",
@@ -119,6 +124,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xc5b4c8821f86746d720531a4990d6200d9b67695618e726289f59f312a39504b"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x03d072e53c9b8dfac4e725c5eaadaa5fa1fe6c65b1eeaf0760d3511d13d8dc4a"
       }
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",

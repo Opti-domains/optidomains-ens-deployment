@@ -25,6 +25,11 @@
         "chain": "base_goerli",
         "contractAddress": "0x8888110038E46D4c4ba75aFF88EaAC6f9aA537c1",
         "transactionHash": "0x92920d5ecea782b4a41e679ac0cddb81189c123394c56d76681abd85cc70e3c7"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0x8888110038E46D4c4ba75aFF88EaAC6f9aA537c1",
+        "transactionHash": "0x5c938ac24c530cae29927754a8c78a1253a904eb02f46b62e4f9d06d21256a8e"
       }
     ],
     "leading": "88881100",

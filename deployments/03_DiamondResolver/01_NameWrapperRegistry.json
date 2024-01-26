@@ -50,6 +50,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
         "transactionHash": "0xe9af3be968c51af0ab9edc8679544dbe9c87096f54c818377bfd5a8e48fb513a"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0x888811E08f362edB8B1BF4A52c08fED2A58a427E",
+        "transactionHash": "0xdfec3379b74d4fc1f49a8fb1ee2a71f25fe6ed7d01203c2c8540a790bd83445f"
       }
     ],
     "leading": "888811",

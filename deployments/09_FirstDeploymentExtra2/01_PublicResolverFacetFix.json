@@ -29,6 +29,10 @@
       {
         "chain": "base_goerli",
         "transactionHash": "0xdb1889edbcc4a37ddaf58ee20915007bcb7440d41059aecad77fd4a6f1dc9387"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x1b32aa636bbfb2d9889082342875b60447b415cc0b49bba28a52f50d43b7f1b5"
       }
     ],
     "selector": "function diamondCut(tuple(address,uint8,bytes4[])[],address,bytes)",

@@ -22,6 +22,10 @@
       {
         "chain": "base_goerli",
         "transactionHash": "0x2b234dfbe8a78792f00f01bb1ec31bc7017ac2aecb72cc62ee3bfa59e0cae313"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x07bcd5db7c6e005dfaba28df49424c98589858c16d1cfbe43182ed70fef3aa50"
       }
     ],
     "signature": "0xf21a65b5384b34716c6f90e430ca85a901c6a828e7f8bf82fc1079958818b4697e2a7323aaeba87f1e5145816f1e6e4194f7f5a2f2822f0a1b0f58bc1d9eefe81c"

@@ -31,6 +31,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x3e7b248ad1596a30bf192fae23d9fb9d4fd6d37ab8957b2ce261b97cc66cd342"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0xc8cb64e996a215a3d3c848856f92c08915890b1028a0988a6531f183ad50e3d4"
       }
     ],
     "selector": "function setBaseFuses(uint16)",

@@ -19,6 +19,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x9270a7537087599866f1d8f6c0e06122c49ac830b75145ebc1befd041e5c6e8d"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x067cdd68ebaa6f6ad3dc29332e5e2c5bf6e4eae4be74cd2c51d418f07039d222"
       }
     ],
     "selector": "function addController(address)",
@@ -46,6 +50,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xf2986814110193f62a89a4092522026b8e2d64fe1b04b076c92482c00724c288"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x279efb9aa1d25ec04270b7badebdecd6d9ff71eb8e9fcca624c8d8e816ab1731"
       }
     ],
     "selector": "function addController(address)",

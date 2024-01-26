@@ -45,6 +45,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
         "transactionHash": "0x8f94cf35e4efce82c86720ffe4901b4296be563985709b9e7387ab0b4140ad0c"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0x888811225d6751A0cf8a9F7fa6a77f4F1EF69DC9",
+        "transactionHash": "0xdaf855961076f8b41b104b8c923906cbe7236a9cea9f47c3afbd33eedbc4521f"
       }
     ],
     "leading": "888811",
@@ -91,6 +96,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xe58fd0eb3d4e1c7dde2b84d93b710b7d2e3264f6c6ab8ccf3e0d7ec8b0e708d3"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x0517f8e52d02e2bcd05d68da84dc37be95ae0f8d1add430dfb83319680f4fb85"
       }
     ],
     "selector": "function setDefaultResolver(address)",
@@ -136,6 +145,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x5c9482d57c167487477f77d99838103f4bf7e3f3ef37d150fa735909b08b142f"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x2eb068d90926901170a5c6778c6f694396fe79a4ad5295f2b695854c538c2f7e"
       }
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",
@@ -181,6 +194,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xa8a612f256fb1660aedf35a09ce312c77c5201c9642a7b773b0c760158cf9941"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0xb2c3765ff81acfa950577025f6686ba6d48be9cdb90c6d8fae078b2562101174"
       }
     ],
     "selector": "function setSubnodeOwner(bytes32,bytes32,address)",
@@ -225,6 +242,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x165878b109fb90e511e714a740dfc23317a40ca3f0e3d233f01b4b8ce43414dc"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x3498273f615b145d7ec581f2445c445bff0ae3a7341872d233a91b7dcedc35fd"
       }
     ],
     "selector": "function setWhitelisted(address,bool)",

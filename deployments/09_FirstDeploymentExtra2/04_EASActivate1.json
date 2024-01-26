@@ -55,6 +55,10 @@
       {
         "chain": "base_goerli",
         "transactionHash": "0x06c3657a98803945691e65d3763180ff329f3eb225a4cdf00f08e2c52b42065c"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x808908200cd4b44d9ac08f624c2887f89b5bb3017c733239b9debfc5dc3824b3"
       }
     ],
     "selector": "function activate(tuple(address,uint256,uint256)[])",

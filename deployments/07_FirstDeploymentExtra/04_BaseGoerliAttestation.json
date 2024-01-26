@@ -24,6 +24,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xb101f25fd780d1a79ffc0d6d074858c833929dc1b7a1a7075781aa3e24fa896c"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x8fd59fb35b45b68532519f32f647974c3c7eb2f314e6bea214c3c704228fe697"
       }
     ],
     "selector": "function activate(address,uint256)",

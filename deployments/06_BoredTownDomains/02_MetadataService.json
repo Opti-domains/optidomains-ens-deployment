@@ -45,6 +45,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
         "transactionHash": "0x247f260661956e26e876a710c2d2b047d204e10fea9702cdaf2ccd4feaf19663"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0xB02EDED8502B029aA7f2CB02e1C2a0c452531279",
+        "transactionHash": "0xd1c02b131e08905d91da0380f32acdcd4fe8303a69e994731ed4e42250ecb8ad"
       }
     ],
     "leading": "B02ED",

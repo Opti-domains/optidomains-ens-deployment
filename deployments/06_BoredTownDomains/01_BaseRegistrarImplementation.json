@@ -46,6 +46,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0xB02ED512702C46dbDB260053C97f79c3F467E39E",
         "transactionHash": "0xbe580c2c30e57e0b08ca71b676a08504873ba1a917db8e01f72ba396bc4d0bb8"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0xB02ED512702C46dbDB260053C97f79c3F467E39E",
+        "transactionHash": "0xd03591b6e73d986dfd109e8d66bb2ec79a4a9bd104b1dcc6781cb3ad786f216d"
       }
     ],
     "leading": "B02ED",
@@ -95,6 +100,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x1dcf08c97adc8ec939eba19e07497bd206436073eb2a893715ebd6e0c8057d50"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x043654cdc047924c890d4c2123e74bcf0c0fc4ca53129aa6ea5ae7c307dfea4b"
       }
     ],
     "selector": "function setSubnodeOwner(address,bytes32,address)",

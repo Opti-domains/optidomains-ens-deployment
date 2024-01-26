@@ -51,6 +51,11 @@
         "chain": "mode_testnet",
         "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
         "transactionHash": "0xfbf1fdd706d5e285fce051645599c60eadc95b27644a0fe0b8279f71b7b83fae"
+      },
+      {
+        "chain": "base",
+        "contractAddress": "0x888811653D30Ed5bd74f5afd4B2bffe2dE3192B3",
+        "transactionHash": "0x77fcc234049dc00dfb989d1ed58290f5746108605bcef86cdec5bc41aadae717"
       }
     ],
     "leading": "888811",
@@ -98,6 +103,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x5f0c27a46b897067bdbf98a5330a79253eb47d8911204572e2470cf64bc9525b"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x8fd352c4760f82534fbf20380c4dd8ac2cdc28dca2fbe0178e396847b66407cb"
       }
     ],
     "selector": "function setAttestation(address)",
@@ -142,6 +151,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0xa7d987a56cb9c8439d0ac96d42ce3d346bf951dbbd086ee252ac61086ce4cef9"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x62fbf79d96390c615761cbef0090e8ea0dc53ef976e9d021a4e9bb975e4a0828"
       }
     ],
     "selector": "function activate(address,uint256)",
@@ -186,6 +199,10 @@
       {
         "chain": "mode_testnet",
         "transactionHash": "0x3fca101d3615b0a17fbf173e0079c8fb5bfb627403fb52ba6a44284a5e6cd55e"
+      },
+      {
+        "chain": "base",
+        "transactionHash": "0x3d10a961cc36fa7281b8aaa24352162e51a82c5ac16a61217a45522879c4583d"
       }
     ],
     "selector": "function activate(address,uint256)",
